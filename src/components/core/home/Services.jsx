@@ -11,6 +11,7 @@ import a7 from "@/assets/hero7.png";
 import a8 from "@/assets/hero8.png";
 import a9 from "@/assets/hero9.png";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 const services = [
   {
     image: a1,
@@ -88,6 +89,12 @@ const services = [
 
 const Services = () => {
   const path = usePathname("/services");
+  const [activeCard, setActiveCard] = useState(null);
+
+  const handleCardClick = (index) => {
+    setActiveCard(activeCard === index ? null : index);
+  };
+
   return (
     <div className={`${path === "/services" ? "mt-44" : "mt-16"}`}>
       <div className="flex flex-col w-full items-center">
@@ -107,7 +114,10 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            className={`relative cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl ${
+              activeCard === index ? "active-card" : ""
+            }`}
+            onClick={() => handleCardClick(index)}
           >
             {/* Image Container */}
             <div className="h-64 w-full">
@@ -122,18 +132,30 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/60 bg-opacity-40 z-10"></div>
 
             {/* Overlay for Title and Subtitle */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4 z-20 transition-transform duration-500 ease-in-out group-hover:translate-x-full">
+            <div
+              className={`absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4 z-20 transition-transform duration-500 ease-in-out ${
+                activeCard === index
+                  ? "translate-x-full"
+                  : "group-hover:translate-x-full"
+              }`}
+            >
               <h6 className="text-xl font-bold">{service.title}</h6>
               <p className="text-sm">{service.subtitle}</p>
             </div>
 
             {/* Hidden content */}
-            <div className="absolute inset-0 bg-white flex flex-col justify-center items-center text-center p-4 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-20">
+            <div
+              className={`absolute inset-0 bg-white flex flex-col justify-center items-center text-center p-4 transform transition-transform duration-500 ease-in-out z-20 ${
+                activeCard === index
+                  ? "translate-x-0"
+                  : "-translate-x-full group-hover:translate-x-0"
+              }`}
+            >
               <h6 className="text-xl font-bold">{service.title}</h6>
               <p className="mt-4 text-gray-600">{service.description}</p>
               <Link
                 href={service.link}
-                className="mt-4 px-4 py-2 bg-[#37b7d7]  text-white rounded-lg hover:bg-yellow-600 transition-colors duration-300"
+                className="mt-4 px-4 py-2 bg-[#37b7d7] text-white rounded-lg hover:bg-yellow-600 transition-colors duration-300"
               >
                 Book Now
               </Link>

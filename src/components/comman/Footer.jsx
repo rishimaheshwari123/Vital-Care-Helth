@@ -25,7 +25,7 @@ const Footer = () => {
             />
             <div className="flex justify-center md:justify-start">
               <a
-                href="/register"
+                href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
                 className="bg-[#40c8ea] hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition transform hover:scale-105"
               >
                 Book Now
