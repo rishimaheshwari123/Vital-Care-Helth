@@ -1,167 +1,138 @@
-"use client";
-import Link from "next/link";
+// "use client";
 import Image from "next/image";
-import a1 from "@/assets/hero.png";
-import a2 from "@/assets/hero2.png";
-import a3 from "@/assets/hero3.png";
-import a4 from "@/assets/hero4.png";
-import a5 from "@/assets/hero5.png";
-import a6 from "@/assets/hero6.png";
-import a7 from "@/assets/hero7.png";
-import a8 from "@/assets/hero8.png";
-import a9 from "@/assets/hero9.png";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
-const services = [
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
+import a1 from "@/assets/Urgent.png";
+import a2 from "@/assets/Covid.png";
+import a3 from "@/assets/Annual.png";
+import a4 from "@/assets/Flu.png";
+import a5 from "@/assets/Sports.png";
+import a6 from "@/assets/Weight.png";
+import a7 from "@/assets/In.png";
+import a8 from "@/assets/Diabetic.png";
+import a9 from "@/assets/Sore.png";
+import a10 from "@/assets/Gastroitestonal.png";
+import a11 from "@/assets/telemedicine.jpg";
+import a12 from "@/assets/Migranne.png";
+
+const treatments = [
   {
+    title: "Urgent Care Needs",
+    desc: "Prompt care for immediate medical concerns, ensuring timely attention and relief.",
     image: a1,
-    title: "Effective Migraine Relief Solutions",
-    subtitle: "Regain Control, Live Pain-Free",
-    description:
-      "Experience expert care to alleviate migraines and restore your well-being.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "urgent-care-needs",
   },
   {
+    title: "COVID-19 Testing",
+    desc: "Safe and efficient testing for COVID-19, ensuring early detection and appropriate care.",
     image: a2,
-    title: "Comprehensive Pain Management",
-    subtitle: "Relief You Deserve, Mobility You Need",
-    description:
-      "Specialized treatment to help you overcome pain and enhance your quality of life.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "covid-19-testing",
   },
   {
+    title: "Annual Physicals",
+    desc: "Comprehensive yearly check-ups to assess overall health, monitor progress, and detect potential issues early on.",
     image: a3,
-    title: "Digestive Health & Gas Relief",
-    subtitle: "Effective Solutions for Lasting Comfort",
-    description:
-      "Say goodbye to stomach discomfort with expert digestive care.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "annual-physicals",
   },
   {
+    title: "Flu Testing & Treatment",
+    desc: "Accurate flu tests and treatment options to ensure rapid recovery and minimize spread.",
     image: a4,
-    title: "Protect Yourself from Viral Infections",
-    subtitle: "Early Detection, Better Prevention",
-    description:
-      "Schedule a checkup today for proactive healthcare and peace of mind.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "flu-testing-treatment",
   },
   {
+    title: "Sports Physicals",
+    desc: "Thorough check-ups to assess overall health and detect potential issues before sports participation.",
     image: a5,
-    title: "Take Charge of Your Diabetes",
-    subtitle: "Proactive Care for a Healthier Future",
-    description:
-      "Manage your diabetes effectively with expert medical guidance and support.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "sports-physicals",
   },
   {
+    title: "Weight Management",
+    desc: "Personalized plans for weight loss and maintenance, with guidance on nutrition, exercise, and lifestyle changes.",
     image: a6,
-    title: "Personalized Weight Loss Solutions",
-    subtitle: "Start Your Transformation Today",
-    description:
-      "Achieve your health goals with tailored weight management programs.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "weight-management",
   },
   {
+    title: "In-House Labs",
+    desc: "Convenient and accurate testing with our in-house labs.",
     image: a7,
-    title: "Advanced Knee Pain Treatment",
-    subtitle: "Regain Strength, Restore Mobility",
-    description:
-      "Expert orthopedic care to help you overcome knee pain and stay active.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "in-house-labs",
   },
   {
+    title: "Diabetes Management",
+    desc: "Comprehensive management of diabetes to ensure optimal blood sugar control and long-term health.",
     image: a8,
-    title: "Your Health is Our Priority",
-    subtitle: "Comprehensive Care for a Better You",
-    description:
-      "Dedicated medical services to support your well-being at every stage.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "diabetes-management",
   },
   {
+    title: "Sore Throat",
+    desc: "Quick evaluations and treatment plans to soothe sore throats and promote healing.",
     image: a9,
-    title: "Expert Urology Care",
-    subtitle: "Relief from Painful Urination",
-    description:
-      "Specialized treatment for bladder health and urinary concerns.",
-    link: "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1",
+    link: "sore-throat",
+  },
+  {
+    title: "Gastrointestinal Issues",
+    desc: "Focused care for digestive problems, offering timely treatment to ease discomfort and improve well-being.",
+    image: a10,
+    link: "gastrointestinal-issues",
+  },
+  {
+    title: "Telemedicine",
+    desc: "Convenient virtual consultations for remote healthcare, ensuring accessible and timely medical advice.",
+    image: a11,
+    link: "telemedicine",
+  },
+  {
+    title: "Effective Migraine Relief Solutions",
+    desc: "Experience expert care to alleviate migraines and restore your well-being.",
+    image: a12,
+    link: "migraine-relief",
   },
 ];
 
 const Services = () => {
-  const path = usePathname("/services");
-  const [activeCard, setActiveCard] = useState(null);
-
-  const handleCardClick = (index) => {
-    setActiveCard(activeCard === index ? null : index);
-  };
-
   return (
-    <div className={`${path === "/services" ? "mt-44" : "mt-16"}`}>
-      <div className="flex flex-col w-full items-center">
-        <h3 className="text-4xl font-fjalla text-[#33536B]">Our Services</h3>
-        <div className="flex items-center w-[75px]">
-          <div className="h-0.5 bg-yellow-400"></div>
-          <div className="h-1 w-1 bg-yellow-400 rounded-full mx-1"></div>
-          <div className="h-1 w-1 bg-yellow-400 rounded-full mx-1"></div>
-          <div className="h-1 w-1 bg-yellow-400 rounded-full mx-1"></div>
-          <div
-            className="h-[4px] rounded-full w-[10px] flex-grow"
-            style={{ backgroundColor: "#e2571a" }}
-          ></div>
-        </div>
+    <div className="bg-[#c2f6f5] py-12 px-6">
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <h2 className="text-4xl font-bold text-gray-900">Our Services</h2>
+        <p className="text-gray-700 mt-2">
+          Explore our wide range of health care services designed to meet your
+          medical needs with compassion and expertise.
+        </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-5">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className={`relative cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl ${
-              activeCard === index ? "active-card" : ""
-            }`}
-            onClick={() => handleCardClick(index)}
-          >
-            {/* Image Container */}
-            <div className="h-64 w-full">
-              <Image
-                src={service.image}
-                alt={`Service ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
 
-            {/* Shaded overlay */}
-            <div className="absolute inset-0 bg-black/60 bg-opacity-40 z-10"></div>
-
-            {/* Overlay for Title and Subtitle */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+        <Fade direction="up" cascade damping={0.1}>
+          {treatments.map((treatment, index) => (
             <div
-              className={`absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4 z-20 transition-transform duration-500 ease-in-out ${
-                activeCard === index
-                  ? "translate-x-full"
-                  : "group-hover:translate-x-full"
-              }`}
+              key={index}
+              className="relative bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300"
             >
-              <h6 className="text-xl font-bold">{service.title}</h6>
-              <p className="text-sm">{service.subtitle}</p>
-            </div>
+              {/* Image */}
+              <div className="relative">
+                <Image
+                  src={treatment.image}
+                  alt={treatment.title}
+                  className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
 
-            {/* Hidden content */}
-            <div
-              className={`absolute inset-0 bg-white flex flex-col justify-center items-center text-center p-4 transform transition-transform duration-500 ease-in-out z-20 ${
-                activeCard === index
-                  ? "translate-x-0"
-                  : "-translate-x-full group-hover:translate-x-0"
-              }`}
-            >
-              <h6 className="text-xl font-bold">{service.title}</h6>
-              <p className="mt-4 text-gray-600">{service.description}</p>
-              <Link
-                href={service.link}
-                className="mt-4 px-4 py-2 bg-[#37b7d7] text-white rounded-lg hover:bg-yellow-600 transition-colors duration-300"
-              >
-                Book Now
-              </Link>
+              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h3 className="text-lg font-semibold text-white">
+                  {treatment.title}
+                </h3>
+                <p className="text-gray-200 text-sm mt-2">{treatment.desc}</p>
+                <Link
+                  href={treatment?.link}
+                  className="mt-3 flex items-center justify-center gap-2 bg-[#00BFB3] text-white px-4 py-2 rounded-md hover:bg-[#00a69b] transition"
+                >
+                  Learn More <FaArrowRight />
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Fade>
       </div>
     </div>
   );

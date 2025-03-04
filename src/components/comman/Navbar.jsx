@@ -1,23 +1,59 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import logo from "@/assets/logo.png";
 import TopHeader from "./TopBar";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiMaplibre } from "react-icons/si";
+
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+
+  const services = [
+    { name: "Urgent Care Needs", to: "/services/urgent-care-needs" },
+    { name: "COVID-19 Testing", to: "/services/covid-19-testing" },
+    { name: "Annual Physicals", to: "/services/annual-physicals" },
+    { name: "Flu Testing & Treatment", to: "/services/flu-testing-treatment" },
+    { name: "Sports Physicals", to: "/services/sports-physicals" },
+    { name: "Weight Management", to: "/services/weight-management" },
+    { name: "In-House Labs", to: "/services/in-house-labs" },
+    { name: "Diabetes Management", to: "/services/diabetes-managements" },
+    { name: "Sore Throat", to: "/services/sore-throat" },
+    {
+      name: "Gastrointestinal Issues",
+      to: "/services/gastrointestinal-issues",
+    },
+    { name: "Telemedicine", to: "/services/telemedicine" },
+    {
+      name: "Effective Migraine Relief Solutions",
+      to: "/services/migraine-relief",
+    },
+  ];
 
   const links = [
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
-    { name: "Services", to: "/services" },
+    {
+      name: "Services",
+      to: "/services",
+      hasSubmenu: true,
+      submenu: services,
+    },
     { name: "Urgent Care", to: "/urgent-care" },
     { name: "Weight Management", to: "/weight-management" },
   ];
+
+  const toggleSubmenu = (index) => {
+    if (openSubmenu === index) {
+      setOpenSubmenu(null);
+    } else {
+      setOpenSubmenu(index);
+    }
+  };
 
   return (
     <>
@@ -28,7 +64,7 @@ const Navbar = () => {
             <Zoom triggerOnce>
               <Link href="/" className="text-xl">
                 <Image
-                  src={logo}
+                  src={logo || "/placeholder.svg"}
                   className="w-48 transition-transform duration-300 hover:scale-110"
                   alt="Logo"
                 />
@@ -42,12 +78,33 @@ const Navbar = () => {
                   key={index}
                   delay={index * 100}
                 >
-                  <Link
-                    href={link.to}
-                    className="hover:text-[#800080] text-[17px] font-semibold transition-all duration-300"
-                  >
-                    {link.name}
-                  </Link>
+                  <div className="relative group">
+                    <Link
+                      href={link.to}
+                      className="hover:text-[#800080] text-[17px] font-semibold transition-all duration-300 flex items-center"
+                    >
+                      {link.name}
+                      {link.hasSubmenu && (
+                        <FaChevronDown className="ml-1 text-xs" />
+                      )}
+                    </Link>
+
+                    {link.hasSubmenu && (
+                      <div className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
+                        <div className="py-2">
+                          {link.submenu.map((subItem, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              href={subItem.to}
+                              className="block px-4 py-2 text-sm hover:bg-gray-100 hover:text-[#800080] transition-colors duration-200"
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </Slide>
               ))}
             </div>
@@ -66,7 +123,7 @@ const Navbar = () => {
         <div className="sm:hidden bg-white flex justify-between items-center px-6 py-4 border-b border-gray-200">
           <Link href="/" className="text-xl">
             <Image
-              src={logo}
+              src={logo || "/placeholder.svg"}
               className="w-36 transition-transform duration-300 hover:scale-110"
               alt="Logo"
             />
@@ -81,27 +138,69 @@ const Navbar = () => {
 
         {/* Sidebar for Small Devices */}
         <div
-          className={`fixed top-0 left-0 w-64 h-screen bg-white shadow-lg z-50 transition-transform duration-500 ease-in-out ${
+          className={`fixed top-0 left-0 w-64 h-screen bg-white shadow-lg z-50 transition-transform duration-500 ease-in-out overflow-y-auto ${
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200">
-            <Image src={logo} className="w-32" alt="Logo" />
+            <Image
+              src={logo || "/placeholder.svg"}
+              className="w-32"
+              alt="Logo"
+            />
             <button onClick={() => setIsSidebarOpen(false)}>
               <FaTimes size={28} />
             </button>
           </div>
           <div className="px-6 py-2">
             {links.map((link, index) => (
-              <Fade direction="up" triggerOnce key={index} delay={index * 100}>
-                <Link
-                  href={link.to}
-                  className="block mb-4 hover:text-gray-600 text-lg font-medium"
-                  onClick={() => setIsSidebarOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </Fade>
+              <div key={index}>
+                <Fade direction="up" triggerOnce delay={index * 100}>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={link.hasSubmenu ? "#" : link.to}
+                      className="block mb-4 hover:text-gray-600 text-lg font-medium"
+                      onClick={() => {
+                        if (!link.hasSubmenu) {
+                          setIsSidebarOpen(false);
+                        } else {
+                          toggleSubmenu(index);
+                        }
+                      }}
+                    >
+                      {link.name}
+                    </Link>
+                    {link.hasSubmenu && (
+                      <button
+                        onClick={() => toggleSubmenu(index)}
+                        className="mb-4 p-2"
+                      >
+                        {openSubmenu === index ? (
+                          <FaChevronUp size={14} />
+                        ) : (
+                          <FaChevronDown size={14} />
+                        )}
+                      </button>
+                    )}
+                  </div>
+                </Fade>
+
+                {link.hasSubmenu && openSubmenu === index && (
+                  <div className="ml-4   mb-4">
+                    {link.submenu.map((subItem, subIndex) => (
+                      <Fade direction="up" key={subIndex} delay={subIndex * 50}>
+                        <Link
+                          href={subItem.to}
+                          className="block mb-3 text-gray-700 hover:text-[#800080] text-base"
+                          onClick={() => setIsSidebarOpen(false)}
+                        >
+                          {subItem.name}
+                        </Link>
+                      </Fade>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -151,15 +250,13 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <br />
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-4 mb-6">
             <Link
               className="bg-[#c5dee4] cursor-pointer px-20 py-3 rounded-2xl"
               href={
                 "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
               }
             >
-              {" "}
               Book Now
             </Link>
           </div>
