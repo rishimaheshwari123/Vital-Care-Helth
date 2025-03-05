@@ -1,8 +1,16 @@
 import { Slide } from "react-awesome-reveal";
-import a1 from "@/assets/f1.png";
-import a2 from "@/assets/f2.png";
-import a3 from "@/assets/f3.avif";
-import a4 from "@/assets/f4.png";
+import a1 from "@/assets/feature/a1.png";
+import a2 from "@/assets/feature/a2.png";
+import a3 from "@/assets/feature/a3.png";
+import a4 from "@/assets/feature/a4.png";
+import a5 from "@/assets/feature/a5.png";
+import a6 from "@/assets/feature/a6.png";
+import a7 from "@/assets/feature/a7.png";
+import a8 from "@/assets/feature/a8.png";
+import a9 from "@/assets/feature/a9.png";
+import a10 from "@/assets/feature/a10.png";
+import a11 from "@/assets/feature/a11.png";
+import a12 from "@/assets/feature/a12.png";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -41,12 +49,12 @@ const About = () => {
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
                     <Image
-                      src={a1}
+                      src={a5}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
                     <Image
-                      src={a2}
+                      src={a6}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
@@ -55,27 +63,32 @@ const About = () => {
                 <div className="scroll-container">
                   <div className="scroll-right-to-left flex gap-2 lg:gap-1">
                     <Image
-                      src={a3}
+                      src={a7}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
                     <Image
-                      src={a4}
+                      src={a8}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
                     <Image
-                      src={a1}
+                      src={a9}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
                     <Image
-                      src={a2}
+                      src={a10}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
                     <Image
-                      src={a2}
+                      src={a11}
+                      alt="Featured logo"
+                      className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
+                    />
+                    <Image
+                      src={a12}
                       alt="Featured logo"
                       className="lg:w-36 lg:h-36 w-28 h-28 rounded-full"
                     />
