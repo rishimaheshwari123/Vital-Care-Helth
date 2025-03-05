@@ -218,21 +218,18 @@ const Navbar = () => {
                 <Fade direction="up" triggerOnce delay={index * 100}>
                   <div className="flex items-center justify-between">
                     <Link
-                      href={link.hasSubmenu ? "#" : link.to}
+                      href={link.to}
                       className="block mb-4 hover:text-gray-600 text-lg font-medium"
-                      onClick={() => {
-                        if (!link.hasSubmenu) {
-                          setIsSidebarOpen(false);
-                        } else {
-                          toggleSubmenu(index);
-                        }
-                      }}
+                      onClick={() => setIsSidebarOpen(false)}
                     >
                       {link.name}
                     </Link>
                     {link.hasSubmenu && (
                       <button
-                        onClick={() => toggleSubmenu(index)}
+                        onClick={(e) => {
+                          e.stopPropagation(); // Prevents parent click
+                          toggleSubmenu(index);
+                        }}
                         className="mb-4 p-2"
                       >
                         {openSubmenu === index ? (
