@@ -90,17 +90,19 @@ const Navbar = () => {
                     </Link>
 
                     {link.hasSubmenu && (
-                      <div className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
-                        <div className="py-2">
-                          {link.submenu.map((subItem, subIndex) => (
-                            <Link
-                              key={subIndex}
-                              href={subItem.to}
-                              className="block px-4 py-2 text-sm hover:bg-gray-100 hover:text-[#800080] transition-colors duration-200"
-                            >
-                              {subItem.name}
-                            </Link>
-                          ))}
+                      <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
+                        <div className="py-4 px-4">
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                            {link.submenu.map((subItem, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                href={subItem.to}
+                                className="block px-3 py-2 text-sm hover:bg-gray-100 hover:text-[#800080] transition-colors duration-200 rounded"
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     )}
@@ -108,14 +110,20 @@ const Navbar = () => {
                 </Slide>
               ))}
             </div>
-            <Link
-              className="bg-[#c5dee4] px-5 py-2 rounded-2xl"
-              href={
-                "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
-              }
-            >
-              Book Now
-            </Link>
+            <div className="flex space-x-3">
+              <Link
+                className="bg-white border border-[#800080] text-[#800080] hover:bg-gray-50 px-5 py-2 rounded-2xl transition-colors duration-300"
+                href="/payment"
+              >
+                Pay Now
+              </Link>
+              <Link
+                className="bg-[#c5dee4] hover:bg-[#b0d0d8] px-5 py-2 rounded-2xl transition-colors duration-300"
+                href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
+              >
+                Book Now
+              </Link>
+            </div>
           </div>
         </Fade>
 
@@ -186,18 +194,24 @@ const Navbar = () => {
                 </Fade>
 
                 {link.hasSubmenu && openSubmenu === index && (
-                  <div className="ml-4   mb-4">
-                    {link.submenu.map((subItem, subIndex) => (
-                      <Fade direction="up" key={subIndex} delay={subIndex * 50}>
-                        <Link
-                          href={subItem.to}
-                          className="block mb-3 text-gray-700 hover:text-[#800080] text-base"
-                          onClick={() => setIsSidebarOpen(false)}
+                  <div className="ml-4 mb-4">
+                    <div className="grid grid-cols-1 gap-1">
+                      {link.submenu.map((subItem, subIndex) => (
+                        <Fade
+                          direction="up"
+                          key={subIndex}
+                          delay={subIndex * 50}
                         >
-                          {subItem.name}
-                        </Link>
-                      </Fade>
-                    ))}
+                          <Link
+                            href={subItem.to}
+                            className="block mb-2 text-gray-700 hover:text-[#800080] text-base"
+                            onClick={() => setIsSidebarOpen(false)}
+                          >
+                            {subItem.name}
+                          </Link>
+                        </Fade>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -250,12 +264,16 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="flex justify-center mt-4 mb-6">
+          <div className="flex flex-col space-y-3 items-center mt-4 mb-6 px-6">
             <Link
-              className="bg-[#c5dee4] cursor-pointer px-20 py-3 rounded-2xl"
-              href={
-                "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
-              }
+              className="bg-white border border-[#800080] text-[#800080] w-full text-center cursor-pointer py-3 rounded-2xl"
+              href="/payment"
+            >
+              Pay Now
+            </Link>
+            <Link
+              className="bg-[#c5dee4] w-full text-center cursor-pointer py-3 rounded-2xl"
+              href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
             >
               Book Now
             </Link>

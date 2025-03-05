@@ -1,60 +1,53 @@
 import Image from "next/image";
 import doctorImage from "@/assets/service/throught/troghth.avif";
-import a1 from "@/assets/service/flu/a1.jpg";
-import a2 from "@/assets/service/flu/a2.jpg";
-import a3 from "@/assets/service/flu/a3.jpg";
-import a4 from "@/assets/service/flu/a4.jpg";
-import a5 from "@/assets/service/flu/a5.jpg";
-import a6 from "@/assets/service/flu/a6.avif";
-import a7 from "@/assets/service/annual/a5.jpg";
+import a1 from "@/assets/service/throught/a1.jpg";
+import a2 from "@/assets/service/throught/a2.jpg";
+import a3 from "@/assets/service/throught/a3.jpg";
+import a4 from "@/assets/service/throught/a4.avif";
+import a5 from "@/assets/service/throught/a5.jpg";
+import a6 from "@/assets/service/throught/a6.jpg";
 import Link from "next/link";
 
 const fluTests = [
   {
     image: a1,
-    title: "Flu Nasal Swab Test",
+    title: "Rapid Strep Throat Test",
     description:
-      "The flu nasal swab test is a quick and painless procedure used to collect respiratory samples for flu testing...",
+      "Our rapid strep throat test is a fast and reliable diagnostic tool designed to determine if your sore throat is caused by a bacterial infection.",
   },
   {
     image: a2,
-    title: "Online Follow-up",
+    title: "Throat Culture",
     description:
-      "VitalCare Health’s online follow-up services provide continuous care and support as you recover from the flu...",
+      "A throat culture is a simple, painless test used to detect bacterial infections. Results are typically available within 2 to 3 days.",
   },
   {
     image: a3,
-    title: "Flu Medication Treatment",
+    title: "Pain Relief Medications",
     description:
-      "At VitalCare Health, we offer personalized flu medication management, prescribing antiviral medications when necessary...",
+      "We offer both prescription and over-the-counter medications to relieve pain and discomfort associated with sore throats. This includes throat lozenges, pain relievers, and anti-inflammatory drugs.",
   },
   {
     image: a4,
-    title: "Flu Vaccine (Influenza)",
+    title: "Antibiotic Treatment",
     description:
-      "As a preventive measure, our flu vaccine significantly reduces the risk of influenza infection...",
+      "For bacterial infections such as strep throat, we provide antibiotic treatment to clear the infection and ease your symptoms.",
   },
   {
     image: a5,
-    title: "Flu Infection Detection",
+    title: "Throat Sprays and Gargles",
     description:
-      "Flu diagnosis is the critical first step in managing influenza. Our healthcare professionals utilize state-of-the-art diagnostic tools...",
+      "Throat sprays and gargles can help soothe irritation and reduce inflammation, offering temporary relief from sore throat symptoms.",
   },
   {
     image: a6,
-    title: "Rapid Flu Test (Antigen)",
+    title: "Education",
     description:
-      "The rapid flu antigen test provides swift results by identifying flu antigens in respiratory samples...",
-  },
-  {
-    image: a7,
-    title: "Blood Test",
-    description:
-      "Our flu-specific blood test measures antibodies, helping our providers assess immune responses to the flu...",
+      "Alongside medical treatments, we emphasize the importance of staying hydrated and getting adequate rest to support your body’s natural healing and promote a speedy recovery.",
   },
 ];
 
-export default function FluTesting() {
+export default function SoreThroat() {
   return (
     <div>
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
@@ -105,33 +98,29 @@ export default function FluTesting() {
       <section className="bg-gray-100 py-10 px-5 md:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-lg font-bold text-gray-800">
-            WHY FLU TESTING AND TREATMENT MATTERS
+            WHY SORE THROAT TREATMENT MATTERS
           </h3>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
-            Our Approach to Flu Test & Vaccination
+            Our Approach to Sore Throat Treatment
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto mt-6 text-gray-700 text-sm md:text-base">
           <p>
-            Influenza is a contagious respiratory illness that requires timely
-            and specialized care. There are four types of influenza viruses,
-            three of which affect humans. At VitalCare Health, we prioritize
-            addressing the unique needs, concerns, and conditions associated
-            with the flu, providing comprehensive care and effective treatment
-            plans. Our team of flu specialists is dedicated to guiding you
-            through the entire process with precision and compassion.
+            A sore throat can be quite uncomfortable, and at VitalCare Health,
+            we recognize the importance of addressing it swiftly and
+            effectively. Our team of healthcare professionals is skilled in
+            assessing your symptoms and providing targeted treatments to
+            alleviate your discomfort. From detailed throat examinations to
+            personalized treatment plans, we are dedicated to helping you
+            recover as quickly as possible.
           </p>
           <p>
-            At VitalCare Health, we offer a streamlined approach to flu care,
-            ensuring that your needs are met conveniently and efficiently. Our
-            integrated care model eliminates the need for multiple appointments,
-            allowing you to undergo flu testing and begin treatment all in one
-            location. Additionally, our on-demand flu vaccine services ensure
-            you can receive your flu shot without the need for an appointment.
-            Whether you require flu testing, consultation, or vaccination,
-            VitalCare Health is here to make your healthcare journey seamless
-            and hassle-free.
+            We offer a thorough approach to sore throat treatment, including a
+            range of diagnostic tests and treatment options tailored to your
+            needs. Whether you're dealing with mild soreness or more severe
+            symptoms, VitalCare Health aims to streamline your care by providing
+            comprehensive sore throat services all in one place.
           </p>
         </div>
 
@@ -149,15 +138,10 @@ export default function FluTesting() {
       </section>
 
       <section className="py-12 px-6 bg-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-            Flu Tests & Treatments Offered
-          </h2>
-        </div>
         <section className="py-12 px-6 bg-white">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-              Flu Tests & Treatments Offered
+              Sore Throat Testing and Treatment Offered
             </h2>
           </div>
 

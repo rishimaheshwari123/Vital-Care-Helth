@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <div>
       <HereSection />
-      <div className="hidden lg:block h-20"></div>
       <About />
       <Services />
       <WeightManagementBanner />

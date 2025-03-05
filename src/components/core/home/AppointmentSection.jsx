@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function AppointmentSection() {
   return (
-    <section className="grid lg:grid-cols-2 max-w-7xl mx-auto p-5 items-center gap-5">
+    <section className="grid lg:grid-cols-2 max-w-7xl mx-auto p-5 items-center gap-5 py-20">
       <div className=" text-center md:text-left">
         <h5 className="text-sm text-[#0096A5] font-semibold uppercase">
           The Path to a Healthier Heart Awaits!

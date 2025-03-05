@@ -84,7 +84,7 @@ const treatments = [
     link: "telemedicine",
   },
   {
-    title: "Effective Migraine Relief Solutions",
+    title: " Migraine Relief ",
     desc: "Experience expert care to alleviate migraines and restore your well-being.",
     image: a12,
     link: "migraine-relief",
@@ -102,7 +102,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 p-6">
         <Fade direction="up" cascade damping={0.1}>
           {treatments.map((treatment, index) => (
             <div
@@ -114,10 +114,14 @@ const Services = () => {
                 <Image
                   src={treatment.image}
                   alt={treatment.title}
-                  className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <div className="absolute bottom-0 w-full bg-black bg-opacity-60 text-white text-center p-2">
+                  <h3 className="text-lg font-semibold">{treatment.title}</h3>
+                </div>
               </div>
 
+              {/* Hover Effect */}
               <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
                 <h3 className="text-lg font-semibold text-white">
                   {treatment.title}
@@ -127,7 +131,7 @@ const Services = () => {
                   href={treatment?.link}
                   className="mt-3 flex items-center justify-center gap-2 bg-[#00BFB3] text-white px-4 py-2 rounded-md hover:bg-[#00a69b] transition"
                 >
-                  Learn More <FaArrowRight />
+                  Learn More
                 </Link>
               </div>
             </div>

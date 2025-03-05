@@ -155,12 +155,6 @@ export default function FluTesting() {
           </h2>
         </div>
         <section className="py-12 px-6 bg-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-              Flu Tests & Treatments Offered
-            </h2>
-          </div>
-
           <div className="mt-8 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {fluTests.map((test, index) => (
               <div
