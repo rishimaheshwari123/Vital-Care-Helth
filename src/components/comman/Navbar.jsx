@@ -2,7 +2,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaChevronDown,
+  FaChevronUp,
+  FaIcons,
+} from "react-icons/fa";
+import {
+  FaStethoscope,
+  FaSyringe,
+  FaHeartbeat,
+  FaVials,
+  FaRunning,
+  FaWeight,
+  FaFlask,
+  FaUserMd,
+  FaDiagnoses,
+  FaTooth,
+  FaPhone,
+  FaHeadSideVirus,
+} from "react-icons/fa";
+
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import logo from "@/assets/logo.png";
 import TopHeader from "./TopBar";
@@ -14,23 +35,53 @@ const Navbar = () => {
   const [openSubmenu, setOpenSubmenu] = useState(null);
 
   const services = [
-    { name: "Urgent Care Needs", to: "/services/urgent-care-needs" },
-    { name: "COVID-19 Testing", to: "/services/covid-19-testing" },
-    { name: "Annual Physicals", to: "/services/annual-physicals" },
-    { name: "Flu Testing & Treatment", to: "/services/flu-testing-treatment" },
-    { name: "Sports Physicals", to: "/services/sports-physicals" },
-    { name: "Weight Management", to: "/services/weight-management" },
-    { name: "In-House Labs", to: "/services/in-house-labs" },
-    { name: "Diabetes Management", to: "/services/diabetes-managements" },
-    { name: "Sore Throat", to: "/services/sore-throat" },
+    {
+      name: "Urgent Care Needs",
+      to: "/services/urgent-care-needs",
+      icon: <FaStethoscope />,
+    },
+    {
+      name: "COVID-19 Testing",
+      to: "/services/covid-19-testing",
+      icon: <FaSyringe />,
+    },
+    {
+      name: "Annual Physicals",
+      to: "/services/annual-physicals",
+      icon: <FaHeartbeat />,
+    },
+    {
+      name: "Flu Testing & Treatment",
+      to: "/services/flu-testing-treatment",
+      icon: <FaVials />,
+    },
+    {
+      name: "Sports Physicals",
+      to: "/services/sports-physicals",
+      icon: <FaRunning />,
+    },
+    {
+      name: "Weight Management",
+      to: "/services/weight-management",
+      icon: <FaWeight />,
+    },
+    { name: "In-House Labs", to: "/services/in-house-labs", icon: <FaFlask /> },
+    {
+      name: "Diabetes Management",
+      to: "/services/diabetes-managements",
+      icon: <FaUserMd />,
+    },
+    { name: "Sore Throat", to: "/services/sore-throat", icon: <FaDiagnoses /> },
     {
       name: "Gastrointestinal Issues",
       to: "/services/gastrointestinal-issues",
+      icon: <FaTooth />,
     },
-    { name: "Telemedicine", to: "/services/telemedicine" },
+    { name: "Telemedicine", to: "/services/telemedicine", icon: <FaPhone /> },
     {
-      name: "Effective Migraine Relief Solutions",
+      name: "Migraine Relief Solutions",
       to: "/services/migraine-relief",
+      icon: <FaHeadSideVirus />,
     },
   ];
 
@@ -97,9 +148,10 @@ const Navbar = () => {
                               <Link
                                 key={subIndex}
                                 href={subItem.to}
-                                className="block px-3 py-2 text-sm hover:bg-gray-100 hover:text-[#800080] transition-colors duration-200 rounded"
+                                className="flex items-center px-3 py-2 text-sm hover:bg-gray-100 hover:text-[#800080] transition-colors duration-200 rounded"
                               >
-                                {subItem.name}
+                                {subItem.icon}{" "}
+                                <span className="ml-2">{subItem.name}</span>
                               </Link>
                             ))}
                           </div>

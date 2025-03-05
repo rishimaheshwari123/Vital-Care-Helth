@@ -24,7 +24,7 @@ const About = () => {
             <Slide direction="left">
               <div className="second border overflow-hidden grid gap-3 p-5">
                 <p className="text-black font-semibold text-2xl text-center">
-                  Featured In
+                  We can help you in{" "}
                 </p>
                 <div className="scroll-container">
                   <div className="scroll-left-to-right flex gap-2 lg:gap-1">

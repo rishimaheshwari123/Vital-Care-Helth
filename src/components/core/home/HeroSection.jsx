@@ -16,13 +16,13 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex items-center h-full px-6 lg:px-20">
         <div className="max-w-3xl">
-          <div className="">
+          <div className="text-center">
             <h1 className="text-3xl lg:text-5xl font-bold text-blue-700">
               Your Health
             </h1>
-            <div className="flex items-center ">
+            <div className="flex items-center justify-center">
               <div className="w-14 h-[2px] bg-blue-700"></div>
-              <span className="mx-2 text-2xl lg:text-4xl font-bold text-red-600">
+              <span className="mx-2 text-2xl text-center lg:text-4xl font-bold text-red-600">
                 is our
               </span>
               <div className="w-14 h-[2px] bg-blue-700"></div>

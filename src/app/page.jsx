@@ -1,3 +1,4 @@
+import Client from "@/components/core/Client";
 import About from "@/components/core/home/About";
 import AppointmentSection from "@/components/core/home/AppointmentSection";
 import HereSection from "@/components/core/home/HeroSection";
@@ -13,6 +14,7 @@ const Home = () => {
       <Services />
       <WeightManagementBanner />
       <AppointmentSection />
+      <Client />
     </div>
   );
 };
