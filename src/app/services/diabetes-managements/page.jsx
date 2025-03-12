@@ -1,15 +1,14 @@
 import Services from "@/components/core/home/Services";
-import HealthConsultation from "@/components/core/urgent/HealthConsultation";
-import UrgentCare from "@/components/core/urgent/UrgentCare";
-import UrgentHome from "@/components/core/urgent/UrgentHome";
+import DiabetesHome from "@/components/core/urgent/DiabetesHome";
+
 import React from "react";
+import DiabetesTest from "./DiabetesTest";
 
 const Diabetes = () => {
   return (
     <div>
-      <UrgentHome />
-      <UrgentCare />
-      <HealthConsultation />
+      <DiabetesHome />
+      <DiabetesTest />
       <Services />
     </div>
   );
