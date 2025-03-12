@@ -1,10 +1,10 @@
 import Image from "next/image";
-import doctorImage from "@/assets/service/inhouse/inhouse.avif";
 import a1 from "@/assets/service/inhouse/a1.jpg";
 import a2 from "@/assets/service/inhouse/a2.jpg";
-import a3 from "@/assets/service/inhouse/a3.jpg";
-
-import Link from "next/link";
+import a3 from "@/assets/service/diabties/d3.png";
+import a4 from "@/assets/service/diabties/d4.png";
+import a5 from "@/assets/service/diabties/d5.png";
+import a6 from "@/assets/service/diabties/d6.png";
 
 const fluTests = [
   {
@@ -26,19 +26,19 @@ const fluTests = [
       "Our CGM devices offer real-time blood sugar tracking, helping you maintain stable glucose levels and prevent complications..",
   },
   {
-    image: a3,
+    image: a4,
     title: "Diabetes Diet & Nutrition Counseling",
     description:
       "A well-balanced diet is key to diabetes management. Our expert nutritionists provide customized meal plans tailored to your health goals...",
   },
   {
-    image: a3,
+    image: a5,
     title: "Insulin Therapy & Training",
     description:
       "We offer guidance on insulin administration, helping patients learn proper injection techniques and dosage adjustments for better diabetes control...",
   },
   {
-    image: a3,
+    image: a6,
     title: "Online Follow-up & Support",
     description:
       "VitalCare Health’s virtual consultations ensure continuous diabetes care, offering expert support and adjustments to your treatment plan as needed...",

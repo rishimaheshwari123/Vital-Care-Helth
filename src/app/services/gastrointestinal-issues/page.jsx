@@ -1,15 +1,12 @@
 import Image from "next/image";
-import a1 from "@/assets/service/gastrointestinal/a1.jpg";
-import a2 from "@/assets/service/gastrointestinal/a2.jpg";
-import a3 from "@/assets/service/gastrointestinal/a3.jpg";
-import a4 from "@/assets/service/gastrointestinal/a4.jpg";
-import a5 from "@/assets/service/gastrointestinal/a5.jpg";
-import a6 from "@/assets/service/gastrointestinal/a6.jpg";
-// import a7 from "@/assets/service/gastrointestinal/a7.jpg";
-// import a8 from "@/assets/service/gastrointestinal/a8.jpg";
-// import a9 from "@/assets/service/gastrointestinal/a9.jpg";
-// import a10 from "@/assets/service/gastrointestinal/a10.jpg";
-// import a11 from "@/assets/service/gastrointestinal/a11.jpg";
+import a1 from "@/assets/service/gastrointestinal/g1.png";
+import a2 from "@/assets/service/gastrointestinal/g2.png";
+import a3 from "@/assets/service/gastrointestinal/g3.png";
+import a4 from "@/assets/service/gastrointestinal/g4.png";
+import a5 from "@/assets/service/gastrointestinal/g5.png";
+import a6 from "@/assets/service/gastrointestinal/g6.png";
+import hero from "@/assets/service/gastrointestinal/hero.png";
+
 import Link from "next/link";
 
 const fluTests = [
@@ -91,7 +88,7 @@ export default function Gastrointestinal() {
         <div className="md:w-1/2 flex justify-center ">
           <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://static.wixstatic.com/media/11062b_bfcf5102b38c4e90a231f048022bd37a~mv2.jpg/v1/crop/x_0,y_33,w_6720,h_4414/fill/w_1306,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Grandmother%20and%20Granddaughter.jpg"
+              src={hero}
               alt="Doctor holding vaccine"
               width={500}
               height={400}

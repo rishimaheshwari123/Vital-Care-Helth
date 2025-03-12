@@ -141,7 +141,7 @@ const Navbar = () => {
                     </Link>
 
                     {link.hasSubmenu && (
-                      <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
+                      <div className="absolute -left-20 mt-3 w-[600px] bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
                         <div className="py-4 px-4">
                           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                             {link.submenu.map((subItem, subIndex) => (
@@ -269,7 +269,7 @@ const Navbar = () => {
 
           <div className="flex space-x-4 pl-10">
             <Link
-              href="https://www.facebook.com/wix"
+              href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -280,7 +280,7 @@ const Navbar = () => {
               />
             </Link>
             <Link
-              href=""
+              href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -290,17 +290,7 @@ const Navbar = () => {
                 className="text-gray-800 hover:text-gray-300"
               />
             </Link>
-            <Link
-              href="https://www.youtube.com/user/Wix"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-            >
-              <FaYoutube
-                size={22}
-                className="text-gray-800 hover:text-gray-300"
-              />
-            </Link>
+
             <Link
               href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
               target="_blank"

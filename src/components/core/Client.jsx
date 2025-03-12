@@ -1,7 +1,7 @@
 import React from "react";
-import c1 from "@/assets/c1.png";
-import c2 from "@/assets/c2.png";
-import c3 from "@/assets/c3.png";
+import c1 from "@/assets/cb1.png";
+import c2 from "@/assets/cb2.png";
+import c3 from "@/assets/cb3.png";
 import c4 from "@/assets/c4.png";
 import c5 from "@/assets/c5.webp";
 import c6 from "@/assets/c6.png";
@@ -38,7 +38,7 @@ const Client = () => {
           Commercial Plans, Medicare Plans ,Military Plans
         </p>
         <div className="scroll-container  max-w-7xl mx-auto my-10 px-5">
-          <div className="scroll-right-to-left flex lg:gap-10 items-center ">
+          <div className="scroll-right-to-left flex lg:gap-5 items-center ">
             <Image src={c1} alt="Client Logo" />
             <Image src={c2} alt="Client Logo" />
             <Image src={c3} alt="Client Logo" />

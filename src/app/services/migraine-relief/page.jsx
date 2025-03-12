@@ -1,13 +1,14 @@
 import Image from "next/image";
-import doctorImage from "@/assets/Migranne.png";
 import Link from "next/link";
 
-import a1 from "@/assets/service/gastrointestinal/a1.jpg";
-import a2 from "@/assets/service/gastrointestinal/a2.jpg";
-import a3 from "@/assets/service/gastrointestinal/a3.jpg";
-import a4 from "@/assets/service/gastrointestinal/a4.jpg";
-import a5 from "@/assets/service/gastrointestinal/a5.jpg";
-import a6 from "@/assets/service/gastrointestinal/a6.jpg";
+import a1 from "@/assets/service/migrane/m1.png";
+import a2 from "@/assets/service/migrane/m2.png";
+import a3 from "@/assets/service/migrane/m3.png";
+import a4 from "@/assets/service/migrane/m4.png";
+import a5 from "@/assets/service/migrane/m5.png";
+import a6 from "@/assets/service/migrane/m6.png";
+import hero from "@/assets/service/migrane/hero.png";
+
 const fluTests = [
   {
     image: a1,
@@ -86,7 +87,7 @@ const Migraine = () => {
         <div className="md:w-1/2 flex justify-center ">
           <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
-              src={doctorImage}
+              src={hero}
               alt="Doctor holding vaccine"
               width={500}
               height={400}

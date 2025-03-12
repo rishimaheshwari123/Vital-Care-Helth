@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import hero from "@/assets/service/diabties/hero.png";
 export default function DiabetesHome() {
   return (
     <div className="bg-[#f2f5ef]">
@@ -39,9 +39,7 @@ export default function DiabetesHome() {
 
           <div className="">
             <Image
-              src={
-                "https://static.wixstatic.com/media/11062b_bfcf5102b38c4e90a231f048022bd37a~mv2.jpg/v1/crop/x_0,y_33,w_6720,h_4414/fill/w_1306,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Grandmother%20and%20Granddaughter.jpg"
-              }
+              src={hero}
               width={300}
               height={400}
               alt="Doctor and Patient"

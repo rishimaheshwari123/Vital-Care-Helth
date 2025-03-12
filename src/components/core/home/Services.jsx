@@ -103,7 +103,7 @@ const Services = () => {
       </div>
 
       <div className="max-w-6xl mx-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 p-6">
-        <Fade direction="up" cascade damping={0.1}>
+        <Fade direction="up">
           {treatments.map((treatment, index) => (
             <div
               key={index}
