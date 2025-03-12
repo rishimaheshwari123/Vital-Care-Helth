@@ -63,7 +63,7 @@ const treatments = [
     title: "Diabetes Management",
     desc: "Comprehensive management of diabetes to ensure optimal blood sugar control and long-term health.",
     image: a8,
-    link: "services/diabetes-management",
+    link: "services/diabetes-managements",
   },
   {
     title: "Sore Throat",
