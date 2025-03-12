@@ -47,7 +47,10 @@ const TopHeader = () => {
 
             <div className="flex space-x-4">
               <Zoom triggerOnce>
-                <Link href="https://www.facebook.com/wix" aria-label="Facebook">
+                <Link
+                  href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
+                  aria-label="Facebook"
+                >
                   <FaFacebook
                     size={22}
                     className="text-blue-600 hover:scale-125 transition-transform duration-300"
@@ -55,14 +58,17 @@ const TopHeader = () => {
                 </Link>
               </Zoom>
               <Zoom triggerOnce delay={100}>
-                <Link href="" aria-label="Instagram">
+                <Link
+                  href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
+                  aria-label="Instagram"
+                >
                   <FaInstagram
                     size={22}
                     className="text-pink-600 hover:scale-125 transition-transform duration-300"
                   />
                 </Link>
               </Zoom>
-              <Zoom triggerOnce delay={200}>
+              {/* <Zoom triggerOnce delay={200}>
                 <Link
                   href="https://www.youtube.com/user/Wix"
                   aria-label="YouTube"
@@ -72,7 +78,7 @@ const TopHeader = () => {
                     className="text-red-600 hover:scale-125 transition-transform duration-300"
                   />
                 </Link>
-              </Zoom>
+              </Zoom> */}
               <Zoom triggerOnce delay={300}>
                 <Link
                   href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
