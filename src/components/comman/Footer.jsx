@@ -50,24 +50,18 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-black mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/wix"
+                href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
                 className="text-blue-500 text-2xl hover:text-white transition transform hover:scale-110"
               >
                 <FaFacebook />
               </a>
               <a
-                href=""
+                href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
                 className="text-pink-500 text-2xl hover:text-white transition transform hover:scale-110"
               >
                 <FaInstagram />
               </a>
 
-              <a
-                href="https://www.youtube.com/user/Wix"
-                className="text-red-500 text-2xl hover:text-white transition transform hover:scale-110"
-              >
-                <FaYoutube />
-              </a>
               <a
                 href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
                 aria-label="Map"
