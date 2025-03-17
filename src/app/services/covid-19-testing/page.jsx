@@ -1,5 +1,9 @@
 import Image from "next/image";
+import img1 from "@/assets/service/covid/rapid.png";
+import img2 from "@/assets/service/covid/ox.png";
+import img3 from "@/assets/service/covid/anti.png";
 import doctorImage from "@/assets/service/covid1.avif";
+
 import Link from "next/link";
 
 export default function Covid() {
@@ -163,10 +167,10 @@ export default function Covid() {
           <div className="flex flex-col lg:flex-row items-center space-x-6">
             <div className="">
               <Image
-                src={doctorImage}
+                src={img1}
                 alt="COVID Test"
                 objectFit="cover"
-                className="rounded-full w-[35vw] h-32 border-4 border-blue-900"
+                className="rounded-full w-[41vw] h-32 border-4 border-blue-900"
               />
             </div>
             <div>
@@ -186,10 +190,10 @@ export default function Covid() {
           <div className="flex flex-col lg:flex-row items-center space-x-6">
             <div className="">
               <Image
-                src={doctorImage}
+                src={img2}
                 alt="Oxygen Monitoring"
                 objectFit="cover"
-                className="rounded-full w-[35vw] h-32 border-4 border-blue-900"
+                className="rounded-full w-[40vw] h-32 border-4 border-blue-900"
               />
             </div>
             <div>
@@ -209,7 +213,7 @@ export default function Covid() {
           <div className="flex flex-col lg:flex-row items-center space-x-6">
             <div className="">
               <Image
-                src={doctorImage}
+                src={img3}
                 alt="Antiviral Medication"
                 objectFit="cover"
                 className="rounded-full w-[35vw] h-32 border-4 border-blue-900"
