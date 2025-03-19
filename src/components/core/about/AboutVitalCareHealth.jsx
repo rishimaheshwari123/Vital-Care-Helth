@@ -53,7 +53,7 @@ export default function AboutVitalCareHealth() {
                   width={300}
                   height={400}
                   alt="Doctor and Patient"
-                  className="rounded-lg shadow-md shadow-yellow-500 min-w-full h-full"
+                  className=" min-w-full h-full"
                 />
               </div>
             </div>

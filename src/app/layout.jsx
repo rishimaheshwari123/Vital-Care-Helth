@@ -1,13 +1,11 @@
 import Navbar from "@/components/comman/Navbar";
 import "./globals.css";
 import Footer from "@/components/comman/Footer";
-import TopHeader from "@/components/comman/TopBar";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <TopHeader />
         <Navbar />
         <div>{children}</div>
         <br />
