@@ -9,8 +9,8 @@ import weight from "@/assets/weight.avif";
 const Glp1WeightManagement = () => {
   return (
     <div className="bg-[#fdecd2]  px-5">
-      <section className=" py-10 flex flex-col md:flex-row items-center md:gap-20">
-        <div className="">
+      <section className=" py-10 flex justify-center items-center md:gap-20">
+        {/* <div className="">
           <Image
             src={weight}
             alt="Weight Loss"
@@ -18,8 +18,8 @@ const Glp1WeightManagement = () => {
             height={400}
             className="rounded-lg"
           />
-        </div>
-        <div className="md:w-1/2 text-center md:text-left px-5">
+        </div> */}
+        <div className="max-w-7xl text-center md:text-left px-5">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3b3b8c]">
             Transform Your Health with Our GLP-1 Weight Management Program
           </h2>
