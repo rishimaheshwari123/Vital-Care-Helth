@@ -1,7 +1,6 @@
 import Image from "next/image";
-import hero from "@/assets/whero.webp";
+import hero from "@/assets/whero2.webp";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
 export default function HeroSection() {
   return (

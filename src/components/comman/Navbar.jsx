@@ -85,10 +85,26 @@ const Navbar = () => {
     },
   ];
 
+  const aboutsubmenu = [
+    {
+      name: "About VitalCare Health",
+      to: "/about",
+    },
+    {
+      name: "Meet Our Founder",
+      to: "/founder",
+    },
+  ];
+
   const links = [
     { name: "Home", to: "/" },
-    { name: "About ", to: "/about" },
-    // { name: "Meet Our Founder", to: "/founder" },
+    // { name: "About ", to: "/about" },
+    {
+      name: "About",
+      to: "/about",
+      hasSubmenu: true,
+      submenu: aboutsubmenu,
+    },
     {
       name: "Services",
       to: "/services",
@@ -144,7 +160,13 @@ const Navbar = () => {
                     {link.hasSubmenu && (
                       <div className="absolute -left-20 mt-3 w-[600px] bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
                         <div className="py-4 px-4">
-                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                          <div
+                            className={`grid gap-2 ${
+                              link.name === "About"
+                                ? "grid-cols-2"
+                                : "md:grid-cols-2 lg:grid-cols-3"
+                            }`}
+                          >
                             {link.submenu.map((subItem, subIndex) => (
                               <Link
                                 key={subIndex}

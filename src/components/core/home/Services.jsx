@@ -93,10 +93,10 @@ const treatments = [
 
 const Services = () => {
   return (
-    <div className="bg-[#c2f6f5] py-12 px-6">
+    <div className="bg-[#0097a3c3] py-12 px-6">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">Our Services</h2>
-        <p className="text-gray-700 mt-2">
+        <h2 className="text-4xl font-bold text-white">Our Services</h2>
+        <p className="text-white mt-2">
           Explore our wide range of health care services designed to meet your
           medical needs with compassion and expertise.
         </p>

@@ -16,7 +16,7 @@ const Home = () => {
       <Services />
       {/* <WeightManagementBanner /> */}
       <AppointmentSection />
-      <div className="bg-[#c2f6f5]">
+      <div className="bg-[#00778c55]">
         <div className="flex items-center max-w-7xl mx-auto  py-10 flex-col lg:flex-row">
           <ReviewSLider1 />
           <ReviewSlider2 />

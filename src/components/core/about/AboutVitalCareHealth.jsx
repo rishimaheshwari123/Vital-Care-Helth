@@ -1,35 +1,65 @@
+import Image from "next/image";
+import hero from "@/assets/ur.avif";
+import Link from "next/link";
 export default function AboutVitalCareHealth() {
   return (
-    <div className="bg-gray-50 py-12 px-6">
-      <div className="max-w-7xl mx-auto text-center">
+    <div className="bg-gray-50 py-2 px-6">
+      <br />
+      <br />
+      <div className="max-w-7xl mx-auto ">
         {/* Main Title */}
-        <h1 className="text-3xl lg:text-5xl font-extrabold text-[#0477BF]">
+        <h1 className="text-3xl text-center lg:text-3xl font-extrabold text-[#058790c3]">
           About VitalCare Health
         </h1>
 
         {/* Introduction */}
-        <p className="mt-4 text-xl lg:text-2xl font-bold text-gray-800">
+        <p className="my-8 text-xl text-center lg:text-2xl font-bold text-gray-800">
           More than just a healthcare provider – we are your health partners!
         </p>
-        <p className="mt-2 text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          VitalCare Health is a primary care and urgent care health center,
-          dedicated to providing exceptional medical assistance and weight
-          management services.
-        </p>
 
-        {/* Content Section */}
-        <div className="mt-8 text-gray-700 max-w-4xl mx-auto leading-relaxed">
-          <p>
-            Our team of experienced doctors and healthcare professionals is
-            committed to offering top-notch medical care. We believe in a
-            holistic approach to health, combining cutting-edge medical
-            expertise with personalized care to help you achieve your wellness
-            goals.
-          </p>
-          <p className="mt-4 font-semibold">
-            Founded on the principles of compassion, innovation, and excellence,
-            we strive to make a meaningful impact on your health journey.
-          </p>
+        <div className="bg-[#f2f5ef]">
+          <section className="max-w-7xl mx-auto px-6 py-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left Side */}
+              <div className="text-center lg:text-left">
+                <p className="mt-4 text-gray-700 text-lg leading-relaxed">
+                  VitalCare Health is a primary care and urgent care health
+                  center, dedicated to providing exceptional medical assistance
+                  and weight management services.
+                </p>
+                <p className="mt-4 text-gray-700 text-lg leading-relaxed">
+                  Our team of experienced doctors and healthcare professionals
+                  is committed to offering top-notch medical care. We believe in
+                  a holistic approach to health, combining cutting-edge medical
+                  expertise with personalized care to help you achieve your
+                  wellness goals.
+                </p>
+                <p className="mt-4 text-gray-700 text-lg leading-relaxed">
+                  Founded on the principles of compassion, innovation, and
+                  excellence, we strive to make a meaningful impact on your
+                  health journey.
+                </p>
+
+                <Link
+                  href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></Link>
+              </div>
+
+              <div className="">
+                <Image
+                  src={
+                    "https://static.wixstatic.com/media/11062b_bfcf5102b38c4e90a231f048022bd37a~mv2.jpg/v1/crop/x_0,y_33,w_6720,h_4414/fill/w_1306,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Grandmother%20and%20Granddaughter.jpg"
+                  }
+                  width={300}
+                  height={400}
+                  alt="Doctor and Patient"
+                  className="rounded-lg shadow-md shadow-yellow-500 min-w-full h-full"
+                />
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Our Story - Highlighted Box */}
@@ -46,27 +76,40 @@ export default function AboutVitalCareHealth() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="mt-12">
+        <div className="mt-12 text-center">
           <h2 className="text-2xl font-bold text-gray-900">Why Choose Us</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6 text-gray-700 text-lg">
-            <div>✔ Patient-Centered Care</div>
-            <div>✔ Compassion in Action</div>
-            <div>✔ Expert Team</div>
-            <div>✔ Holistic Approach</div>
-            <div>✔ Convenient Access</div>
-            <div>✔ Proven Results</div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6">
+            {[
+              "Patient-Centered Care",
+              "Compassion in Action",
+              "Expert Team",
+              "Holistic Approach",
+              "Convenient Access",
+              "Proven Results",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center p-4 bg-white shadow-md rounded-lg border border-gray-200"
+              >
+                <span className="text-green-600 text-xl">✔</span>
+                <span className="ml-3 text-gray-700 text-lg">{item}</span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Our Promise Section */}
         <div className="mt-12 text-gray-800 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold">Our Promise to You</h2>
-          <p className="mt-4">
-            At VitalCare, your well-being is our purpose. We’re not just here to
-            provide care – we’re here to inspire healthier, happier lives. Every
-            patient we serve is a testament to our mission: to make a
-            meaningful, lasting impact on the health of our community.
-          </p>
+          <h2 className="text-2xl text-center font-bold">Our Promise to You</h2>
+
+          <div className="bg-white shadow-md p-6 mt-8 max-w-2xl mx-auto rounded-lg border-l-4 border-[#0477BF]">
+            <p className="mt-4">
+              At VitalCare, your well-being is our purpose. We’re not just here
+              to provide care – we’re here to inspire healthier, happier lives.
+              Every patient we serve is a testament to our mission: to make a
+              meaningful, lasting impact on the health of our community.
+            </p>
+          </div>
         </div>
 
         {/* Footer */}

@@ -9,7 +9,7 @@ const TopHeader = () => {
   return (
     <>
       <Fade direction="right" triggerOnce>
-        <div className="bg-[#c5dee4] text-gray-800 p-3 hidden md:block h-[50px]">
+        <div className="bg-[#0097a3c3] text-gray-800 p-3 hidden md:block h-[50px]">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 px-4">
             <div className="flex flex-wrap items-center space-x-6">
               <Zoom triggerOnce>
