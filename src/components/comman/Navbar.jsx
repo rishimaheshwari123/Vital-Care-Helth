@@ -87,7 +87,8 @@ const Navbar = () => {
 
   const links = [
     { name: "Home", to: "/" },
-    { name: "About", to: "/about" },
+    { name: "About ", to: "/about" },
+    // { name: "Meet Our Founder", to: "/founder" },
     {
       name: "Services",
       to: "/services",
@@ -111,7 +112,7 @@ const Navbar = () => {
       <div className="w-full bg-white text-black shadow-lg fixed top-0 left-0 z-50 ">
         <TopHeader />
         <Fade direction="down" triggerOnce>
-          <div className="hidden sm:flex justify-between max-w-7xl mx-auto items-center px-6 py-4">
+          <div className="hidden sm:flex justify-between max-w-11/12 mx-auto items-center px-6 py-4">
             <Zoom triggerOnce>
               <Link href="/" className="text-xl">
                 <Image
@@ -198,7 +199,7 @@ const Navbar = () => {
 
         {/* Sidebar for Small Devices */}
         <div
-          className={`fixed top-0 left-0 w-64 h-screen bg-white shadow-lg z-50 transition-transform duration-500 ease-in-out overflow-y-auto ${
+          className={`fixed top-0 left-0 w-70 h-screen bg-white shadow-lg z-50 transition-transform duration-500 ease-in-out overflow-y-auto ${
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
