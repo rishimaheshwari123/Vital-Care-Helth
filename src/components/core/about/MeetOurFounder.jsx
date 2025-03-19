@@ -4,65 +4,81 @@ import founder from "@/assets/founder.avif";
 
 const MeetOurFounder = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto text-gray-800">
-      {/* Image Section - Placed at the Top */}
-      <div className="flex justify-center mb-6">
-        <Image
-          src={founder}
-          alt="Dr. Hardik Parekh"
-          width={200}
-          height={200}
-          className="rounded-full shadow-lg"
-        />
-      </div>
-
-      <h2 className="text-3xl font-bold text-center mb-4">Meet Our Founder</h2>
-
-      <div className="text-center">
-        <h3 className="text-xl font-semibold text-gray-900">
+    <div className="max-w-7xl mx-auto p-6 bg-gradient-to-br ">
+      {/* Image Section */}
+      <div className="flex flex-col items-center text-center p-6">
+        <div className="relative">
+          <Image
+            src={founder}
+            alt="Dr. Hardik Parekh"
+            width={150}
+            height={150}
+            className="rounded-full border-4 border-blue-500 shadow-lg"
+          />
+          <div className="absolute bottom-0 right-0 bg-blue-500 text-white text-xs px-3 py-1 rounded-full shadow-md">
+            Founder
+          </div>
+        </div>
+        <h2 className="text-3xl font-extrabold text-gray-900 mt-4">
+          Meet Our Founder
+        </h2>
+        <h3 className="text-lg font-semibold text-blue-700 mt-2">
           Dr. Hardik Parekh, MD, MPH
         </h3>
-        <p className="text-lg text-gray-600">Owner & Medical Director</p>
+        <p className="text-gray-600 text-sm">Owner & Medical Director</p>
       </div>
 
-      <p className="mt-4 text-lg leading-relaxed text-center">
-        Dr. Hardik Parekh, MD, MPH, is a board-certified medical director and
-        the visionary founder of VitalCare Health. With over a decade of
-        experience in emergency and family medicine, he is committed to
-        delivering exceptional, patient-centered healthcare.
-      </p>
+      {/* Content Section */}
+      <div className="px-6 pb-6 space-y-6">
+        <p className="text-gray-700 text-base leading-relaxed text-center">
+          Dr. Hardik Parekh, MD, MPH, is a board-certified medical director and
+          the visionary founder of VitalCare Health. With over a decade of
+          experience in emergency and family medicine, he is committed to
+          delivering exceptional, patient-centered healthcare.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6">Expertise & Credentials</h3>
-      <p className="mt-2 text-lg leading-relaxed">
-        Board-certified by the American Board of Family Medicine, Dr. Parekh
-        serves as a trusted Medical Director affiliated with Piedmont Hospitals.
-        His expertise spans Emergency Medicine and Family Medicine, ensuring
-        comprehensive care for both urgent and long-term health needs.
-      </p>
+        <div className="grid gap-6">
+          <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-blue-500">
+            <h3 className="text-md font-bold text-gray-800">
+              🏥 Expertise & Credentials
+            </h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Board-certified by the American Board of Family Medicine, Dr.
+              Parekh serves as a trusted Medical Director affiliated with
+              Piedmont Hospitals. His expertise spans Emergency Medicine and
+              Family Medicine, ensuring comprehensive care for both urgent and
+              long-term health needs.
+            </p>
+          </div>
 
-      <h3 className="text-xl font-semibold mt-6">
-        A Holistic Approach to Medicine
-      </h3>
-      <p className="mt-2 text-lg leading-relaxed">
-        Holding dual degrees in Medicine (MD) and Public Health (MPH), Dr.
-        Parekh integrates clinical expertise with a deep understanding of public
-        health, promoting overall wellness and preventive care.
-      </p>
+          <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-green-500">
+            <h3 className="text-md font-bold text-gray-800">
+              🌍 A Holistic Approach
+            </h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Holding dual degrees in Medicine (MD) and Public Health (MPH), Dr.
+              Parekh integrates clinical expertise with a deep understanding of
+              public health, promoting overall wellness and preventive care.
+            </p>
+          </div>
 
-      <h3 className="text-xl font-semibold mt-6">
-        A Trusted Leader in the Community
-      </h3>
-      <p className="mt-2 text-lg leading-relaxed">
-        Affiliated with Piedmont Hospitals, Dr. Parekh ensures that VitalCare
-        Health is equipped to handle urgent medical needs and long-term
-        healthcare management with skill and compassion.
-      </p>
+          <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-yellow-500">
+            <h3 className="text-md font-bold text-gray-800">
+              🤝 Community Leadership
+            </h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Affiliated with Piedmont Hospitals, Dr. Parekh ensures that
+              VitalCare Health is equipped to handle urgent medical needs and
+              long-term healthcare management with skill and compassion.
+            </p>
+          </div>
+        </div>
 
-      <p className="mt-6 text-lg leading-relaxed font-semibold text-center">
-        Driven by the belief that healthcare should be accessible and
-        transformative, Dr. Parekh leads VitalCare Health with dedication and
-        integrity.
-      </p>
+        <p className="mt-6 text-lg font-semibold text-center text-blue-700">
+          "Healthcare should be accessible and transformative."
+          <br />- Dr. Hardik Parekh
+        </p>
+      </div>
     </div>
   );
 };

@@ -9,12 +9,12 @@ const TopHeader = () => {
   return (
     <>
       <Fade direction="right" triggerOnce>
-        <div className="bg-[#0097a3c3] text-gray-800 p-3 hidden md:block h-[50px]">
+        <div className="bg-[#0097a3c3] text-white p-3 hidden md:block h-[50px]">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 px-4">
             <div className="flex flex-wrap items-center space-x-6">
               <Zoom triggerOnce>
                 <div className="flex items-center space-x-2">
-                  <FiMapPin className="text-xl text-red-600 animate-pulse" />
+                  <FiMapPin className="text-xl text-white  " />
                   <span className="font-semibold">
                     1130 Senoia Road Suite B4 Tyrone GA 30290
                   </span>
@@ -22,7 +22,7 @@ const TopHeader = () => {
               </Zoom>
               <Zoom triggerOnce delay={100}>
                 <div className="hidden md:flex items-center space-x-2">
-                  <FiPhone className="text-xl text-green-600" />
+                  <FiPhone className="text-xl text-white" />
                   <a
                     href="tel:+14708513800"
                     className="font-semibold hover:underline"
@@ -34,7 +34,7 @@ const TopHeader = () => {
 
               <Zoom triggerOnce delay={200}>
                 <div className="flex items-center space-x-2">
-                  <FiMail className="text-xl text-blue-600" />
+                  <FiMail className="text-xl text-whie" />
                   <a
                     href="mailto:info@vitalcarega.com"
                     className="font-semibold hover:underline"
@@ -50,22 +50,18 @@ const TopHeader = () => {
                 <Link
                   href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
                   aria-label="Facebook"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
                 >
-                  <FaFacebook
-                    size={22}
-                    className="text-blue-600 hover:scale-125 transition-transform duration-300"
-                  />
+                  <FaFacebook size={18} className="text-[#0097a3c3]" />
                 </Link>
               </Zoom>
               <Zoom triggerOnce delay={100}>
                 <Link
                   href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
                   aria-label="Instagram"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
                 >
-                  <FaInstagram
-                    size={22}
-                    className="text-pink-600 hover:scale-125 transition-transform duration-300"
-                  />
+                  <FaInstagram size={22} className="text-[#0097a3c3]" />
                 </Link>
               </Zoom>
               {/* <Zoom triggerOnce delay={200}>
@@ -83,11 +79,9 @@ const TopHeader = () => {
                 <Link
                   href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
                   aria-label="Map"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
                 >
-                  <SiMaplibre
-                    size={22}
-                    className="text-green-600 hover:scale-125 transition-transform duration-300"
-                  />
+                  <SiMaplibre size={22} className="text-[#0097a3c3]" />
                 </Link>
               </Zoom>
             </div>

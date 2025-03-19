@@ -31,7 +31,7 @@ const reviews = [
 const ReviewSlider = () => {
   return (
     <div className=" w-full lg:max-w-md mx-auto p-4">
-      <h2 className="text-3xl font-bold text-center text-[#0096A5] mb-4">
+      <h2 className="text-3xl font-bold text-center text-white mb-4">
         Reviews
       </h2>
       <Swiper

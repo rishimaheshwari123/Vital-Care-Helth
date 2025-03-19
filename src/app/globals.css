@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: #f0fffe;
 }
 
 @keyframes scroll-left-to-right {
