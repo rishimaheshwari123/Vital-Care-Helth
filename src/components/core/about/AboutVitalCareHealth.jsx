@@ -1,9 +1,9 @@
 import Image from "next/image";
-import hero from "@/assets/ur.avif";
+import hero from "@/assets/dr.png";
 import Link from "next/link";
 export default function AboutVitalCareHealth() {
   return (
-    <div className="bg-gray-50 py-2 px-6">
+    <div className="py-2 px-6">
       <br />
       <br />
       <div className="max-w-7xl mx-auto ">
@@ -17,7 +17,7 @@ export default function AboutVitalCareHealth() {
           More than just a healthcare provider – we are your health partners!
         </p>
 
-        <div className="bg-[#f2f5ef]">
+        <div className="">
           <section className="max-w-7xl mx-auto px-6 py-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Side */}
@@ -49,9 +49,7 @@ export default function AboutVitalCareHealth() {
 
               <div className="">
                 <Image
-                  src={
-                    "https://static.wixstatic.com/media/11062b_bfcf5102b38c4e90a231f048022bd37a~mv2.jpg/v1/crop/x_0,y_33,w_6720,h_4414/fill/w_1306,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Grandmother%20and%20Granddaughter.jpg"
-                  }
+                  src={hero}
                   width={300}
                   height={400}
                   alt="Doctor and Patient"
@@ -89,10 +87,10 @@ export default function AboutVitalCareHealth() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex items-center p-4 bg-white shadow-md rounded-lg border border-gray-200"
+                className="flex items-center p-4 bg-[#0097a3c3] shadow-md rounded-lg border text-white border-gray-200"
               >
-                <span className="text-green-600 text-xl">✔</span>
-                <span className="ml-3 text-gray-700 text-lg">{item}</span>
+                <span className="text-white text-xl">✔</span>
+                <span className="ml-3  text-lg">{item}</span>
               </div>
             ))}
           </div>

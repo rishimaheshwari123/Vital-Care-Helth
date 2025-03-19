@@ -18,7 +18,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="">
-      <div className="bg-[#b4c6ca] py-5">
+      <div className="py-5">
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:gap-32 py-1 bg-opacity-90 bg-transparent text-black">
           <div className="main items-center grid gap-5 lg:grid-cols-2">
             <Slide direction="left">
@@ -116,7 +116,7 @@ const About = () => {
                 </p>
                 <div className="mt-5">
                   <Link href={"/about"}>
-                    <span className="bg-black mt-4 rounded-full text-white w-fit px-5 py-4 text-xl lg:text-xl">
+                    <span className="bg-[#0097a3c3] mt-4 rounded-full text-white w-fit px-5 py-4 text-xl lg:text-xl">
                       Learn more about us
                     </span>
                   </Link>

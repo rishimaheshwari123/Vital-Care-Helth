@@ -13,16 +13,16 @@ const MeetOurFounder = () => {
             alt="Dr. Hardik Parekh"
             width={150}
             height={150}
-            className="rounded-full border-4 border-blue-500 shadow-lg"
+            className="rounded-full border-4 border-[#0097a3c3] shadow-lg"
           />
-          <div className="absolute bottom-0 right-0 bg-blue-500 text-white text-xs px-3 py-1 rounded-full shadow-md">
+          <div className="absolute bottom-0 right-0 bg-[#0097a3c3] text-white text-xs px-3 py-1 rounded-full shadow-md">
             Founder
           </div>
         </div>
         <h2 className="text-3xl font-extrabold text-gray-900 mt-4">
           Meet Our Founder
         </h2>
-        <h3 className="text-lg font-semibold text-blue-700 mt-2">
+        <h3 className="text-lg font-semibold text-[#0097a3c3] mt-2">
           Dr. Hardik Parekh, MD, MPH
         </h3>
         <p className="text-gray-600 text-sm">Owner & Medical Director</p>
@@ -74,7 +74,7 @@ const MeetOurFounder = () => {
           </div>
         </div>
 
-        <p className="mt-6 text-lg font-semibold text-center text-blue-700">
+        <p className="mt-6 text-lg font-semibold text-center text-white bg-[#0097a3c3]">
           "Healthcare should be accessible and transformative."
           <br />- Dr. Hardik Parekh
         </p>
