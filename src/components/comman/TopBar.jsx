@@ -9,7 +9,7 @@ const TopHeader = () => {
   return (
     <>
       <Fade direction="right" triggerOnce>
-        <div className="bg-[#0097a3c3] text-white p-3 hidden md:block h-[50px]">
+        <div className="bg-[#0097a3c3] text-white px-3 py-2 hidden md:block h-[55px]">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 px-4">
             <div className="flex flex-wrap items-center space-x-6">
               <Zoom triggerOnce>
@@ -45,14 +45,18 @@ const TopHeader = () => {
               </Zoom>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 bg-white px-3 py-1 rounded-2xl">
               <Zoom triggerOnce>
                 <Link
                   href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
                   aria-label="Facebook"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
                 >
-                  <FaFacebook size={18} className="text-[#0097a3c3]" />
+                  {/* <FaFacebook size={18} className="text-[#0097a3c3]" /> */}
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png"
+                    alt=""
+                  />
                 </Link>
               </Zoom>
               <Zoom triggerOnce delay={100}>
@@ -61,7 +65,11 @@ const TopHeader = () => {
                   aria-label="Instagram"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
                 >
-                  <FaInstagram size={22} className="text-[#0097a3c3]" />
+                  {/* <FaInstagram size={22} className="text-[#0097a3c3]" /> */}
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png"
+                    alt=""
+                  />
                 </Link>
               </Zoom>
               {/* <Zoom triggerOnce delay={200}>
@@ -81,7 +89,11 @@ const TopHeader = () => {
                   aria-label="Map"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
                 >
-                  <SiMaplibre size={22} className="text-[#0097a3c3]" />
+                  {/* <SiMaplibre size={22} className="text-[#0097a3c3]" /> */}
+                  <img
+                    src="https://media.istockphoto.com/id/1148705812/vector/location-icon-vector-pin-sign-isolated-on-white-background-navigation-map-gps-direction.jpg?s=612x612&w=0&k=20&c=lqEIzW3QedZfytsX30NoBJbHxZZbWnlLsvEiwOSbaow="
+                    alt=""
+                  />
                 </Link>
               </Zoom>
             </div>
