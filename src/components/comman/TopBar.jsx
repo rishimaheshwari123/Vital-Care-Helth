@@ -128,12 +128,12 @@ const TopHeader = () => {
             </a>
           </div>
 
-          <div className="flex bg-white rounded-2xl px-1 py-1 space-x-4">
+          <div className="flex rounded-2xl px-1 py-1 space-x-4">
             <Zoom triggerOnce>
               <Link
                 href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
                 aria-label="Facebook"
-                className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
+                className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
               >
                 {/* <FaFacebook size={18} className="text-[#0097a3c3]" /> */}
                 <img
@@ -146,7 +146,7 @@ const TopHeader = () => {
               <Link
                 href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
                 aria-label="Instagram"
-                className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
+                className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
               >
                 {/* <FaInstagram size={22} className="text-[#0097a3c3]" /> */}
                 <img
@@ -170,7 +170,7 @@ const TopHeader = () => {
               <Link
                 href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
                 aria-label="Map"
-                className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
+                className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
               >
                 {/* <SiMaplibre size={22} className="text-[#0097a3c3]" /> */}
                 <img
