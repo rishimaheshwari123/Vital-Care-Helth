@@ -7,22 +7,22 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 const TopHeader = () => {
   return (
-    <>
+    <div className="">
       <Fade direction="right" triggerOnce>
-        <div className="bg-[#0097a3c3] text-white px-3 py-2 hidden md:block h-[55px]">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 px-4">
+        <div className="bg-[#0097a3c3] h-[55px] text-white hidden md:block py-2">
+          <div className="flex flex-col justify-between items-center max-w-11/12 md:flex-row md:space-y-0 mx-auto px-4 space-y-2">
             <div className="flex flex-wrap items-center space-x-6">
               <Zoom triggerOnce>
                 <div className="flex items-center space-x-2">
-                  <FiMapPin className="text-xl text-white  " />
+                  <FiMapPin className="text-white text-xl" />
                   <span className="font-semibold">
                     1130 Senoia Road Suite B4 Tyrone GA 30290
                   </span>
                 </div>
               </Zoom>
               <Zoom triggerOnce delay={100}>
-                <div className="hidden md:flex items-center space-x-2">
-                  <FiPhone className="text-xl text-white" />
+                <div className="hidden items-center md:flex space-x-2">
+                  <FiPhone className="text-white text-xl" />
                   <a
                     href="tel:+14708513800"
                     className="font-semibold hover:underline"
@@ -34,7 +34,7 @@ const TopHeader = () => {
 
               <Zoom triggerOnce delay={200}>
                 <div className="flex items-center space-x-2">
-                  <FiMail className="text-xl text-whie" />
+                  <FiMail className="text-whie text-xl" />
                   <a
                     href="mailto:info@vitalcarega.com"
                     className="font-semibold hover:underline"
@@ -45,12 +45,12 @@ const TopHeader = () => {
               </Zoom>
             </div>
 
-            <div className="flex space-x-4 bg-white px-3 py-1 rounded-2xl">
+            <div className="flex bg-white rounded-2xl px-3 py-1 space-x-4">
               <Zoom triggerOnce>
                 <Link
                   href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
                   aria-label="Facebook"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
+                  className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
                 >
                   {/* <FaFacebook size={18} className="text-[#0097a3c3]" /> */}
                   <img
@@ -63,7 +63,7 @@ const TopHeader = () => {
                 <Link
                   href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
                   aria-label="Instagram"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
+                  className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
                 >
                   {/* <FaInstagram size={22} className="text-[#0097a3c3]" /> */}
                   <img
@@ -79,7 +79,7 @@ const TopHeader = () => {
                 >
                   <FaYoutube
                     size={22}
-                    className="text-red-600 hover:scale-125 transition-transform duration-300"
+                    className="text-red-600 duration-300 hover:scale-125 transition-transform"
                   />
                 </Link>
               </Zoom> */}
@@ -87,7 +87,7 @@ const TopHeader = () => {
                 <Link
                   href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
                   aria-label="Map"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white  transition-colors duration-300"
+                  className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
                 >
                   {/* <SiMaplibre size={22} className="text-[#0097a3c3]" /> */}
                   <img
@@ -102,14 +102,14 @@ const TopHeader = () => {
       </Fade>
 
       {/* Mobile Header */}
-      <div className="bg-[#c5dee4] text-black p-4 md:hidden">
-        <div className="flex flex-wrap items-center justify-between space-x-4">
+      <div className="bg-[#c5dee4] p-4 text-black md:hidden">
+        <div className="flex flex-wrap justify-between items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <FiMapPin className="text-xl text-red-600 animate-pulse" />
+            <FiMapPin className="text-red-600 text-xl animate-pulse" />
             <span className="font-semibold">B4 Tyrone GA</span>
           </div>
           <div className="flex items-center space-x-2">
-            <FiMail className="text-xl text-blue-600" />
+            <FiMail className="text-blue-600 text-xl" />
             <a
               href="mailto:info@vitalcarega.com"
               className="font-semibold hover:underline"
@@ -121,7 +121,7 @@ const TopHeader = () => {
 
         <div className="flex justify-between mt-3">
           <div className="flex items-center space-x-2">
-            <FiPhone className="text-xl text-green-600" />
+            <FiPhone className="text-green-600 text-xl" />
             <a
               href="tel:+14708513800"
               className="font-semibold hover:underline"
@@ -138,7 +138,7 @@ const TopHeader = () => {
               >
                 <FaFacebook
                   size={22}
-                  className="text-blue-600 hover:scale-125 transition-transform duration-300"
+                  className="text-blue-600 duration-300 hover:scale-125 transition-transform"
                 />
               </Link>
             </Zoom>
@@ -149,7 +149,7 @@ const TopHeader = () => {
               >
                 <FaInstagram
                   size={22}
-                  className="text-pink-600 hover:scale-125 transition-transform duration-300"
+                  className="text-pink-600 duration-300 hover:scale-125 transition-transform"
                 />
               </Link>
             </Zoom>
@@ -161,14 +161,14 @@ const TopHeader = () => {
               >
                 <SiMaplibre
                   size={22}
-                  className="text-green-600 hover:scale-125 transition-transform duration-300"
+                  className="text-green-600 duration-300 hover:scale-125 transition-transform"
                 />
               </Link>
             </Zoom>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

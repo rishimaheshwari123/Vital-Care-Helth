@@ -5,7 +5,6 @@ import HereSection from "@/components/core/home/HeroSection";
 import ReviewSLider1 from "@/components/core/home/ReviewSLider1";
 import ReviewSlider2 from "@/components/core/home/ReviewSLider2";
 import Services from "@/components/core/home/Services";
-import WeightManagementBanner from "@/components/core/home/WeightManagementBanner";
 import React from "react";
 
 const Home = () => {
@@ -17,7 +16,7 @@ const Home = () => {
       {/* <WeightManagementBanner /> */}
       <AppointmentSection />
       <div className="bg-[#f0fffe]">
-        <div className="flex items-center max-w-7xl mx-auto  py-10 flex-col lg:flex-row">
+        <div className="flex flex-col items-center lg:flex-row max-w-7xl mx-auto py-10">
           <ReviewSLider1 />
           <ReviewSlider2 />
         </div>

@@ -25,15 +25,15 @@ export default function BmiCalculator() {
   };
 
   return (
-    <div className="bg-[#cedfe3]">
-      <div className="max-w-7xl mx-auto p-5">
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-[70vh]">
+    <div className="">
+      <div className="p-5 max-w-7xl mx-auto">
+        <div className="flex flex-col justify-center items-center md:flex-row min-h-[70vh]">
           {/* Left Side Content */}
-          <div className="md:w-1/2 text-center md:text-left p-6">
-            <h1 className="text-4xl font-bold text-black">
+          <div className="p-6 text-center md:text-left md:w-1/2">
+            <h1 className="text-4xl text-black font-bold">
               WEIGHT LOST. <span className="text-red-500">LIFE GAINED.</span>
             </h1>
-            <p className="mt-4 text-gray-700">
+            <p className="text-gray-700 mt-4">
               The Center for Disease Control estimates that more than 40 percent
               of Americans are obese, meaning they have a Body Mass Index (BMI)
               score greater than 30. The higher your score, the more you are at
@@ -43,50 +43,50 @@ export default function BmiCalculator() {
           </div>
 
           {/* BMI Calculator */}
-          <div className="md:w-1/2 bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg md:w-1/2">
+            <h2 className="text-gray-800 text-xl font-semibold mb-4">
               Is your Body Mass Index above 30? Find out now.
             </h2>
             <div className="mb-4">
-              <label className="block text-gray-700">Weight (lbs)</label>
+              <label className="text-gray-700 block">Weight (lbs)</label>
               <input
                 type="number"
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
-                className="w-full p-2 border rounded"
+                className="border p-2 rounded w-full"
                 placeholder="Enter weight"
               />
             </div>
-            <div className="mb-4 flex space-x-2">
+            <div className="flex mb-4 space-x-2">
               <div className="w-1/2">
-                <label className="block text-gray-700">Height (feet)</label>
+                <label className="text-gray-700 block">Height (feet)</label>
                 <input
                   type="number"
                   value={feet}
                   onChange={(e) => setFeet(e.target.value)}
-                  className="w-full p-2 border rounded"
+                  className="border p-2 rounded w-full"
                   placeholder="Feet"
                 />
               </div>
               <div className="w-1/2">
-                <label className="block text-gray-700">Height (inches)</label>
+                <label className="text-gray-700 block">Height (inches)</label>
                 <input
                   type="number"
                   value={inches}
                   onChange={(e) => setInches(e.target.value)}
-                  className="w-full p-2 border rounded"
+                  className="border p-2 rounded w-full"
                   placeholder="Inches"
                 />
               </div>
             </div>
             <button
               onClick={calculateBMI}
-              className="w-full bg-red-500 text-white py-2 rounded-lg font-semibold"
+              className="bg-red-500 rounded-lg text-white w-full font-semibold py-2"
             >
               Calculate BMI
             </button>
             {bmi && (
-              <div className="mt-4 text-center">
+              <div className="text-center mt-4">
                 <p className="text-lg font-semibold">Your BMI: {bmi}</p>
                 <p className="text-gray-700">Category: {category}</p>
               </div>

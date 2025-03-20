@@ -23,6 +23,8 @@ import {
   FaPhone,
   FaHeadSideVirus,
 } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
+import { MdEmojiPeople } from "react-icons/md";
 
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import logo from "@/assets/logo.png";
@@ -90,10 +92,12 @@ const Navbar = () => {
     {
       name: "About VitalCare Health",
       to: "/about",
+      icon: <FcAbout />,
     },
     {
       name: "Meet Our Founder",
       to: "/founder",
+      icon: <MdEmojiPeople />,
     },
   ];
 
@@ -137,22 +141,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" relative">
-      <div className="w-full bg-white text-black shadow-lg fixed top-0 left-0 z-50 ">
+    <div className="relative">
+      <div className="bg-white shadow-lg text-black w-full fixed left-0 top-0 z-50">
         <TopHeader />
         <Fade direction="down" triggerOnce>
-          <div className="hidden sm:flex justify-between max-w-11/12 mx-auto items-center px-6 py-4">
+          <div className="justify-between hidden items-center max-w-11/12 mx-auto px-6 py-4 sm:flex">
             <Zoom triggerOnce>
               <Link href="/" className="text-xl">
                 <Image
                   src={logo || "/placeholder.svg"}
-                  className="w-48 transition-transform duration-300 hover:scale-110"
+                  className="w-48 duration-300 hover:scale-110 transition-transform"
                   alt="Logo"
                 />
               </Link>
             </Zoom>
             <div>
-              <div className="flex space-x-6 items-center">
+              <div className="flex items-center space-x-6">
                 {links.map((link, index) => (
                   <Slide
                     direction="down"
@@ -165,11 +169,11 @@ const Navbar = () => {
                         href={link.to}
                         onMouseEnter={() => handleMouseEnter(index)}
                         onMouseLeave={handleMouseLeave}
-                        className="hover:text-[#0097a3c3] text-[17px] font-semibold transition-all duration-300 flex items-center"
+                        className="flex text-[17px] duration-300 font-semibold hover:text-[#0097a3c3] items-center transition-all"
                       >
                         {link.name}
                         {link.hasSubmenu && (
-                          <FaChevronDown className="ml-1 text-xs" />
+                          <FaChevronDown className="text-xs ml-1" />
                         )}
                       </Link>
                     </div>
@@ -179,13 +183,13 @@ const Navbar = () => {
             </div>
             <div className="flex space-x-3">
               <Link
-                className="border-2 border-[#0097a3c3] text-black hover:bg-gray-50 px-5 py-2 rounded-2xl transition-colors duration-300"
+                className="border-[#0097a3c3] border-2 rounded-2xl text-black duration-300 hover:bg-gray-50 px-5 py-2 transition-colors"
                 href="/payment"
               >
                 Pay Now
               </Link>
               <Link
-                className="bg-[#0097a3c3] hover:bg-[#b0d0d8] text-white px-5 py-2 rounded-2xl transition-colors duration-300"
+                className="bg-[#0097a3c3] rounded-2xl text-white duration-300 hover:bg-[#b0d0d8] px-5 py-2 transition-colors"
                 href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
               >
                 Book Now
@@ -195,17 +199,17 @@ const Navbar = () => {
         </Fade>
 
         {/* Mobile Navbar */}
-        <div className="sm:hidden bg-white flex justify-between items-center px-6 py-4 border-b border-gray-200">
+        <div className="flex bg-white border-b border-gray-200 justify-between items-center px-6 py-4 sm:hidden">
           <Link href="/" className="text-xl">
             <Image
               src={logo || "/placeholder.svg"}
-              className="w-36 transition-transform duration-300 hover:scale-110"
+              className="w-36 duration-300 hover:scale-110 transition-transform"
               alt="Logo"
             />
           </Link>
           <button
             onClick={() => setIsSidebarOpen((prev) => !prev)}
-            className="transition-all duration-300"
+            className="duration-300 transition-all"
           >
             {isSidebarOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
           </button>
@@ -217,7 +221,7 @@ const Navbar = () => {
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200">
+          <div className="flex border-b border-gray-200 justify-between items-center px-6 py-4">
             <Image
               src={logo || "/placeholder.svg"}
               className="w-32"
@@ -231,10 +235,10 @@ const Navbar = () => {
             {links.map((link, index) => (
               <div key={index}>
                 <Fade direction="up" triggerOnce delay={index * 100}>
-                  <div className="flex items-center justify-between">
+                  <div className="flex justify-between items-center">
                     <Link
                       href={link.to}
-                      className="block mb-4 hover:text-gray-600 text-lg font-medium"
+                      className="text-lg block font-medium hover:text-gray-600 mb-4"
                       onClick={() => setIsSidebarOpen(false)}
                     >
                       {link.name}
@@ -245,7 +249,7 @@ const Navbar = () => {
                           e.stopPropagation(); // Prevents parent click
                           toggleSubmenu(index);
                         }}
-                        className="mb-4 p-2"
+                        className="p-2 mb-4"
                       >
                         {openSubmenu === index ? (
                           <FaChevronUp size={14} />
@@ -258,7 +262,7 @@ const Navbar = () => {
                 </Fade>
 
                 {link.hasSubmenu && openSubmenu === index && (
-                  <div className="ml-4 mb-4">
+                  <div className="mb-4 ml-4">
                     <div className="grid grid-cols-1 gap-1">
                       {link.submenu.map((subItem, subIndex) => (
                         <Fade
@@ -268,7 +272,7 @@ const Navbar = () => {
                         >
                           <Link
                             href={subItem.to}
-                            className="block mb-2 text-gray-700 hover:text-[#800080] text-base"
+                            className="text-base text-gray-700 block hover:text-[#800080] mb-2"
                             onClick={() => setIsSidebarOpen(false)}
                           >
                             {subItem.name}
@@ -282,7 +286,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="flex space-x-4 pl-10">
+          <div className="flex pl-10 space-x-4">
             <Link
               href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
               target="_blank"
@@ -318,15 +322,15 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="flex flex-col space-y-3 items-center mt-4 mb-6 px-6">
+          <div className="flex flex-col items-center mb-6 mt-4 px-6 space-y-3">
             <Link
-              className="bg-white border border-[#0097a3c3] text-[#0097a3c3] w-full text-center cursor-pointer py-3 rounded-2xl"
+              className="bg-white border border-[#0097a3c3] rounded-2xl text-[#0097a3c3] text-center w-full cursor-pointer py-3"
               href="/payment"
             >
               Pay Now
             </Link>
             <Link
-              className="bg-[#0097a3c3] w-full text-center cursor-pointer py-3 rounded-2xl"
+              className="bg-[#0097a3c3] rounded-2xl text-center w-full cursor-pointer py-3"
               href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
             >
               Book Now
@@ -344,23 +348,31 @@ const Navbar = () => {
       </div>
 
       {hoveredSubmenu.length > 0 && (
-        <div className=" min-w-[70vw] mx-auto">
+        <div className="min-w-[70vw] mx-auto">
           <div
-            className=" min-h-[20px] fixed top-[100px]  min-w-full left-0 z-[999999]"
+            className="fixed left-0 min-h-[20px] min-w-full top-[100px] z-[999999]"
             onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
             onMouseLeave={handleMouseLeave}
           ></div>
           <div
-            className="fixed top-[120px] left-[28%] right-[30%]  bg-white shadow-lg py-4 px-6 z-[99999]"
+            className="bg-white shadow-lg fixed left-[29%] px-6 py-4 right-[32%] top-[120px] z-[99999]"
             onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="grid gap-2 grid-cols-2 md:grid-cols-3">
+            <div
+              className={`grid gap-2 ${
+                hoveredSubmenu.some(
+                  (item) => item.name === "About VitalCare Health"
+                )
+                  ? "grid-cols-2"
+                  : "grid-cols-3"
+              }`}
+            >
               {hoveredSubmenu.map((subItem, subIndex) => (
                 <Link
                   key={subIndex}
                   href={subItem.to}
-                  className="flex items-center px-4 py-2 text-sm hover:bg-[#0097a3c3] hover:text-white transition-colors duration-200 rounded"
+                  className="flex rounded text-sm duration-200 hover:bg-[#0097a3c3] hover:text-white items-center px-4 py-2 transition-colors"
                 >
                   {subItem.icon} <span className="ml-2">{subItem.name}</span>
                 </Link>
