@@ -17,7 +17,7 @@ export default function HeroSection() {
 
       <div className="flex h-full items-center lg:px-20 px-6 relative z-10">
         <div className="text-left max-w-3xl">
-          <h1 className="text-2xl text-cyan-400 drop-shadow-lg font-extrabold lg:text-4xl max-w-lg">
+          <h1 className="text-2xl text-cyan-400 drop-shadow-lg font-extrabold lg:text-4xl">
             Why Choose GLP-1 for Weight Loss
           </h1>
           <br />

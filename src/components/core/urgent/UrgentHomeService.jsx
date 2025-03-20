@@ -1,7 +1,6 @@
-"use client";
 import Link from "next/link";
 
-export default function UrgentHome() {
+export default function UrgentHomeService() {
   return (
     <div className="h-screen relative">
       {/* Background Video */}
@@ -10,6 +9,7 @@ export default function UrgentHome() {
           src="./Urgent.mp4"
           autoPlay
           muted
+          loop
           className="h-full w-full absolute object-cover"
         />
         <div className="bg-gradient-to-b absolute from-black/40 inset-0 to-black/60 via-black/50"></div>

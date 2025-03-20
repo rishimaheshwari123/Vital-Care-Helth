@@ -31,7 +31,8 @@ import logo from "@/assets/logo.png";
 import TopHeader from "./TopBar";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiMaplibre } from "react-icons/si";
-
+import doctor from "@/assets/doc.png";
+import vital from "@/assets/vital.png";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -40,7 +41,7 @@ const Navbar = () => {
   const services = [
     {
       name: "Urgent Care Needs",
-      to: "/services/urgent-care-needs",
+      to: "/urgent-care",
       icon: <FaStethoscope />,
     },
     {
@@ -92,12 +93,12 @@ const Navbar = () => {
     {
       name: "About VitalCare Health",
       to: "/about",
-      icon: <FcAbout />,
+      image: doctor,
     },
     {
       name: "Meet Our Founder",
       to: "/founder",
-      icon: <MdEmojiPeople />,
+      image: vital,
     },
   ];
 
@@ -374,7 +375,16 @@ const Navbar = () => {
                   href={subItem.to}
                   className="flex rounded text-sm duration-200 hover:bg-[#0097a3c3] hover:text-white items-center px-4 py-2 transition-colors"
                 >
-                  {subItem.icon} <span className="ml-2">{subItem.name}</span>
+                  {subItem.image ? (
+                    <Image
+                      src={subItem.image}
+                      alt={subItem.name}
+                      className="h-5 w-5 mr-2"
+                    />
+                  ) : (
+                    subItem.icon
+                  )}
+                  <span className="ml-2">{subItem.name}</span>
                 </Link>
               ))}
             </div>

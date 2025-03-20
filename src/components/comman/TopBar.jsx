@@ -45,7 +45,7 @@ const TopHeader = () => {
               </Zoom>
             </div>
 
-            <div className="flex bg-white rounded-2xl px-3 py-1 space-x-4">
+            <div className="flex bg-white rounded-2xl px-1 py-1 space-x-4">
               <Zoom triggerOnce>
                 <Link
                   href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
