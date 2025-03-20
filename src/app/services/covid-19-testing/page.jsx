@@ -9,17 +9,17 @@ import Link from "next/link";
 export default function Covid() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
+      <div className="flex flex-col bg-white items-center md:flex-row md:px-20 md:space-y-0 px-5 py-10 space-y-8">
         {/* Left Content */}
-        <div className="md:w-1/2 text-left">
-          <h3 className="text-lg font-bold text-gray-800">
+        <div className="text-left md:w-1/2">
+          <h3 className="text-gray-800 text-lg font-bold">
             Discover Our COVID-19 Tests
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h1 className="text-3xl text-black font-bold md:text-4xl mt-2">
             Urgent Care <br />
             <span>COVID-19 Testing</span>
           </h1>
-          <p className="text-gray-600 mt-4 text-sm md:text-base">
+          <p className="text-gray-600 text-sm md:text-base mt-4">
             At Vital Care, we provide comprehensive COVID-19 testing and
             vaccination services to support your health throughout the year. Our
             expert team offers precise and reliable testing, along with
@@ -27,10 +27,10 @@ export default function Covid() {
             you need a test for travel, work, or health concerns, we prioritize
             your well-being with accurate results and dedicated care.
           </p>
-          <h2 className="text-lg md:text-xl font-bold text-black mt-4">
+          <h2 className="text-black text-lg font-bold md:text-xl mt-4">
             COVID-19 Testing:
           </h2>
-          <ul className="list-disc list-inside text-gray-600 mt-2 text-sm md:text-base">
+          <ul className="list-disc list-inside text-gray-600 text-sm md:text-base mt-2">
             <li>
               <strong>Diagnostic Testing:</strong> Accurate tests to detect
               current COVID-19 infections.
@@ -46,7 +46,7 @@ export default function Covid() {
               href={
                 "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
               }
-              className="bg-[#7ed0e4] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-red-600 transition"
+              className="bg-[#7ed0e4] rounded-lg shadow-lg text-white hover:bg-red-600 px-6 py-3 transition"
             >
               Contact Us Today
             </Link>
@@ -54,8 +54,8 @@ export default function Covid() {
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2 flex justify-center">
-          <div className="rounded-xl overflow-hidden shadow-lg">
+        <div className="flex justify-center md:w-1/2">
+          <div className="rounded-xl shadow-lg overflow-hidden">
             <Image
               src={doctorImage}
               alt="Doctor holding vaccine"
@@ -67,17 +67,17 @@ export default function Covid() {
         </div>
       </div>
 
-      <section className="bg-gray-100 py-10 px-5 md:px-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-lg font-bold text-gray-800">
+      <section className="bg-gray-100 md:px-20 px-5 py-10">
+        <div className="text-center max-w-4xl mx-auto">
+          <h3 className="text-gray-800 text-lg font-bold">
             Discover Our COVID-19 Tests
           </h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl text-black font-bold md:text-4xl mt-2">
             Why COVID Testing and Vaccination Matters
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto mt-6 text-gray-700 text-sm md:text-base">
+        <div className="text-gray-700 text-sm max-w-4xl md:text-base mt-6 mx-auto">
           <p>
             COVID-19 presents unique challenges that require specialized care
             and attention. At <span className="font-semibold">VitalCare</span>,
@@ -89,10 +89,10 @@ export default function Covid() {
         </div>
 
         {/* Two Columns: Testing & Vaccination */}
-        <div className="max-w-4xl mx-auto mt-8 grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 max-w-4xl md:grid-cols-2 mt-8 mx-auto">
           {/* Testing Section */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold text-black">
+            <h3 className="text-black text-xl font-bold">
               Why Testing is Crucial:
             </h3>
             <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
@@ -111,7 +111,7 @@ export default function Covid() {
 
           {/* Vaccination Section */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold text-black">
+            <h3 className="text-black text-xl font-bold">
               Why Vaccination Matters:
             </h3>
             <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
@@ -130,7 +130,7 @@ export default function Covid() {
         </div>
 
         {/* Footer Text */}
-        <div className="max-w-4xl mx-auto mt-8 text-center text-gray-700">
+        <div className="text-center text-gray-700 max-w-4xl mt-8 mx-auto">
           <p>
             At <span className="font-semibold">VitalCare</span>, we simplify
             your healthcare experience by providing all COVID-19 services—
@@ -143,38 +143,38 @@ export default function Covid() {
         </div>
 
         {/* Contact Button */}
-        <div className="max-w-4xl mx-auto mt-6 flex justify-center">
+        <div className="flex justify-center max-w-4xl mt-6 mx-auto">
           <Link
             href={
               "https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
             }
-            className="bg-red-500 cursor-pointer text-white px-6 py-3 rounded-lg shadow-lg hover:bg-red-600 transition"
+            className="bg-red-500 rounded-lg shadow-lg text-white cursor-pointer hover:bg-red-600 px-6 py-3 transition"
           >
             Get Tested Today
           </Link>
         </div>
       </section>
 
-      <section className="py-12 px-6 bg-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+      <section className="bg-white px-6 py-12">
+        <div className="text-center max-w-5xl mx-auto">
+          <h2 className="text-3xl text-blue-900 font-bold md:text-4xl">
             COVID-19 Tests & Treatments Offered
           </h2>
         </div>
 
-        <div className="mt-8 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid gap-8 max-w-5xl md:grid-cols-2 mt-8 mx-auto">
           {/* Rapid COVID Testing */}
-          <div className="flex flex-col lg:flex-row items-center space-x-6">
-            <div className="">
+          <div className="flex flex-col items-center lg:flex-row space-x-6">
+            <div className="border-4 border-blue-900 rounded-full min-w-[10vw] overflow-hidden">
               <Image
                 src={img1}
                 alt="COVID Test"
                 objectFit="cover"
-                className="rounded-full w-[41vw] h-32 border-4 border-blue-900"
+                className="h-full rounded-full w-full object-cover"
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h3 className="text-blue-900 text-lg font-bold">
                 Rapid COVID Testing (Antigen):
               </h3>
               <p className="text-gray-700">
@@ -187,17 +187,17 @@ export default function Covid() {
           </div>
 
           {/* Oxygen Saturation Monitoring */}
-          <div className="flex flex-col lg:flex-row items-center space-x-6">
-            <div className="">
+          <div className="flex flex-col items-center lg:flex-row space-x-6">
+            <div className="border-4 border-blue-900 rounded-full min-w-[10vw] overflow-hidden">
               <Image
                 src={img2}
                 alt="Oxygen Monitoring"
                 objectFit="cover"
-                className="rounded-full w-[40vw] h-32 border-4 border-blue-900"
+                className="h-full rounded-full w-full object-cover"
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h3 className="text-blue-900 text-lg font-bold">
                 Oxygen Saturation Monitoring:
               </h3>
               <p className="text-gray-700">
@@ -210,17 +210,17 @@ export default function Covid() {
           </div>
 
           {/* Antiviral Medications */}
-          <div className="flex flex-col lg:flex-row items-center space-x-6">
-            <div className="">
+          <div className="flex flex-col items-center lg:flex-row space-x-6">
+            <div className="border-4 border-blue-900 rounded-full min-w-[10vw] overflow-hidden">
               <Image
                 src={img3}
                 alt="Antiviral Medication"
                 objectFit="cover"
-                className="rounded-full w-[35vw] h-32 border-4 border-blue-900"
+                className="h-full rounded-full w-full object-cover"
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h3 className="text-blue-900 text-lg font-bold">
                 Antiviral Medications for COVID:
               </h3>
               <p className="text-gray-700">

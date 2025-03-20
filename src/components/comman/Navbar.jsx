@@ -182,7 +182,7 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-            <div className="flex space-x-3">
+            <div className="flex items-center space-x-3">
               <Link
                 className="border-[#0097a3c3] border-2 rounded-2xl text-black duration-300 hover:bg-gray-50 px-5 py-2 transition-colors"
                 href="/payment"
@@ -190,7 +190,7 @@ const Navbar = () => {
                 Pay Now
               </Link>
               <Link
-                className="bg-[#0097a3c3] rounded-2xl text-white duration-300 hover:bg-[#b0d0d8] px-5 py-2 transition-colors"
+                className="bg-[#0097a3c3] border-[#0097a3c3] border-2 rounded-2xl text-white duration-300 hover:bg-[#65a9b9] px-5 py-2 transition-colors"
                 href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
               >
                 Book Now

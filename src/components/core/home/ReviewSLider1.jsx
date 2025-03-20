@@ -4,37 +4,34 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Import Aut
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import r1 from "@/assets/revies/r1.webp";
+import r2 from "@/assets/revies/r2.jpg";
+import r3 from "@/assets/revies/r3.jpg";
+import r4 from "@/assets/revies/r4.jpg";
+import Image from "next/image";
 const data = [
   {
     id: 1,
-    image:
-      "https://scottsdaleweightloss.com/wp-content/uploads/2024/10/2-lauren_weight-loss-before-and-after-scottsdale-weight-loss-center.webp",
+    image: r1,
     title: "Trusted Weight Loss Journey",
     description:
       "Discover expert-led weight loss programs tailored to your health goals. Discover expert-led weight loss programs tailored to your health goals Discover expert-led weight loss programs tailored to your health goals",
   },
   {
     id: 2,
-    image:
-      "https://scottsdaleweightloss.com/wp-content/uploads/2024/10/2-lauren_weight-loss-before-and-after-scottsdale-weight-loss-center.webp",
-    title: "Personalized Health Plans",
+    image: r2,
     description:
       "Custom diet and fitness plans designed for long-term well-being. Get recommendations based on your unique body needs and lifestyle preferences. Our expert team assesses your health history, dietary patterns, ",
   },
   {
     id: 3,
-    image:
-      "https://scottsdaleweightloss.com/wp-content/uploads/2024/10/2-lauren_weight-loss-before-and-after-scottsdale-weight-loss-center.webp",
-    title: "Expert Healthcare Guidance",
+    image: r3,
     description:
       "Access top doctors and dietitians for professional health advice. Our approach ensures you receive medically-backed recommendations that align with your personal health goals. From  .",
   },
   {
     id: 4,
-    image:
-      "https://scottsdaleweightloss.com/wp-content/uploads/2024/10/2-lauren_weight-loss-before-and-after-scottsdale-weight-loss-center.webp",
-    title: "Sustainable Lifestyle Changes",
+    image: r4,
     description:
       "Adopt lasting healthy habits with science-backed recommendations. Make small, manageable changes for a lifetime of wellness. Our program encourages gradual improvements in your .",
   },
@@ -42,7 +39,7 @@ const data = [
 
 const ReviewSlider1 = () => {
   return (
-    <div className="w-full max-w-4xl  sm:max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto px-3 sm:px-4 py-4">
+    <div className="w-full lg:max-w-4xl max-w-4xl md:max-w-2xl mx-auto px-3 py-4 sm:max-w-sm sm:px-4">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={10}
@@ -71,16 +68,16 @@ const ReviewSlider1 = () => {
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="flex  flex-col items-center bg-white shadow-md rounded-xl p-3 sm:p-4 md:p-6">
-              <img
+            <div className="flex flex-col bg-white p-3 rounded-xl shadow-md items-center md:p-6 sm:p-4">
+              <Image
                 src={item.image || "/placeholder.svg"}
-                alt={item.title}
-                className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] object-cover rounded-full"
+                alt={"not found"}
+                className="h-[180px] rounded-full w-[180px] lg:h-[300px] lg:w-[300px] md:h-[250px] md:w-[250px] object-cover sm:h-[220px] sm:w-[220px]"
               />
-              <h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+              <h3 className="text-lg font-bold mt-3 sm:mt-4 sm:text-xl">
                 {item.title}
               </h3>
-              <p className="text-gray-700 text-sm sm:text-base text-center mt-2">
+              <p className="text-center text-gray-700 text-sm mt-2 sm:text-base">
                 {item.description}
               </p>
             </div>
