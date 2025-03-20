@@ -1,7 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
-import { SiMaplibre } from "react-icons/si";
 import Link from "next/link";
 import { Fade, Zoom } from "react-awesome-reveal";
 
@@ -45,12 +43,12 @@ const TopHeader = () => {
               </Zoom>
             </div>
 
-            <div className="flex bg-white rounded-2xl px-1 py-1 space-x-4">
+            <div className="flex rounded-2xl mt-1 px-1 py-1 space-x-4">
               <Zoom triggerOnce>
                 <Link
                   href="https://www.facebook.com/share/1BAq26qeo6/?mibextid=wwXIfr"
                   aria-label="Facebook"
-                  className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
+                  className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
                 >
                   {/* <FaFacebook size={18} className="text-[#0097a3c3]" /> */}
                   <img
@@ -63,7 +61,7 @@ const TopHeader = () => {
                 <Link
                   href="https://www.instagram.com/vitalcare__health?igsh=MXY0NnNsYWJmNHc1ag%3D%3D&utm_source=qr"
                   aria-label="Instagram"
-                  className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
+                  className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
                 >
                   {/* <FaInstagram size={22} className="text-[#0097a3c3]" /> */}
                   <img
@@ -87,7 +85,7 @@ const TopHeader = () => {
                 <Link
                   href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
                   aria-label="Map"
-                  className="flex bg-white h-8 justify-center rounded-full w-8 duration-300 items-center transition-colors"
+                  className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
                 >
                   {/* <SiMaplibre size={22} className="text-[#0097a3c3]" /> */}
                   <img
@@ -102,9 +100,9 @@ const TopHeader = () => {
       </Fade>
 
       {/* Mobile Header */}
-      <div className="bg-[#c5dee4] p-4 text-black md:hidden">
+      <div className="bg-[#c5dee4] text-black md:hidden pb-[10px] px-2">
         <div className="flex flex-wrap justify-between items-center space-x-4">
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <FiMapPin className="text-red-600 text-xl animate-pulse" />
             <span className="font-semibold">B4 Tyrone GA</span>
           </div>
@@ -116,7 +114,7 @@ const TopHeader = () => {
             >
               Email Us
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-between mt-3">

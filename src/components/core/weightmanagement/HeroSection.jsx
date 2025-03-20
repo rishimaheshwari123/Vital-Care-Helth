@@ -21,7 +21,7 @@ export default function HeroSection() {
             Why Choose GLP-1 for Weight Loss
           </h1>
           <br />
-          <p className="text-gray-100 text-xl max-w-lg mt-5">
+          <p className="text-gray-100 text-lg lg:text-2xl max-w-2xl mt-5">
             Are you struggling with weight loss and looking for a clinically
             proven solution? At VitalCare Health, our GLP-1 Weight Management
             Program helps you achieve lasting results with FDA-approved GLP-1

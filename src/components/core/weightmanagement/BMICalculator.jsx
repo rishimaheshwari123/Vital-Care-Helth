@@ -25,9 +25,9 @@ export default function BmiCalculator() {
   };
 
   return (
-    <div className="">
+    <div className="py-10">
       <div className="p-5 max-w-7xl mx-auto">
-        <div className="flex flex-col justify-center items-center md:flex-row min-h-[70vh]">
+        <div className="flex flex-col justify-center items-center md:flex-row">
           {/* Left Side Content */}
           <div className="p-6 text-center md:text-left md:w-1/2">
             <h1 className="text-4xl text-black font-bold">

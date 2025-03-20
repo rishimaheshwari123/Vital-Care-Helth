@@ -349,31 +349,27 @@ const Navbar = () => {
       </div>
 
       {hoveredSubmenu.length > 0 && (
-        <div className="min-w-[70vw] mx-auto">
+        <div className="max-w-[50vw] mx-auto">
           <div
             className="fixed left-0 min-h-[20px] min-w-full top-[100px] z-[999999]"
             onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
             onMouseLeave={handleMouseLeave}
           ></div>
           <div
-            className="bg-white shadow-lg fixed left-[29%] px-6 py-4 right-[32%] top-[120px] z-[99999]"
+            className="bg-white p-1 shadow-lg w-full fixed left-[29%] max-w-[40vw] right-[32%] top-[110px] transform z-[99999]"
             onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
             onMouseLeave={handleMouseLeave}
           >
             <div
-              className={`grid gap-2 ${
-                hoveredSubmenu.some(
-                  (item) => item.name === "About VitalCare Health"
-                )
-                  ? "grid-cols-2 "
-                  : "grid-cols-3"
+              className={`grid gap-3 ${
+                hoveredSubmenu.length <= 4 ? "grid-cols-2" : "grid-cols-3"
               }`}
             >
               {hoveredSubmenu.map((subItem, subIndex) => (
                 <Link
                   key={subIndex}
                   href={subItem.to}
-                  className="flex justify-center rounded text-sm duration-200 hover:bg-[#0097a3c3] hover:text-white items-center px-4 py-2 transition-colors"
+                  className="flex rounded text-sm hover:bg-[#0097a3c3] hover:text-white items-center px-3 py-2 transition-colors"
                 >
                   {subItem.image ? (
                     <Image
@@ -382,9 +378,9 @@ const Navbar = () => {
                       className="h-5 w-5 mr-2"
                     />
                   ) : (
-                    subItem.icon
+                    <p className="text-lg">{subItem.icon}</p>
                   )}
-                  <span className="text-[17px] ml-2">{subItem.name}</span>
+                  <span className="text-[16px] ml-2">{subItem.name}</span>
                 </Link>
               ))}
             </div>

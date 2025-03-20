@@ -10,7 +10,7 @@ const GoogleReview = () => {
       );
       if (elfsightContainer) {
         elfsightContainer.style.width = "100%";
-        elfsightContainer.style.clipPath = "inset(7px 0 0 0)";
+        elfsightContainer.style.clipPath = "inset(30px 0 0 0)";
       }
     };
 

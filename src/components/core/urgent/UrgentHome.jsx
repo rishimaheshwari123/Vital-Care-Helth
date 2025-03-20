@@ -10,6 +10,7 @@ export default function UrgentHome() {
           src="./Urgent.mp4"
           autoPlay
           muted
+          loop
           className="h-full w-full absolute object-cover"
         />
         <div className="bg-gradient-to-b absolute from-black/40 inset-0 to-black/60 via-black/50"></div>
@@ -27,13 +28,16 @@ export default function UrgentHome() {
           <h2 className="text-2xl text-cyan-400 font-bold leading-tight lg:text-3xl">
             Focused on Patients.
           </h2>
-          <p className="text-white text-xl leading-relaxed mt-5">
+          <p className="text-lg text-white leading-relaxed lg:text-xl mt-5">
             When urgent healthcare needs arise, VitalCare Health is here to
             offer swift and responsive medical attention. Our clinic specializes
-            in addressing urgent medical concerns, ensuring you receive timely
-            care for non-life-threatening conditions. Located in Tyrone, GA, our
-            team of dedicated healthcare professionals is committed to providing
-            comprehensive and compassionate urgent care services.
+            in addressing urgent medical concerns{" "}
+            <span className="hidden lg:inline">
+              , ensuring you receive timely care for non-life-threatening
+              conditions.Located in Tyrone, GA, our team of dedicated healthcare
+              professionals is committed to providing comprehensive and
+              compassionate urgent care services.
+            </span>
           </p>
           <br />
 
@@ -42,7 +46,7 @@ export default function UrgentHome() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="bg-[#0097a3c3] rounded-lg shadow-md text-lg text-white cursor-pointer duration-300 font-semibold hover:bg-[#5aaabd] inline-block mt-6 px-8 py-3 transition">
+            <span className="bg-[#0097a3c3] rounded-lg shadow-md text-center text-lg text-white cursor-pointer duration-300 font-semibold hover:bg-[#5aaabd] inline-block mt-6 px-8 py-3 transition">
               ACCEPTING NEW PATIENTS NOW!
             </span>
           </Link>
