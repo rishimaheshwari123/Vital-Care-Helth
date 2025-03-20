@@ -93,12 +93,12 @@ const Navbar = () => {
     {
       name: "About VitalCare Health",
       to: "/about",
-      image: doctor,
+      image: vital,
     },
     {
       name: "Meet Our Founder",
       to: "/founder",
-      image: vital,
+      image: doctor,
     },
   ];
 
@@ -365,7 +365,7 @@ const Navbar = () => {
                 hoveredSubmenu.some(
                   (item) => item.name === "About VitalCare Health"
                 )
-                  ? "grid-cols-2"
+                  ? "grid-cols-2 "
                   : "grid-cols-3"
               }`}
             >
@@ -373,7 +373,7 @@ const Navbar = () => {
                 <Link
                   key={subIndex}
                   href={subItem.to}
-                  className="flex rounded text-sm duration-200 hover:bg-[#0097a3c3] hover:text-white items-center px-4 py-2 transition-colors"
+                  className="flex justify-center rounded text-sm duration-200 hover:bg-[#0097a3c3] hover:text-white items-center px-4 py-2 transition-colors"
                 >
                   {subItem.image ? (
                     <Image
@@ -384,7 +384,7 @@ const Navbar = () => {
                   ) : (
                     subItem.icon
                   )}
-                  <span className="ml-2">{subItem.name}</span>
+                  <span className="text-[17px] ml-2">{subItem.name}</span>
                 </Link>
               ))}
             </div>

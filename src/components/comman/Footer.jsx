@@ -89,7 +89,7 @@ const Footer = () => {
                 >
                   {/* <SiMaplibre size={22} className="text-[#0097a3c3]" /> */}
                   <img
-                    src="https://media.istockphoto.com/id/1148705812/vector/location-icon-vector-pin-sign-isolated-on-white-background-navigation-map-gps-direction.jpg?s=612x612&w=0&k=20&c=lqEIzW3QedZfytsX30NoBJbHxZZbWnlLsvEiwOSbaow="
+                    src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png"
                     alt=""
                   />
                 </Link>

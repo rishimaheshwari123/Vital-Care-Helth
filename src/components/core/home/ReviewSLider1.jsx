@@ -20,18 +20,24 @@ const data = [
   {
     id: 2,
     image: r2,
+    title: "Personalized Health Plans",
+
     description:
       "Custom diet and fitness plans designed for long-term well-being. Get recommendations based on your unique body needs and lifestyle preferences. Our expert team assesses your health history, dietary patterns, ",
   },
   {
     id: 3,
     image: r3,
+    title: "Expert Healthcare Guidance",
+
     description:
       "Access top doctors and dietitians for professional health advice. Our approach ensures you receive medically-backed recommendations that align with your personal health goals. From  .",
   },
   {
     id: 4,
     image: r4,
+    title: "Sustainable Lifestyle Changes",
+
     description:
       "Adopt lasting healthy habits with science-backed recommendations. Make small, manageable changes for a lifetime of wellness. Our program encourages gradual improvements in your .",
   },
