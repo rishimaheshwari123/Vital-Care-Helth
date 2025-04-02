@@ -24,10 +24,10 @@ const treatments = [
     link: "services/urgent-care-needs",
   },
   {
-    title: "COVID-19 Testing",
-    desc: "Safe and efficient testing for COVID-19, ensuring early detection and appropriate care.",
-    image: a2,
-    link: "services/covid-19-testing",
+    title: "Weight Management",
+    desc: "Personalized plans for weight loss and maintenance, with guidance on nutrition, exercise, and lifestyle changes.",
+    image: a6,
+    link: "services/weight-management",
   },
   {
     title: "Annual Physicals",
@@ -48,11 +48,12 @@ const treatments = [
     link: "services/sports-physicals",
   },
   {
-    title: "Weight Management",
-    desc: "Personalized plans for weight loss and maintenance, with guidance on nutrition, exercise, and lifestyle changes.",
-    image: a6,
-    link: "services/weight-management",
+    title: "COVID-19 Testing",
+    desc: "Safe and efficient testing for COVID-19, ensuring early detection and appropriate care.",
+    image: a2,
+    link: "services/covid-19-testing",
   },
+
   {
     title: "In-House Labs",
     desc: "Convenient and accurate testing with our in-house labs.",

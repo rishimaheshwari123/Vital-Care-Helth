@@ -13,9 +13,14 @@ const TopHeader = () => {
               <Zoom triggerOnce>
                 <div className="flex items-center space-x-2">
                   <FiMapPin className="text-white text-xl" />
-                  <span className="font-semibold">
+                  <a
+                    href="https://g.co/kgs/fjZMb8X"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-white"
+                  >
                     1130 Senoia Road Suite B4 Tyrone GA 30290
-                  </span>
+                  </a>
                 </div>
               </Zoom>
               <Zoom triggerOnce delay={100}>
@@ -102,6 +107,17 @@ const TopHeader = () => {
       {/* Mobile Header */}
       <div className="bg-[#c5dee4] text-black md:hidden pb-[10px] px-2">
         <div className="flex flex-wrap justify-between items-center space-x-4">
+          <div className="flex items-center space-x-2">
+            <FiMapPin className="text-black text-xl" />
+            <a
+              href="https://g.co/kgs/fjZMb8X"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-black"
+            >
+              1130 Senoia Road Suite B4 Tyrone GA 30290
+            </a>
+          </div>
           {/* <div className="flex items-center space-x-2">
             <FiMapPin className="text-red-600 text-xl animate-pulse" />
             <span className="font-semibold">B4 Tyrone GA</span>

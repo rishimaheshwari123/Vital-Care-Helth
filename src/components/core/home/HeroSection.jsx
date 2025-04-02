@@ -22,12 +22,12 @@ export default function HeroSection() {
             Your Health Is Our Priority
           </h1>
 
-          <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-white leading-tight">
+          {/* <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-white leading-tight">
             Locally Owned <br />
             <span className="text-cyan-300">by Doctors.</span> <br />
             <span className="text-cyan-400">Focused</span> <br />
             <span className="text-cyan-500">on Patients.</span>
-          </h2>
+          </h2> */}
 
           <p className="mt-4 text-white text-lg leading-relaxed">
             Experience the difference{" "}

@@ -45,9 +45,9 @@ const Navbar = () => {
       icon: <FaStethoscope />,
     },
     {
-      name: "COVID-19 Testing",
-      to: "/services/covid-19-testing",
-      icon: <FaSyringe />,
+      name: "Weight Management",
+      to: "/services/weight-management",
+      icon: <FaWeight />,
     },
     {
       name: "Annual Physicals",
@@ -65,10 +65,11 @@ const Navbar = () => {
       icon: <FaRunning />,
     },
     {
-      name: "Weight Management",
-      to: "/services/weight-management",
-      icon: <FaWeight />,
+      name: "COVID-19 Testing",
+      to: "/services/covid-19-testing",
+      icon: <FaSyringe />,
     },
+
     { name: "In-House Labs", to: "/services/in-house-labs", icon: <FaFlask /> },
     {
       name: "Diabetes Management",
