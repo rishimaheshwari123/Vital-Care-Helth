@@ -31,9 +31,9 @@ const Wrapper = ({ children }) => {
   return (
     <div>
       <Navbar />
-      {/* {showModal && (
+      {showModal && (
         <InquiryForm onClose={handleCloseModal} showModal={showModal} />
-      )} */}
+      )}
       <div className="mt-32">{children}</div>
 
       <Footer />

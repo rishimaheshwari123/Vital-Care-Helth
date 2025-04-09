@@ -22,7 +22,8 @@ const sendContactForm = async (formData) => {
   });
   try {
     const response = await axios.post(
-      "http://localhost:8080/api/v1/contact/create",
+      // "http://localhost:8080/api/v1/contact/create",
+      "https://vital-care-helth.onrender.com/api/v1/contact/create",
       formData
     );
     if (response?.data) {
