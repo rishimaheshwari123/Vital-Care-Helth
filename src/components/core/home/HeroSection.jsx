@@ -29,12 +29,12 @@ export default function HeroSection() {
             <span className="text-cyan-500">on Patients.</span>
           </h2> */}
 
-          <p className="mt-4 text-white text-lg leading-relaxed">
+          {/* <p className="mt-4 text-white text-lg leading-relaxed">
             Experience the difference{" "}
             <span className="font-semibold text-cyan-300">doctor-designed</span>{" "}
             care can make.
-          </p>
-
+          </p> */}
+          <br />
           {/* CTA Button with Icon */}
           <Link
             href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"

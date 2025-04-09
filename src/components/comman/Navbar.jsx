@@ -152,7 +152,7 @@ const Navbar = () => {
               <Link href="/" className="text-xl">
                 <Image
                   src={logo || "/placeholder.svg"}
-                  className="w-48 duration-300 hover:scale-110 transition-transform"
+                  className="w-64"
                   alt="Logo"
                 />
               </Link>

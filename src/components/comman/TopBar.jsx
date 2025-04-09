@@ -105,7 +105,7 @@ const TopHeader = () => {
       </Fade>
 
       {/* Mobile Header */}
-      <div className="bg-[#c5dee4] text-black md:hidden pb-[10px] px-2">
+      <div className="bg-[#c5dee4] text-black md:hidden pb-[10px] px-2 py-1">
         <div className="flex flex-wrap justify-between items-center space-x-4">
           <div className="flex items-center space-x-2">
             <FiMapPin className="text-black text-xl" />
@@ -113,7 +113,7 @@ const TopHeader = () => {
               href="https://g.co/kgs/fjZMb8X"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-black"
+              className="font-semibold text-[14px] text-black"
             >
               1130 Senoia Road Suite B4 Tyrone GA 30290
             </a>
@@ -138,7 +138,7 @@ const TopHeader = () => {
             <FiPhone className="text-green-600 text-xl" />
             <a
               href="tel:+14708513800"
-              className="font-semibold hover:underline"
+              className="font-semibold text-[14px] hover:underline"
             >
               +1 (470) 851-3800
             </a>
