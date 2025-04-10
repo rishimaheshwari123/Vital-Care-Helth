@@ -197,3 +197,39 @@ export default function Telemedicine() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title:
+      "Telemedicine Services in Georgia | Virtual Care by VitalCare Health",
+    description:
+      "Access primary and urgent care from home with VitalCare Health’s telemedicine services. Available to patients across Georgia. Book your virtual visit today!",
+    keywords:
+      "telemedicine, virtual doctor consultation, online doctor Georgia, urgent care telehealth, remote primary care, chronic disease management, telehealth Georgia, online prescription, video doctor visit, VitalCare Health",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/telemedicine",
+      title:
+        "Online Doctor Visits | Telemedicine in Georgia | VitalCare Health",
+      description:
+        "Experience convenient virtual healthcare from your home. Telemedicine for urgent and primary care appointments now available at VitalCare Health in Georgia.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Telemedicine consultation with VitalCare Health provider",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Virtual Healthcare at Home | VitalCare Health Telemedicine",
+      description:
+        "Book online doctor appointments for urgent and primary care. Telemedicine now available across Georgia at VitalCare Health.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

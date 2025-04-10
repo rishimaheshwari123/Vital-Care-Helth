@@ -183,3 +183,38 @@ export default function FluTesting() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title:
+      "Flu Testing & Treatment | Rapid Flu Diagnosis & Care | VitalCare Health",
+    description:
+      "Get fast and reliable flu testing and treatment at VitalCare Health. We offer flu nasal swabs, rapid antigen tests, antiviral medication, and flu vaccines—all in one convenient location.",
+    keywords:
+      "flu testing, flu treatment, rapid flu test, flu nasal swab, flu vaccine, influenza care, flu symptoms, flu diagnosis, urgent care flu, flu medication, flu shot near me, flu antigen test, influenza testing and treatment, flu detection, VitalCare Health flu clinic",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/flu-testing-treatment",
+      title: "Flu Testing & Treatment | VitalCare Health",
+      description:
+        "VitalCare Health offers same-day flu testing, diagnosis, and treatment. Visit our clinic for rapid flu tests, vaccines, and professional care tailored to your symptoms.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Flu Testing - VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Flu Testing & Treatment | VitalCare Health",
+      description:
+        "Swift flu diagnosis and treatment available at VitalCare Health. Rapid tests, flu shots, and antiviral medication—get care when you need it most.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

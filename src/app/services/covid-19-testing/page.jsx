@@ -235,3 +235,38 @@ export default function Covid() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "COVID-19 Testing & Vaccination | Rapid Tests | VitalCare Health",
+    description:
+      "Get fast and reliable COVID-19 testing and vaccination at VitalCare Health. Rapid Antigen Tests, travel clearance, oxygen monitoring, and antiviral treatment—no appointment needed.",
+    keywords:
+      "COVID-19 testing, rapid COVID test, COVID-19 vaccine, travel COVID test, antigen testing, workplace COVID test, oxygen monitoring, antiviral medication for COVID, COVID diagnosis, urgent care COVID testing, same-day COVID test, VitalCare Health COVID services",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/covid-19-testing",
+      title:
+        "COVID-19 Testing & Vaccination | Reliable Rapid Tests | VitalCare",
+      description:
+        "Visit VitalCare Health for accurate COVID-19 testing and fast results. We offer vaccination, rapid antigen testing, and antiviral treatment—all in one visit.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "COVID-19 Testing at VitalCare",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "COVID-19 Testing | VitalCare Health",
+      description:
+        "Fast, walk-in COVID-19 tests and vaccines at VitalCare Health. Get diagnosed and treated quickly with same-day rapid results and expert care.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

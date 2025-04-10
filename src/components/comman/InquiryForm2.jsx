@@ -1,6 +1,5 @@
 "use client";
 import axios from "axios";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   FaTimes,
@@ -44,7 +43,7 @@ const sendContactForm = async (formData) => {
   }
 };
 
-export default function ContactForm({ onClose, showModal }) {
+export default function InquiryForm2({ onClose, enquiry }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -87,7 +86,7 @@ export default function ContactForm({ onClose, showModal }) {
     }
   };
 
-  if (!showModal) return null;
+  if (!enquiry) return null;
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -108,21 +107,6 @@ export default function ContactForm({ onClose, showModal }) {
         <div className="mb-6 text-center">
           <h2 className="text-[15px] font-semibold mb-2">Inquiry Form</h2>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
-          <Link
-            href="/urgent-care"
-            className="w-full text-center p-2 bg-[#f97316] text-white rounded-md hover:bg-[#ea580c] transition"
-          >
-            Urgent Care
-          </Link>
-          <Link
-            href="/weight-management"
-            className="w-full text-center p-2 bg-[#10b981] text-white rounded-md hover:bg-[#059669] transition"
-          >
-            Weight Management
-          </Link>
-        </div>
-
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label

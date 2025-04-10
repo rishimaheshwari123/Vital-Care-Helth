@@ -179,3 +179,38 @@ export default function SportPhysicals() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "Sports Physicals | Youth Athlete Exams | VitalCare Health",
+    description:
+      "Ensure your child's safety and readiness with a comprehensive sports physical at VitalCare Health. Walk-in and scheduled options available. Get cleared for the season today.",
+    keywords:
+      "sports physicals, pre-participation physicals, youth sports exams, school sports physical, athletic clearance, sports checkup, musculoskeletal exam, blood pressure check, vision screening, child physical exam, walk-in sports physical, VitalCare Health, physical for athletes, sports physical form, sports health exam",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/sports-physicals",
+      title:
+        "Sports Physicals | Athletic Clearance for Kids | VitalCare Health",
+      description:
+        "Get your child ready for the season with expert sports physicals at VitalCare Health. Full exam, health history evaluation, and sports form completion included.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Sports Physical - VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Sports Physicals | VitalCare Health",
+      description:
+        "Fast, reliable sports physicals for kids at VitalCare Health. Comprehensive exams, musculoskeletal checks, and school form completion—all in one visit.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

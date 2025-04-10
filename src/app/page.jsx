@@ -27,21 +27,37 @@ const Home = () => {
 };
 
 export default Home;
+
 export const generateMetadata = () => {
   return {
-    title: "VitalCare Health",
-    description: "VitalCare Health",
-    keywords: "VitalCare Health",
-    url: "https://palakchoudhary52.wixsite.com",
-    image: "/android-chrome-192x192.png",
+    title: "VitalCare Health | Comprehensive Urgent Care & Wellness Services",
+    description:
+      "VitalCare Health provides quality healthcare services including urgent care, weight management, diabetes care, flu testing, telemedicine, and more. Your trusted partner in health and wellness.",
+    keywords:
+      "VitalCare Health, urgent care, weight management, annual physicals, flu testing, flu treatment, sports physicals, COVID-19 testing, in-house labs, diabetes management, sore throat, gastrointestinal issues, telemedicine, migraine relief, healthcare services, primary care, wellness clinic",
 
-    // Open Graph Tags
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
     openGraph: {
       type: "website",
-      url: "VitalCare Health",
-      title: "VitalCare Health",
-      description: "VitalCare Health",
-      image: "/android-chrome-192x192.png",
+      url: "https://palakchoudhary52.wixsite.com",
+      title: "VitalCare Health | Comprehensive Urgent Care & Wellness Services",
+      description:
+        "VitalCare Health offers comprehensive urgent care and wellness services like flu testing, diabetes care, physicals, and more.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "VitalCare Health | Urgent Care & Wellness Clinic",
+      description:
+        "Explore healthcare services at VitalCare Health, including urgent care, telemedicine, migraine relief, and more.",
+      images: ["/android-chrome-192x192.png"],
     },
   };
 };

@@ -173,3 +173,37 @@ export default function SoreThroat() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "Sore Throat & Strep Throat Treatment | VitalCare Health",
+    description:
+      "Get fast relief for sore throat symptoms at VitalCare Health. We offer rapid strep tests, throat cultures, pain relief, and antibiotic treatments tailored to your needs.",
+    keywords:
+      "sore throat treatment, strep throat test, rapid strep test, throat culture, throat pain relief, urgent care sore throat, sore throat medication, strep throat Tyrone GA, VitalCare Health, antibiotics for sore throat, throat sprays and gargles",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/sore-throat",
+      title: "Urgent Care for Sore Throat & Strep | VitalCare Health",
+      description:
+        "VitalCare Health provides expert sore throat and strep throat treatment, including rapid tests, pain relief, and antibiotics. Walk in or book online today.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Sore throat care at VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Strep & Sore Throat Relief | VitalCare Health",
+      description:
+        "From throat cultures to soothing sprays, get complete sore throat care at VitalCare Health. Trusted treatment in Tyrone, GA.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

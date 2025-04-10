@@ -134,3 +134,36 @@ const Migraine = () => {
 };
 
 export default Migraine;
+export const generateMetadata = () => {
+  return {
+    title: "Migraine Relief & Treatment | VitalCare Health",
+    description:
+      "Get effective migraine relief at VitalCare Health. We offer diagnosis, prescription treatment, Botox therapy, and trigger management to help you live pain-free.",
+    keywords:
+      "migraine relief, migraine treatment, Botox for migraines, chronic migraines, migraine medication, headache therapy, migraine triggers, VitalCare Health, online migraine doctor, migraine evaluation",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/migraine-relief",
+      title: "Effective Migraine Relief & Treatment | VitalCare Health",
+      description:
+        "Struggling with migraines? Our experts provide personalized migraine care, Botox injections, lifestyle management, and online follow-ups for lasting relief.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Migraine relief consultation at VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Migraine Relief That Works | VitalCare Health",
+      description:
+        "Discover lasting relief from chronic migraines with expert care from VitalCare Health. Botox, medication, and trigger management available.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

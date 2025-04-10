@@ -183,3 +183,37 @@ export default function InHouseLab() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "In-House Lab Testing | Fast Diagnostic Services | VitalCare Health",
+    description:
+      "VitalCare Health offers in-house lab testing for fast, accurate diagnosis. Blood tests, urine analysis, rapid diagnostics, and COVID-19 tests—all at one location in Tyrone, GA.",
+    keywords:
+      "in-house lab, diagnostic lab testing, blood tests, urine tests, rapid diagnostic test, on-site lab, urgent care labs, COVID-19 PCR test, strep test, flu test, pregnancy test, VitalCare Health lab services, Tyrone GA healthcare",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/in-house-labs",
+      title: "On-Site Lab Testing | Fast & Reliable | VitalCare Health",
+      description:
+        "Access quick and accurate diagnostic testing at VitalCare Health with our in-house lab. Get blood work, urine tests, and rapid results with no extra travel or delays.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "VitalCare In-House Lab Services",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "In-House Lab Testing | VitalCare Health",
+      description:
+        "On-site lab testing for blood, urine, and rapid diagnostics at VitalCare Health. Walk in for fast results and personalized treatment in Tyrone, GA.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

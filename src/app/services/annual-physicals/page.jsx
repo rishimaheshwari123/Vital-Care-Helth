@@ -228,3 +228,37 @@ export default function Annual() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "Annual Physicals | Preventive Health Exams | VitalCare Health",
+    description:
+      "Stay proactive about your health with annual physical exams at VitalCare Health. Our expert team provides personalized checkups, lab tests, and screenings to detect health risks early and ensure your overall wellness.",
+    keywords:
+      "annual physicals, preventive care, physical exam, health checkup, yearly health exam, primary care physical, medical examination, lab tests, blood pressure monitoring, vision screening, health risk detection, COVID testing, cholesterol test, diabetes screening, wellness exams, blood work, VitalCare Health annual checkup",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/annual-physicals",
+      title: "Annual Physical Exams | VitalCare Health",
+      description:
+        "VitalCare Health offers comprehensive annual physicals to monitor your health, detect risks early, and support long-term wellness. Book your exam today.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Annual Physical - VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Annual Physicals | VitalCare Health",
+      description:
+        "Get your annual checkup with VitalCare Health. We provide personalized exams, lab tests, and early detection to keep you healthy year-round.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};

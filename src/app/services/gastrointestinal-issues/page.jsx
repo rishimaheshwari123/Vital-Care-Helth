@@ -133,3 +133,37 @@ export default function Gastrointestinal() {
     </div>
   );
 }
+
+export const generateMetadata = () => {
+  return {
+    title: "Gastrointestinal Care & Digestive Health | VitalCare Health",
+    description:
+      "Expert treatment for gastrointestinal issues including IBS, acid reflux, liver and gallbladder conditions, and more at VitalCare Health in Tyrone, GA.",
+    keywords:
+      "gastrointestinal care, digestive health, acid reflux treatment, IBS management, colonoscopy, endoscopy, liver health, gallbladder treatment, GI specialist Tyrone GA, stomach pain treatment, gut health, VitalCare Health",
+
+    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    openGraph: {
+      type: "website",
+      url: "https://palakchoudhary52.wixsite.com/services/gastrointestinal-issues",
+      title: "GI & Digestive Health Treatment | VitalCare Health",
+      description:
+        "Personalized care for acid reflux, IBS, ulcers, and chronic digestive issues. Book a GI consultation today at VitalCare Health in Tyrone, GA.",
+      images: [
+        {
+          url: "/android-chrome-192x192.png",
+          width: 192,
+          height: 192,
+          alt: "Gastrointestinal health checkup at VitalCare Health",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: "Digestive Care & GI Treatment | VitalCare Health",
+      description:
+        "Manage digestive conditions like reflux and IBS with expert gastrointestinal care at VitalCare Health. Book a consult now.",
+      images: ["/android-chrome-192x192.png"],
+    },
+  };
+};
