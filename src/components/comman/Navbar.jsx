@@ -205,7 +205,7 @@ const Navbar = () => {
           <Link href="/" className="text-xl">
             <Image
               src={logo || "/placeholder.svg"}
-              className="w-52 duration-300 hover:scale-110 transition-transform"
+              className="w-64 duration-300 hover:scale-110 transition-transform"
               alt="Logo"
             />
           </Link>
