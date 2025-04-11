@@ -152,7 +152,7 @@ const Navbar = () => {
               <Link href="/" className="text-xl">
                 <Image
                   src={logo || "/placeholder.svg"}
-                  className="w-64"
+                  className="w-80"
                   alt="Logo"
                 />
               </Link>

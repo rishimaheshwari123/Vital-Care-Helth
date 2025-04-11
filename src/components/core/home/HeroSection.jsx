@@ -1,12 +1,13 @@
 import Image from "next/image";
 import hero from "@/assets/banner.jpg";
+import topLogo from "@/assets/toplogo.avif"; // Make sure this is in your assets
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa"; // Importing icon
+import { FaArrowRight } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
     <div className="h-screen relative">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
           src={hero}
@@ -16,26 +17,27 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60"></div>
       </div>
 
+      {/* Top Right Box */}
+      <div className="absolute top-12 right-0.5 lg:right-5 bg-white p-4 rounded-lg shadow-lg max-w-sm w-full flex flex-col items-center text-center z-20">
+        <p className="text-sm text-gray-800 mb-3">
+          <span className="font-semibold">Proudly part of Piedmont</span>,
+          provides fast, expert medical care near you. Walk in anytime for
+          top-quality treatment from trusted professionals!
+        </p>
+        <Image
+          src={topLogo}
+          alt="Top Logo"
+          className="w-40 h-auto object-contain"
+        />
+      </div>
+
+      {/* Hero Main Content */}
       <div className="relative z-10 flex items-center h-full px-6 lg:px-20">
         <div className="max-w-3xl text-left">
           <h1 className="text-4xl lg:text-6xl font-extrabold text-cyan-400 drop-shadow-lg">
             Your Health Is Our Priority
           </h1>
 
-          {/* <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Locally Owned <br />
-            <span className="text-cyan-300">by Doctors.</span> <br />
-            <span className="text-cyan-400">Focused</span> <br />
-            <span className="text-cyan-500">on Patients.</span>
-          </h2> */}
-
-          {/* <p className="mt-4 text-white text-lg leading-relaxed">
-            Experience the difference{" "}
-            <span className="font-semibold text-cyan-300">doctor-designed</span>{" "}
-            care can make.
-          </p> */}
-          <br />
-          {/* CTA Button with Icon */}
           <Link
             href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
             target="_blank"

@@ -21,7 +21,7 @@ const treatments = [
     title: "Urgent Care Needs",
     desc: "Prompt care for immediate medical concerns, ensuring timely attention and relief.",
     image: a1,
-    link: "services/urgent-care-needs",
+    link: "/urgent-care",
   },
   {
     title: "Weight Management",

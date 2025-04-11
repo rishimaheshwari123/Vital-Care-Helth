@@ -35,7 +35,7 @@ const Wrapper = ({ children }) => {
 
       <button
         onClick={() => setEnquiry(true)}
-        className="fixed cursor-pointer bottom-4 -right-10 transform -translate-x-1/2 bg-[#0097a3c3] text-white px-6 py-3 rounded-full shadow-lg z-50"
+        className="fixed cursor-pointer bottom-4 -right-10 transform -translate-x-1/2 bg-red-600 text-white px-6 py-3 rounded-full shadow-lg z-50"
       >
         Get Inquiry
       </button>
