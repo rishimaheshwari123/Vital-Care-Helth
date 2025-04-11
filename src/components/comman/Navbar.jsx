@@ -226,7 +226,7 @@ const Navbar = () => {
           <div className="flex border-b border-gray-200 justify-between items-center px-6 py-4">
             <Image
               src={logo || "/placeholder.svg"}
-              className="w-32"
+              className="w-48"
               alt="Logo"
             />
             <button onClick={() => setIsSidebarOpen(false)}>

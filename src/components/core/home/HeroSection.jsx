@@ -33,7 +33,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="block lg:hidden">
-        <div className="absolute top-10 right-0 lg:top-12 lg:right-5 bg-white p-4 rounded-lg shadow-lg sm:max-w-none w-[90vw] flex flex-col items-center text-center z-20 left-1/2 transform -translate-x-1/2">
+        <div className="absolute top-16 right-0 lg:top-12 lg:right-5 bg-white p-4 rounded-lg shadow-lg sm:max-w-none w-[90vw] flex flex-col items-center text-center z-20 left-1/2 transform -translate-x-1/2">
           <p className="text-sm text-gray-800 mb-3">
             <span className="font-semibold">Proudly part of Piedmont</span>,
             provides fast, expert medical care near you. Walk in anytime for
