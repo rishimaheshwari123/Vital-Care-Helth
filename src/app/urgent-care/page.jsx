@@ -22,10 +22,10 @@ export const generateMetadata = () => {
     keywords:
       "Urgent care Tyrone GA, walk-in clinic, same-day doctor appointment, minor injuries treatment, sore throat, fever, cough, allergic reactions, conjunctivitis, diarrhea, vomiting, sinus infection, urinary symptoms, non-emergency care, urgent medical help, VitalCare Health urgent care, STI concerns, skin rashes, abdominal pain, earache, sunburn, minor burns",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/urgent-care",
+      url: "http://vitalcarega.com/urgent-care",
       title: "Urgent Care Services | VitalCare Health | Tyrone, GA",
       description:
         "Same-day appointments and walk-in urgent care at VitalCare Health. Get timely treatment for cough, fever, infections, and minor injuries in Tyrone, GA.",

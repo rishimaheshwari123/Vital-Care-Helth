@@ -207,10 +207,10 @@ export const generateMetadata = () => {
     keywords:
       "telemedicine, virtual doctor consultation, online doctor Georgia, urgent care telehealth, remote primary care, chronic disease management, telehealth Georgia, online prescription, video doctor visit, VitalCare Health",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/telemedicine",
+      url: "http://vitalcarega.com/services/telemedicine",
       title:
         "Online Doctor Visits | Telemedicine in Georgia | VitalCare Health",
       description:

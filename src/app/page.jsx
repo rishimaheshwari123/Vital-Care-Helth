@@ -36,10 +36,10 @@ export const generateMetadata = () => {
     keywords:
       "VitalCare Health, urgent care, weight management, annual physicals, flu testing, flu treatment, sports physicals, COVID-19 testing, in-house labs, diabetes management, sore throat, gastrointestinal issues, telemedicine, migraine relief, healthcare services, primary care, wellness clinic",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com",
+      url: "http://vitalcarega.com",
       title: "VitalCare Health | Comprehensive Urgent Care & Wellness Services",
       description:
         "VitalCare Health offers comprehensive urgent care and wellness services like flu testing, diabetes care, physicals, and more.",

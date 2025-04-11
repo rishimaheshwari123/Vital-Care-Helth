@@ -192,10 +192,10 @@ export const generateMetadata = () => {
     keywords:
       "in-house lab, diagnostic lab testing, blood tests, urine tests, rapid diagnostic test, on-site lab, urgent care labs, COVID-19 PCR test, strep test, flu test, pregnancy test, VitalCare Health lab services, Tyrone GA healthcare",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/in-house-labs",
+      url: "http://vitalcarega.com/services/in-house-labs",
       title: "On-Site Lab Testing | Fast & Reliable | VitalCare Health",
       description:
         "Access quick and accurate diagnostic testing at VitalCare Health with our in-house lab. Get blood work, urine tests, and rapid results with no extra travel or delays.",

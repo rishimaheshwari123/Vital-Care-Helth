@@ -142,10 +142,10 @@ export const generateMetadata = () => {
     keywords:
       "migraine relief, migraine treatment, Botox for migraines, chronic migraines, migraine medication, headache therapy, migraine triggers, VitalCare Health, online migraine doctor, migraine evaluation",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/migraine-relief",
+      url: "http://vitalcarega.com/services/migraine-relief",
       title: "Effective Migraine Relief & Treatment | VitalCare Health",
       description:
         "Struggling with migraines? Our experts provide personalized migraine care, Botox injections, lifestyle management, and online follow-ups for lasting relief.",

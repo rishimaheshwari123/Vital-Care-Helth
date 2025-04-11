@@ -20,10 +20,10 @@ export const generateMetadata = () => {
     keywords:
       "VitalCare Health, about VitalCare, urgent care center, primary care clinic, weight management, holistic healthcare, patient-centered care, experienced doctors, compassionate medical care, chronic condition support, wellness journey, telemedicine, personalized healthcare, healthcare mission, health empowerment",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/about",
+      url: "http://vitalcarega.com/about",
       title: "About Us | VitalCare Health - Your Partner in Wellness",
       description:
         "Discover the story behind VitalCare Health. From expert urgent care to holistic weight management, we’re here to inspire healthier lives.",

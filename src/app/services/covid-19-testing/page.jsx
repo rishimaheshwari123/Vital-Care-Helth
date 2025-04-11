@@ -244,10 +244,10 @@ export const generateMetadata = () => {
     keywords:
       "COVID-19 testing, rapid COVID test, COVID-19 vaccine, travel COVID test, antigen testing, workplace COVID test, oxygen monitoring, antiviral medication for COVID, COVID diagnosis, urgent care COVID testing, same-day COVID test, VitalCare Health COVID services",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/covid-19-testing",
+      url: "http://vitalcarega.com/services/covid-19-testing",
       title:
         "COVID-19 Testing & Vaccination | Reliable Rapid Tests | VitalCare",
       description:

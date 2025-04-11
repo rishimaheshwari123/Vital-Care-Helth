@@ -1,6 +1,6 @@
 
 export default function robots() {
-  const baseURL = "https://palakchoudhary52.wixsite.com";
+  const baseURL = "http://vitalcarega.com";
   return {
     rules: {
       userAgent: "*",

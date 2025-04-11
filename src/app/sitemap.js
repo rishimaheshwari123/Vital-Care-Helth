@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseURL = "https://palakchoudhary52.wixsite.com";
+  const baseURL = "http://vitalcarega.com";
 
   return [
     { url: `${baseURL}/`, lastModified: new Date() },

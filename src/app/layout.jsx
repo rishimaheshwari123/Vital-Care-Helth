@@ -14,7 +14,7 @@ export const generateMetadata = () => {
     title: "VitalCare Health",
     description: "VitalCare Health",
     keywords: "VitalCare Health",
-    url: "https://palakchoudhary52.wixsite.com",
+    url: "http://vitalcarega.com",
     image: "/android-chrome-192x192.png",
 
     // Open Graph Tags

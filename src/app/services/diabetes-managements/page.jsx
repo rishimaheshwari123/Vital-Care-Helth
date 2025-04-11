@@ -24,10 +24,10 @@ export const generateMetadata = () => {
     keywords:
       "diabetes management, blood sugar testing, insulin therapy, continuous glucose monitoring, CGM, diabetes medication, nutrition counseling, diabetes care Tyrone GA, VitalCare Health, diabetes treatment, online diabetes follow-up",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/diabetes-managements",
+      url: "http://vitalcarega.com/services/diabetes-managements",
       title:
         "Personalized Diabetes Care | Blood Sugar Control | VitalCare Health",
       description:

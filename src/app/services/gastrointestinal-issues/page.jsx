@@ -142,10 +142,10 @@ export const generateMetadata = () => {
     keywords:
       "gastrointestinal care, digestive health, acid reflux treatment, IBS management, colonoscopy, endoscopy, liver health, gallbladder treatment, GI specialist Tyrone GA, stomach pain treatment, gut health, VitalCare Health",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/gastrointestinal-issues",
+      url: "http://vitalcarega.com/services/gastrointestinal-issues",
       title: "GI & Digestive Health Treatment | VitalCare Health",
       description:
         "Personalized care for acid reflux, IBS, ulcers, and chronic digestive issues. Book a GI consultation today at VitalCare Health in Tyrone, GA.",

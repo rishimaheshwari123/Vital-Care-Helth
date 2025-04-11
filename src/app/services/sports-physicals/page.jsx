@@ -188,10 +188,10 @@ export const generateMetadata = () => {
     keywords:
       "sports physicals, pre-participation physicals, youth sports exams, school sports physical, athletic clearance, sports checkup, musculoskeletal exam, blood pressure check, vision screening, child physical exam, walk-in sports physical, VitalCare Health, physical for athletes, sports physical form, sports health exam",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/sports-physicals",
+      url: "http://vitalcarega.com/services/sports-physicals",
       title:
         "Sports Physicals | Athletic Clearance for Kids | VitalCare Health",
       description:

@@ -182,10 +182,10 @@ export const generateMetadata = () => {
     keywords:
       "sore throat treatment, strep throat test, rapid strep test, throat culture, throat pain relief, urgent care sore throat, sore throat medication, strep throat Tyrone GA, VitalCare Health, antibiotics for sore throat, throat sprays and gargles",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/sore-throat",
+      url: "http://vitalcarega.com/services/sore-throat",
       title: "Urgent Care for Sore Throat & Strep | VitalCare Health",
       description:
         "VitalCare Health provides expert sore throat and strep throat treatment, including rapid tests, pain relief, and antibiotics. Walk in or book online today.",

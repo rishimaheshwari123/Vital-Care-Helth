@@ -193,10 +193,10 @@ export const generateMetadata = () => {
     keywords:
       "flu testing, flu treatment, rapid flu test, flu nasal swab, flu vaccine, influenza care, flu symptoms, flu diagnosis, urgent care flu, flu medication, flu shot near me, flu antigen test, influenza testing and treatment, flu detection, VitalCare Health flu clinic",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/flu-testing-treatment",
+      url: "http://vitalcarega.com/services/flu-testing-treatment",
       title: "Flu Testing & Treatment | VitalCare Health",
       description:
         "VitalCare Health offers same-day flu testing, diagnosis, and treatment. Visit our clinic for rapid flu tests, vaccines, and professional care tailored to your symptoms.",

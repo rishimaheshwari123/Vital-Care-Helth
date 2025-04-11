@@ -21,10 +21,10 @@ export const generateMetadata = () => {
     keywords:
       "Dr. Hardik Parekh, VitalCare founder, medical director, board-certified physician, family medicine, emergency medicine, Piedmont Hospitals, public health, holistic healthcare, healthcare leadership, MD MPH, patient-centered care, urgent care expert, medical visionary, healthcare innovation",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "profile",
-      url: "https://palakchoudhary52.wixsite.com/founder",
+      url: "http://vitalcarega.com/founder",
       title: "Meet Our Founder | Dr. Hardik Parekh, MD, MPH",
       description:
         "Dr. Hardik Parekh, founder of VitalCare Health, brings over a decade of experience in family and emergency medicine. Discover his commitment to accessible, holistic healthcare.",

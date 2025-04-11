@@ -23,10 +23,10 @@ export const generateMetadata = () => {
     keywords:
       "GLP-1 weight loss, weight management program, FDA-approved weight loss, sustainable weight loss, appetite control, metabolism booster, BMI over 30, obesity treatment, VitalCare Health, weight loss clinic Tyrone GA, lose weight with GLP-1, obesity-related disease prevention, body mass index calculator, medical weight loss program",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/weight-management",
+      url: "http://vitalcarega.com/services/weight-management",
       title: "Weight Management | GLP-1 Program at VitalCare Health",
       description:
         "Transform your health with VitalCare Health's GLP-1 Weight Management Program. A science-backed approach to long-term, effective weight loss with expert support.",

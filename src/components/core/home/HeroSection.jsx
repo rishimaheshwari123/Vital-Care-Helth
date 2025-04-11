@@ -18,17 +18,33 @@ export default function HeroSection() {
       </div>
 
       {/* Top Right Box */}
-      <div className="absolute top-12 right-0.5 lg:right-5 bg-white p-4 rounded-lg shadow-lg max-w-sm w-full flex flex-col items-center text-center z-20">
-        <p className="text-sm text-gray-800 mb-3">
-          <span className="font-semibold">Proudly part of Piedmont</span>,
-          provides fast, expert medical care near you. Walk in anytime for
-          top-quality treatment from trusted professionals!
-        </p>
-        <Image
-          src={topLogo}
-          alt="Top Logo"
-          className="w-40 h-auto object-contain"
-        />
+      <div className="hidden lg:block">
+        <div className="absolute  lg:top-12 lg:right-5 bg-white p-4 rounded-lg shadow-lg lg:max-w-sm w-[90vw] flex flex-col items-center text-center z-20 ">
+          <p className="text-sm text-gray-800 mb-3">
+            <span className="font-semibold">Proudly part of Piedmont</span>,
+            provides fast, expert medical care near you. Walk in anytime for
+            top-quality treatment from trusted professionals!
+          </p>
+          <Image
+            src={topLogo}
+            alt="Top Logo"
+            className="w-56 h-auto object-contain"
+          />
+        </div>
+      </div>
+      <div className="block lg:hidden">
+        <div className="absolute top-10 right-0 lg:top-12 lg:right-5 bg-white p-4 rounded-lg shadow-lg sm:max-w-none w-[90vw] flex flex-col items-center text-center z-20 left-1/2 transform -translate-x-1/2">
+          <p className="text-sm text-gray-800 mb-3">
+            <span className="font-semibold">Proudly part of Piedmont</span>,
+            provides fast, expert medical care near you. Walk in anytime for
+            top-quality treatment from trusted professionals!
+          </p>
+          <Image
+            src={topLogo}
+            alt="Top Logo"
+            className="w-40 h-auto object-contain"
+          />
+        </div>
       </div>
 
       {/* Hero Main Content */}

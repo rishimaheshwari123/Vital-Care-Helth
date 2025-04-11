@@ -237,10 +237,10 @@ export const generateMetadata = () => {
     keywords:
       "annual physicals, preventive care, physical exam, health checkup, yearly health exam, primary care physical, medical examination, lab tests, blood pressure monitoring, vision screening, health risk detection, COVID testing, cholesterol test, diabetes screening, wellness exams, blood work, VitalCare Health annual checkup",
 
-    metadataBase: new URL("https://palakchoudhary52.wixsite.com"),
+    metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
-      url: "https://palakchoudhary52.wixsite.com/services/annual-physicals",
+      url: "http://vitalcarega.com/services/annual-physicals",
       title: "Annual Physical Exams | VitalCare Health",
       description:
         "VitalCare Health offers comprehensive annual physicals to monitor your health, detect risks early, and support long-term wellness. Book your exam today.",
