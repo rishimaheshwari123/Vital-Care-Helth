@@ -110,12 +110,14 @@ export default function ContactForm({ onClose, showModal }) {
         </div>
         <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
           <Link
+            onClick={onClose}
             href="/urgent-care"
             className="w-full text-center p-2 bg-[#f97316] text-white rounded-md hover:bg-[#ea580c] transition"
           >
             Urgent Care
           </Link>
           <Link
+            onClick={onClose}
             href="/weight-management"
             className="w-full text-center p-2 bg-[#10b981] text-white rounded-md hover:bg-[#059669] transition"
           >
