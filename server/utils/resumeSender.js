@@ -12,11 +12,11 @@ const resumeSender = async (email, title, body, attachments) => {
         });
 
         let mailOptions = {
-            from: `"I Next Ets " <${process.env.MAIL_USER}>`,
+            from: `"Vital Care " <${process.env.MAIL_USER}>`,
             to: email,
             subject: title,
             html: body,
-            attachments: attachments || [], // Initialize attachments as an empty array if not provided
+            attachments: attachments || [],
         };
 
         let info = await transporter.sendMail(mailOptions);
