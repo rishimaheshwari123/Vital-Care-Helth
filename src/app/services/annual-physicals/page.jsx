@@ -16,11 +16,11 @@ export default function Annual() {
           <h3 className="text-lg font-bold text-gray-800">
             Prioritizing Your Health and Wellness
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Primary Care Annual Physicals
             <br />
             <span>Annual Physicals</span>
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             An annual physical exam is a vital step toward a healthier life,
             enabling you to identify potential health risks, detect early signs

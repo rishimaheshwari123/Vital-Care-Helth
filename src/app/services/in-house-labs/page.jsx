@@ -34,11 +34,11 @@ export default function InHouseLab() {
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
           <h3 className="text-lg font-bold text-gray-800">In-House Labs</h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Convenient and Accurate
             <br />
             Diagnostic Testing{" "}
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             At VitalCare Health, we offer in-house laboratory services to
             provide you with fast and reliable diagnostic testing. Our on-site

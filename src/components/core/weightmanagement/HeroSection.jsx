@@ -17,9 +17,9 @@ export default function HeroSection() {
 
       <div className="flex h-full items-center lg:px-20 px-6 relative z-10">
         <div className="text-left max-w-3xl">
-          <h1 className="text-2xl text-cyan-400 drop-shadow-lg font-extrabold lg:text-4xl">
+          <h2 className="text-2xl text-cyan-400 drop-shadow-lg font-extrabold lg:text-4xl">
             Why Choose GLP-1 for Weight Loss
-          </h1>
+          </h2>
           <br />
           <p className="text-gray-100 text-lg lg:text-2xl max-w-2xl mt-5">
             Are you struggling with weight loss and looking for a clinically
@@ -29,7 +29,6 @@ export default function HeroSection() {
           </p>
           <br />
 
-          {/* CTA Button with Icon */}
           <Link
             href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
             target="_blank"

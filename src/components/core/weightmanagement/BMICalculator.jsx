@@ -30,9 +30,9 @@ export default function BmiCalculator() {
         <div className="flex flex-col justify-center items-center md:flex-row">
           {/* Left Side Content */}
           <div className="p-6 text-center md:text-left md:w-1/2">
-            <h1 className="text-4xl text-black font-bold">
+            <h2 className="text-4xl text-black font-bold">
               WEIGHT LOST. <span className="text-red-500">LIFE GAINED.</span>
-            </h1>
+            </h2>
             <p className="text-gray-700 mt-4">
               The Center for Disease Control estimates that more than 40 percent
               of Americans are obese, meaning they have a Body Mass Index (BMI)

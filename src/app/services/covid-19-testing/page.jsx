@@ -15,10 +15,10 @@ export default function Covid() {
           <h3 className="text-gray-800 text-lg font-bold">
             Discover Our COVID-19 Tests
           </h3>
-          <h1 className="text-3xl text-black font-bold md:text-4xl mt-2">
+          <h2 className="text-3xl text-black font-bold md:text-4xl mt-2">
             Urgent Care <br />
             <span>COVID-19 Testing</span>
-          </h1>
+          </h2>
           <p className="text-gray-600 text-sm md:text-base mt-4">
             At Vital Care, we provide comprehensive COVID-19 testing and
             vaccination services to support your health throughout the year. Our

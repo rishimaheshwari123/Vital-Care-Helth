@@ -57,9 +57,9 @@ export default function Gastrointestinal() {
           <h3 className="text-lg font-bold text-gray-800">
             {/* Walk-ins and Same-Day Appointments */}
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Why Gastrointestinal Care Matters
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             Good gastrointestinal (GI) health is essential for digestion,
             nutrient absorption, and overall well-being. Proper care helps

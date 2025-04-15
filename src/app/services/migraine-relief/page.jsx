@@ -57,9 +57,9 @@ const Migraine = () => {
           <h3 className="text-lg font-bold text-gray-800">
             {/* Walk-ins and Same-Day Appointments */}
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Why Migraine Relief Matters
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             Effective migraine management reduces the frequency and severity of
             attacks, improving daily productivity and quality of life. Untreated

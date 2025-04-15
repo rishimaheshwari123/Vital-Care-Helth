@@ -57,11 +57,11 @@ export default function SportPhysicals() {
           <h3 className="text-lg font-bold text-gray-800">
             DISCOVER OUR SPORTS PHYSICALS
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Primary Care
             <br />
             Annual Physicals
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             Ensuring your child’s health and readiness for athletic activities
             is crucial, especially since most athletic leagues and schools

@@ -72,9 +72,9 @@ export default function Telemedicine() {
           <h3 className="text-lg font-bold text-gray-800">
             Care from the Comfort of Home
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Immediate Care & Primary Care Telemedicine Appointments
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             Experience the convenience of healthcare from the comfort of your
             own home with VitalCare Health’s telemedicine appointments. Our

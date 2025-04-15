@@ -56,10 +56,10 @@ export default function SoreThroat() {
           <h3 className="text-lg font-bold text-gray-800">
             DISCOVER OUR SORE THROAT SERVICES
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Urgent Care for Strep Throat
             <br />& Sore Throat Treatment{" "}
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             At VitalCare Health, our specialized team is dedicated to addressing
             your sore throat concerns with precision and care. We provide

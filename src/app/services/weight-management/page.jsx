@@ -59,11 +59,11 @@ export default function WeightManagment() {
           <h3 className="text-lg font-bold text-gray-800">
             Supporting Your Weight Management Journey
           </h3>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Physician-led Weight
             <br />
             Loss & Management Program{" "}
-          </h1>
+          </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             At VitalCare Health, we understand that effective weight management
             is key to achieving overall health and well-being. We are committed
