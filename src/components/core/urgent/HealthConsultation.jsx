@@ -34,16 +34,16 @@ export default function HealthConsultation() {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h2 className="text-2xl font-bold mb-4">Health Consultation</h2>
+          <h1 className="text-2xl font-bold mb-4">Health Consultation</h1>
           <p className="text-gray-700 mb-4">
             At VitalCare Health, we understand the importance of addressing
             urgent medical needs promptly. Our dedicated healthcare
             professionals provide immediate and comprehensive care for various
             urgent conditions.
           </p>
-          <h3 className="text-lg font-semibold mb-2">
+          <h2 className="text-lg font-semibold mb-2">
             Common Urgent Care Symptoms Treated:
-          </h3>
+          </h2>
           <ul className="grid grid-cols-2 gap-3 text-gray-800">
             {symptoms.map((symptom, index) => (
               <li key={index} className="flex  lg:items-center gap-2">

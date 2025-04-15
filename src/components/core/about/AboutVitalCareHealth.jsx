@@ -8,9 +8,9 @@ export default function AboutVitalCareHealth() {
       <br />
       <div className="max-w-7xl mx-auto">
         {/* Main Title */}
-        <h2 className="text-[#058790c3] text-3xl text-center font-extrabold lg:text-3xl">
+        <h1 className="text-[#058790c3] text-3xl text-center font-extrabold lg:text-3xl">
           About VitalCare Health
-        </h2>
+        </h1>
 
         {/* Introduction */}
         <p className="text-center text-gray-800 text-xl font-bold lg:text-2xl my-8">

@@ -19,12 +19,12 @@ const MeetOurFounder = () => {
             Founder
           </div>
         </div>
-        <h2 className="text-3xl font-extrabold text-gray-900 mt-4">
+        <h1 className="text-3xl font-extrabold text-gray-900 mt-4">
           Meet Our Founder
-        </h2>
-        <h3 className="text-lg font-semibold text-[#0097a3c3] mt-2">
+        </h1>
+        <h2 className="text-lg font-semibold text-[#0097a3c3] mt-2">
           Dr. Hardik Parekh, MD, MPH
-        </h3>
+        </h2>
         <p className="text-gray-600 text-sm">Owner & Medical Director</p>
       </div>
 
@@ -39,9 +39,9 @@ const MeetOurFounder = () => {
 
         <div className="grid gap-6">
           <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-blue-500">
-            <h3 className="text-md font-bold text-gray-800">
+            <p className="text-md font-bold text-gray-800">
               🏥 Expertise & Credentials
-            </h3>
+            </p>
             <p className="text-sm text-gray-600 mt-2">
               Board-certified by the American Board of Family Medicine, Dr.
               Parekh serves as a trusted Medical Director affiliated with
@@ -52,9 +52,9 @@ const MeetOurFounder = () => {
           </div>
 
           <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-green-500">
-            <h3 className="text-md font-bold text-gray-800">
+            <p className="text-md font-bold text-gray-800">
               🌍 A Holistic Approach
-            </h3>
+            </p>
             <p className="text-sm text-gray-600 mt-2">
               Holding dual degrees in Medicine (MD) and Public Health (MPH), Dr.
               Parekh integrates clinical expertise with a deep understanding of
@@ -63,9 +63,9 @@ const MeetOurFounder = () => {
           </div>
 
           <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-yellow-500">
-            <h3 className="text-md font-bold text-gray-800">
+            <p className="text-md font-bold text-gray-800">
               🤝 Community Leadership
-            </h3>
+            </p>
             <p className="text-sm text-gray-600 mt-2">
               Affiliated with Piedmont Hospitals, Dr. Parekh ensures that
               VitalCare Health is equipped to handle urgent medical needs and

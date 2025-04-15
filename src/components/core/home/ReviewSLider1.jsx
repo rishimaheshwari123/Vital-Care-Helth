@@ -80,9 +80,9 @@ const ReviewSlider1 = () => {
                 alt={"not found"}
                 className="h-[180px] rounded-full w-[180px] lg:h-[300px] lg:w-[300px] md:h-[250px] md:w-[250px] object-cover sm:h-[220px] sm:w-[220px]"
               />
-              <h3 className="text-lg font-bold mt-3 sm:mt-4 sm:text-xl">
+              <p className="text-lg font-bold mt-3 sm:mt-4 sm:text-xl">
                 {item.title}
-              </h3>
+              </p>
               <p className="text-center text-gray-700 text-sm mt-2 sm:text-base">
                 {item.description}
               </p>

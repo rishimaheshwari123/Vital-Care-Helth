@@ -54,9 +54,9 @@ export default function SportPhysicals() {
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
-          <h3 className="text-lg font-bold text-gray-800">
+          <h1 className="text-lg font-bold text-gray-800">
             DISCOVER OUR SPORTS PHYSICALS
-          </h3>
+          </h1>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Primary Care
             <br />
@@ -101,9 +101,9 @@ export default function SportPhysicals() {
 
       <section className="bg-gray-100 py-10 px-5 md:px-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-lg font-bold text-gray-800">
+          <p className="text-lg font-bold text-gray-800">
             THE IMPORTANCE OF SPORTS PHYSICALS
-          </h3>
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Our Approach to Physicals for Sports
           </h2>
@@ -167,9 +167,7 @@ export default function SportPhysicals() {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-blue-900">
-                  {test.title}
-                </h3>
+                <p className="text-lg font-bold text-blue-900">{test.title}</p>
                 <p className="text-gray-700">{test.description}</p>
               </div>
             </div>

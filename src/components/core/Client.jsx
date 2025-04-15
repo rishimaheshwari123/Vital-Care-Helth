@@ -18,9 +18,9 @@ const Client = () => {
       <br />
       <div className="my-10">
         <div className=" flex flex-col  w-full items-center">
-          <h3 className=" text-2xl lg:text-4xl font-semibold  text-black">
+          <h1 className=" text-2xl lg:text-4xl font-semibold  text-black">
             We Accept Major Insurances
-          </h3>
+          </h1>
           <br />
           <div className="flex items-center w-[75px]">
             <div className="h-0.5 bg-[#cee21a]"></div>

@@ -53,9 +53,9 @@ export default function SoreThroat() {
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
-          <h3 className="text-lg font-bold text-gray-800">
+          <h1 className="text-lg font-bold text-gray-800">
             DISCOVER OUR SORE THROAT SERVICES
-          </h3>
+          </h1>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Urgent Care for Strep Throat
             <br />& Sore Throat Treatment{" "}
@@ -100,9 +100,9 @@ export default function SoreThroat() {
           <h3 className="text-lg font-bold text-gray-800">
             WHY SORE THROAT TREATMENT MATTERS
           </h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h4 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Our Approach to Sore Throat Treatment
-          </h2>
+          </h4>
         </div>
 
         <div className="max-w-4xl mx-auto mt-6 text-gray-700 text-sm md:text-base">
@@ -160,9 +160,9 @@ export default function SoreThroat() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-blue-900">
+                  <p className="text-lg font-bold text-blue-900">
                     {test.title}
-                  </h3>
+                  </p>
                   <p className="text-gray-700">{test.description}</p>
                 </div>
               </div>

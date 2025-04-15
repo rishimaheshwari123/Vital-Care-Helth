@@ -51,9 +51,9 @@ export default function DiabetesTest() {
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
         <section className="py-12 px-6 bg-white">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
               Get Tested Today
-            </h2>
+            </h1>
           </div>
 
           <div className="mt-8 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -71,9 +71,9 @@ export default function DiabetesTest() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-blue-900">
+                  <p className="text-lg font-bold text-blue-900">
                     {test.title}
-                  </h3>
+                  </p>
                   <p className="text-gray-700">{test.description}</p>
                 </div>
               </div>

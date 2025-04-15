@@ -43,9 +43,9 @@ const ReviewSlider = () => {
         {reviews.map((review) => (
           <SwiperSlide key={review.id}>
             <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
-              <h3 className="text-lg font-bold text-[#0096A5]">
+              <h1 className="text-lg font-bold text-[#0096A5]">
                 Excellent rating
-              </h3>
+              </h1>
               <p className="text-gray-600 text-sm">Based on 450 reviews</p>
               <div className="flex items-center mt-2">
                 <FaCheckCircle className="text-[#0096A5] mr-2" />

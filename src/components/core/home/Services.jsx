@@ -118,15 +118,15 @@ const Services = () => {
                   className="w-full duration-300 group-hover:scale-105 object-cover transition-transform"
                 />
                 <div className="bg-black bg-opacity-60 p-2 text-center text-white w-full absolute bottom-0">
-                  <h3 className="text-lg font-semibold">{treatment.title}</h3>
+                  <h1 className="text-lg font-semibold">{treatment.title}</h1>
                 </div>
               </div>
 
               {/* Hover Effect */}
               <div className="flex flex-col bg-black bg-opacity-60 justify-center p-4 text-center absolute duration-300 group-hover:opacity-100 inset-0 items-center opacity-0 transition-opacity">
-                <h3 className="text-lg text-white font-semibold">
+                <h2 className="text-lg text-white font-semibold">
                   {treatment.title}
-                </h3>
+                </h2>
                 <p className="text-gray-200 text-sm mt-2">{treatment.desc}</p>
                 <Link
                   href={treatment?.link}

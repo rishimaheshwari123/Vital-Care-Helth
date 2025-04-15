@@ -13,9 +13,9 @@ export default function Annual() {
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
-          <h3 className="text-lg font-bold text-gray-800">
+          <h1 className="text-lg font-bold text-gray-800">
             Prioritizing Your Health and Wellness
-          </h3>
+          </h1>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Primary Care Annual Physicals
             <br />
@@ -58,9 +58,9 @@ export default function Annual() {
 
       <section className="bg-gray-100 py-10 px-5 md:px-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-lg font-bold text-gray-800">
+          <h1 className="text-lg font-bold text-gray-800">
             Why Annual Physical Exams Matter
-          </h3>
+          </h1>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             The Importance of Physical Exams
           </h2>
@@ -117,7 +117,7 @@ export default function Annual() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">Blood Tests</h3>
+              <h1 className="text-lg font-bold text-blue-900">Blood Tests</h1>
               <p className="text-gray-700">
                 Blood tests play a crucial role in assessing your overall
                 health. These tests analyze various components of your blood,
@@ -140,9 +140,9 @@ export default function Annual() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h1 className="text-lg font-bold text-blue-900">
                 Health History Evaluation
-              </h3>
+              </h1>
               <p className="text-gray-700">
                 A thorough health history evaluation enables healthcare
                 providers to gain insights into your past and current medical
@@ -165,9 +165,9 @@ export default function Annual() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h1 className="text-lg font-bold text-blue-900">
                 Blood Pressure Measurement
-              </h3>
+              </h1>
               <p className="text-gray-700">
                 Measuring your blood pressure is a routine part of annual
                 physical exams. High blood pressure can be an indicator of
@@ -187,9 +187,9 @@ export default function Annual() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h1 className="text-lg font-bold text-blue-900">
                 Vision and Hearing Screening
-              </h3>
+              </h1>
               <p className="text-gray-700">
                 Annual physical exams include basic vision and hearing
                 screenings, which evaluate your visual clarity and detect any
@@ -209,9 +209,9 @@ export default function Annual() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-blue-900">
+              <h1 className="text-lg font-bold text-blue-900">
                 Physical Examination
-              </h3>
+              </h1>
               <p className="text-gray-700">
                 As part of your annual check-up, a comprehensive physical
                 examination is conducted. This involves assessing vital signs

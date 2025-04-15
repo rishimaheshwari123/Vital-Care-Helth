@@ -12,9 +12,9 @@ export default function Covid() {
       <div className="flex flex-col bg-white items-center md:flex-row md:px-20 md:space-y-0 px-5 py-10 space-y-8">
         {/* Left Content */}
         <div className="text-left md:w-1/2">
-          <h3 className="text-gray-800 text-lg font-bold">
+          <h1 className="text-gray-800 text-lg font-bold">
             Discover Our COVID-19 Tests
-          </h3>
+          </h1>
           <h2 className="text-3xl text-black font-bold md:text-4xl mt-2">
             Urgent Care <br />
             <span>COVID-19 Testing</span>
@@ -69,9 +69,9 @@ export default function Covid() {
 
       <section className="bg-gray-100 md:px-20 px-5 py-10">
         <div className="text-center max-w-4xl mx-auto">
-          <h3 className="text-gray-800 text-lg font-bold">
+          <p className="text-gray-800 text-lg font-bold">
             Discover Our COVID-19 Tests
-          </h3>
+          </p>
           <h2 className="text-3xl text-black font-bold md:text-4xl mt-2">
             Why COVID Testing and Vaccination Matters
           </h2>
@@ -92,9 +92,9 @@ export default function Covid() {
         <div className="grid gap-8 max-w-4xl md:grid-cols-2 mt-8 mx-auto">
           {/* Testing Section */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-black text-xl font-bold">
+            <p className="text-black text-xl font-bold">
               Why Testing is Crucial:
-            </h3>
+            </p>
             <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
               <li>
                 <span className="font-semibold">Accurate Diagnosis:</span> We
@@ -111,9 +111,9 @@ export default function Covid() {
 
           {/* Vaccination Section */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-black text-xl font-bold">
+            <p className="text-black text-xl font-bold">
               Why Vaccination Matters:
-            </h3>
+            </p>
             <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
               <li>
                 <span className="font-semibold">Protection:</span> COVID-19
@@ -174,9 +174,9 @@ export default function Covid() {
               />
             </div>
             <div>
-              <h3 className="text-blue-900 text-lg font-bold">
+              <p className="text-blue-900 text-lg font-bold">
                 Rapid COVID Testing (Antigen):
-              </h3>
+              </p>
               <p className="text-gray-700">
                 Our Rapid COVID Test Antigen Service provides quick and accurate
                 results. We collect a nasal or throat swab and conduct an
@@ -197,9 +197,9 @@ export default function Covid() {
               />
             </div>
             <div>
-              <h3 className="text-blue-900 text-lg font-bold">
+              <p className="text-blue-900 text-lg font-bold">
                 Oxygen Saturation Monitoring:
-              </h3>
+              </p>
               <p className="text-gray-700">
                 During your visit, we will measure your oxygen saturation using
                 a non-invasive handheld device. This helps ensure your oxygen
@@ -220,9 +220,9 @@ export default function Covid() {
               />
             </div>
             <div>
-              <h3 className="text-blue-900 text-lg font-bold">
+              <h2 className="text-blue-900 text-lg font-bold">
                 Antiviral Medications for COVID:
-              </h3>
+              </h2>
               <p className="text-gray-700">
                 We offer prescription antiviral medications to treat COVID-19,
                 available for eligible patients. These medications can help

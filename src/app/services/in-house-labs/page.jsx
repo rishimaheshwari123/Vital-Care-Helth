@@ -33,7 +33,7 @@ export default function InHouseLab() {
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
-          <h3 className="text-lg font-bold text-gray-800">In-House Labs</h3>
+          <h1 className="text-lg font-bold text-gray-800">In-House Labs</h1>
           <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Convenient and Accurate
             <br />
@@ -77,12 +77,12 @@ export default function InHouseLab() {
 
       <section className="bg-gray-100 py-10 px-5 md:px-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-lg font-bold text-gray-800">
+          <p className="text-lg font-bold text-gray-800">
             IN-HOUSE LABS & DIAGNOSTIC TESTING
-          </h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          </p>
+          <h3 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Comprehensive COVID-19 Testing & Vaccination
-          </h2>
+          </h3>
         </div>
 
         <div className="max-w-4xl mx-auto mt-6 text-gray-700 text-sm md:text-base">
@@ -96,9 +96,9 @@ export default function InHouseLab() {
             compassionate care throughout the testing and treatment process.
           </p>
 
-          <h3 className="text-lg font-bold text-gray-800 mt-4">
+          <p className="text-lg font-bold text-gray-800 mt-4">
             Why Testing is Crucial:
-          </h3>
+          </p>
           <ul className="list-disc list-inside">
             <li>
               <span className="font-bold">Accurate Diagnosis:</span> We offer
@@ -112,9 +112,9 @@ export default function InHouseLab() {
             </li>
           </ul>
 
-          <h3 className="text-lg font-bold text-gray-800 mt-4">
+          <h4 className="text-lg font-bold text-gray-800 mt-4">
             Why Vaccination Matters:
-          </h3>
+          </h4>
           <ul className="list-disc list-inside">
             <li>
               <span className="font-bold">Protection:</span> COVID-19 vaccines
@@ -171,9 +171,7 @@ export default function InHouseLab() {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-blue-900">
-                  {test.title}
-                </h3>
+                <p className="text-lg font-bold text-blue-900">{test.title}</p>
                 <p className="text-gray-700">{test.description}</p>
               </div>
             </div>

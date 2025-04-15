@@ -20,18 +20,18 @@ const Glp1WeightManagement = () => {
           />
         </div> */}
         <div className="text-center max-w-7xl md:text-left px-5">
-          <h2 className="text-[#3b3b8c] text-3xl font-bold md:text-4xl">
+          <h1 className="text-[#3b3b8c] text-3xl font-bold md:text-4xl">
             Transform Your Health with Our GLP-1 Weight Management Program
-          </h2>
+          </h1>
           <p className="text-gray-700 text-lg mt-4">
             Are you struggling with weight loss and looking for a clinically
             proven solution? At VitalCare Health, our GLP-1 Weight Management
             Program helps you achieve lasting results with FDA-approved GLP-1
             medications.
           </p>
-          <h3 className="text-[#3b3b8c] text-2xl font-bold mt-6">
+          <h2 className="text-[#3b3b8c] text-2xl font-bold mt-6">
             Why Choose GLP-1 for Weight Loss?
-          </h3>
+          </h2>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4 mt-6">
             {benefits.map((benefit, index) => (
               <div
