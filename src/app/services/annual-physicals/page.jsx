@@ -235,7 +235,7 @@ export const generateMetadata = () => {
     description:
       "Stay proactive about your health with annual physical exams at VitalCare Health. Our expert team provides personalized checkups, lab tests, and screenings to detect health risks early and ensure your overall wellness.",
     keywords:
-      "annual physicals, preventive care, physical exam, health checkup, yearly health exam, primary care physical, medical examination, lab tests, blood pressure monitoring, vision screening, health risk detection, COVID testing, cholesterol test, diabetes screening, wellness exams, blood work, VitalCare Health annual checkup",
+      "annual physical exam Georgia, wellness check up near me, preventive health screening Georgia,annual physicals, preventive care, physical exam, health checkup, yearly health exam, primary care physical, medical examination, lab tests, blood pressure monitoring, vision screening, health risk detection, COVID testing, cholesterol test, diabetes screening, wellness exams, blood work, VitalCare Health annual checkup",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {

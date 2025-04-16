@@ -34,8 +34,7 @@ export const generateMetadata = () => {
     description:
       "VitalCare Health provides quality healthcare services including urgent care, weight management, diabetes care, flu testing, telemedicine, and more. Your trusted partner in health and wellness.",
     keywords:
-      "VitalCare Health, urgent care, weight management, annual physicals, flu testing, flu treatment, sports physicals, COVID-19 testing, in-house labs, diabetes management, sore throat, gastrointestinal issues, telemedicine, migraine relief, healthcare services, primary care, wellness clinic",
-
+      "VitalCare Health, urgent care, weight management, annual physicals, flu testing, flu treatment, sports physicals, COVID-19 testing, in-house labs, diabetes management, sore throat, gastrointestinal issues, telemedicine, migraine relief, healthcare services, primary care, wellness clinic, urgent care near me, primary care clinic Georgia, walk-in clinic Georgia, same-day doctor appointment Georgia, 24 hour urgent care Georgia, family medicine Georgia, primary care physician near me, urgent care in Atlanta GA, primary care in [Your City Name], top-rated urgent care Georgia, best walk-in clinic in [City Name], local doctors office open now",
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",

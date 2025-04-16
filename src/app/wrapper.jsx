@@ -9,7 +9,7 @@ import InquiryForm2 from "@/components/comman/InquiryForm2";
 
 const Wrapper = ({ children }) => {
   const [showModal, setShowModal] = useState(true);
-  const [enquiry, setEnquiry] = useState(false); // Initially false to show form only when button is clicked
+  const [enquiry, setEnquiry] = useState(false);
 
   const handleCloseModal = () => {
     setShowModal(false);

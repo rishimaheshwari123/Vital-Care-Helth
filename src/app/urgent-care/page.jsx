@@ -20,7 +20,7 @@ export const generateMetadata = () => {
     description:
       "Visit VitalCare Health for same-day urgent care and walk-in medical services in Tyrone, GA. We treat minor injuries, infections, allergic reactions, and more with compassionate and expert care.",
     keywords:
-      "Urgent care Tyrone GA, walk-in clinic, same-day doctor appointment, minor injuries treatment, sore throat, fever, cough, allergic reactions, conjunctivitis, diarrhea, vomiting, sinus infection, urinary symptoms, non-emergency care, urgent medical help, VitalCare Health urgent care, STI concerns, skin rashes, abdominal pain, earache, sunburn, minor burns",
+      "Urgent care Tyrone GA, minor injury treatment Georgia, flu testing near me walk-in clinic, COVID testing urgent care Georgia,same-day urgent care visit, same-day doctor appointment, minor injuries treatment, sore throat, fever, cough, allergic reactions, conjunctivitis, diarrhea, vomiting, sinus infection, urinary symptoms, non-emergency care, urgent medical help, VitalCare Health urgent care, STI concerns, skin rashes, abdominal pain, earache, sunburn, minor burns",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
