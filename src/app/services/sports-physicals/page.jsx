@@ -101,12 +101,12 @@ export default function SportPhysicals() {
 
       <section className="bg-gray-100 py-10 px-5 md:px-20">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg font-bold text-gray-800">
+          <h2 className="text-lg font-bold text-gray-800">
             THE IMPORTANCE OF SPORTS PHYSICALS
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
-            Our Approach to Physicals for Sports
           </h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-black mt-2">
+            Our Approach to Physicals for Sports
+          </h3>
         </div>
 
         <div className="max-w-4xl mx-auto mt-6 text-gray-700 text-sm md:text-base">
@@ -167,7 +167,9 @@ export default function SportPhysicals() {
               </div>
 
               <div>
-                <p className="text-lg font-bold text-blue-900">{test.title}</p>
+                <h2 className="text-lg font-bold text-blue-900">
+                  {test.title}
+                </h2>
                 <p className="text-gray-700">{test.description}</p>
               </div>
             </div>

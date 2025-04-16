@@ -357,7 +357,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           ></div>
           <div
-            className="bg-white p-1 shadow-lg w-full fixed left-[29%] max-w-[40vw] right-[32%] top-[110px] transform z-[99999]"
+            className="bg-white p-1 shadow-lg w-full fixed left-[29%] max-w-[40vw] right-[32%] top-[125px] transform z-[99999]"
             onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
             onMouseLeave={handleMouseLeave}
           >

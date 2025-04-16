@@ -13,9 +13,9 @@ export default function AboutVitalCareHealth() {
         </h1>
 
         {/* Introduction */}
-        <p className="text-center text-gray-800 text-xl font-bold lg:text-2xl my-8">
+        <h2 className="text-center text-gray-800 text-xl font-bold lg:text-2xl my-8">
           More than just a healthcare provider – we are your health partners!
-        </p>
+        </h2>
 
         <div className="">
           <section className="max-w-7xl mx-auto px-6 py-16">
@@ -62,7 +62,7 @@ export default function AboutVitalCareHealth() {
 
         {/* Our Story - Highlighted Box */}
         <div className="bg-white border-[#0477BF] border-l-4 p-6 rounded-lg shadow-md max-w-2xl mt-8 mx-auto">
-          <h2 className="text-[#0477BF] text-lg font-semibold">Our Story</h2>
+          <h3 className="text-[#0477BF] text-lg font-semibold">Our Story</h3>
           <p className="text-gray-700 mt-2">
             Our journey began with a simple yet powerful idea: healthcare should
             be as much about prevention and empowerment as it is about
@@ -75,7 +75,7 @@ export default function AboutVitalCareHealth() {
 
         {/* Why Choose Us Section */}
         <div className="text-center mt-12">
-          <h2 className="text-2xl text-gray-900 font-bold">Why Choose Us</h2>
+          <h4 className="text-2xl text-gray-900 font-bold">Why Choose Us</h4>
           <div className="grid grid-cols-2 gap-6 lg:grid-cols-3 md:grid-cols-3 mt-6">
             {[
               "Patient-Centered Care",

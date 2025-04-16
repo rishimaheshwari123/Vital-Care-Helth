@@ -107,9 +107,9 @@ export default function FluTesting() {
           <h2 className="text-lg font-bold text-gray-800">
             WHY FLU TESTING AND TREATMENT MATTERS
           </h2>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h3 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Our Approach to Flu Test & Vaccination
-          </h2>
+          </h3>
         </div>
 
         <div className="max-w-4xl mx-auto mt-6 text-gray-700 text-sm md:text-base">
@@ -170,9 +170,9 @@ export default function FluTesting() {
                 </div>
 
                 <div>
-                  <p className="text-lg font-bold text-blue-900">
+                  <h2 className="text-lg font-bold text-blue-900">
                     {test.title}
-                  </p>
+                  </h2>
                   <p className="text-gray-700">{test.description}</p>
                 </div>
               </div>

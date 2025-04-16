@@ -111,9 +111,9 @@ export default function Covid() {
 
           {/* Vaccination Section */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-black text-xl font-bold">
+            <h2 className="text-black text-xl font-bold">
               Why Vaccination Matters:
-            </p>
+            </h2>
             <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
               <li>
                 <span className="font-semibold">Protection:</span> COVID-19
@@ -174,9 +174,9 @@ export default function Covid() {
               />
             </div>
             <div>
-              <p className="text-blue-900 text-lg font-bold">
+              <h2 className="text-blue-900 text-lg font-bold">
                 Rapid COVID Testing (Antigen):
-              </p>
+              </h2>
               <p className="text-gray-700">
                 Our Rapid COVID Test Antigen Service provides quick and accurate
                 results. We collect a nasal or throat swab and conduct an
@@ -197,9 +197,9 @@ export default function Covid() {
               />
             </div>
             <div>
-              <p className="text-blue-900 text-lg font-bold">
+              <h2 className="text-blue-900 text-lg font-bold">
                 Oxygen Saturation Monitoring:
-              </p>
+              </h2>
               <p className="text-gray-700">
                 During your visit, we will measure your oxygen saturation using
                 a non-invasive handheld device. This helps ensure your oxygen

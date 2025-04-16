@@ -96,11 +96,11 @@ const Services = () => {
   return (
     <div className="bg-[#0097a3c3] px-6 py-12">
       <div className="text-center max-w-3xl mb-12 mx-auto">
-        <h2 className="text-4xl text-white font-bold">Our Services</h2>
-        <p className="text-white mt-2">
+        <h4 className="text-4xl text-white font-bold">Our Services</h4>
+        <h1 className="text-white mt-2">
           Explore our wide range of health care services designed to meet your
           medical needs with compassion and expertise.
-        </p>
+        </h1>
       </div>
 
       <div className="grid p-6 gap-8 lg:grid-cols-4 max-w-6xl md:grid-cols-3 mx-auto sm:grid-cols-2">
@@ -118,7 +118,7 @@ const Services = () => {
                   className="w-full duration-300 group-hover:scale-105 object-cover transition-transform"
                 />
                 <div className="bg-black bg-opacity-60 p-2 text-center text-white w-full absolute bottom-0">
-                  <h1 className="text-lg font-semibold">{treatment.title}</h1>
+                  <h2 className="text-lg font-semibold">{treatment.title}</h2>
                 </div>
               </div>
 

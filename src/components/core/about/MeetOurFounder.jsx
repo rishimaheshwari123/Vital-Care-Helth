@@ -63,9 +63,9 @@ const MeetOurFounder = () => {
           </div>
 
           <div className="bg-white p-5 rounded-xl shadow-lg border-l-4 border-yellow-500">
-            <p className="text-md font-bold text-gray-800">
+            <h3 className="text-md font-bold text-gray-800">
               🤝 Community Leadership
-            </p>
+            </h3>
             <p className="text-sm text-gray-600 mt-2">
               Affiliated with Piedmont Hospitals, Dr. Parekh ensures that
               VitalCare Health is equipped to handle urgent medical needs and

@@ -54,12 +54,9 @@ const Migraine = () => {
       <div className="flex flex-col gap-5 md:flex-row items-center bg-white py-10 px-5 md:px-20 space-y-8 md:space-y-0">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
-          <h1 className="text-lg font-bold text-gray-800">
-            {/* Walk-ins and Same-Day Appointments */}
-          </h1>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-black mt-2">
             Why Migraine Relief Matters
-          </h2>
+          </h1>
           <p className="text-gray-600 mt-4 text-sm md:text-base">
             Effective migraine management reduces the frequency and severity of
             attacks, improving daily productivity and quality of life. Untreated
@@ -99,9 +96,9 @@ const Migraine = () => {
 
       <section className="py-12 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-blue-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
             Get Tested Today
-          </h3>
+          </h2>
         </div>
         <section className="py-12 px-6 bg-white">
           <div className="mt-8 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -119,9 +116,9 @@ const Migraine = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-bold text-blue-900">
+                  <h2 className="text-lg font-bold text-blue-900">
                     {test.title}
-                  </p>
+                  </h2>
                   <p className="text-gray-700">{test.description}</p>
                 </div>
               </div>

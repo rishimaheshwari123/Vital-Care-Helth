@@ -34,9 +34,9 @@ const Client = () => {
           </div>
                     
         </div>
-        <p className="text-center text-xl px-5">
+        <h2 className="text-center text-xl px-5">
           Commercial Plans, Medicare Plans ,Military Plans
-        </p>
+        </h2>
         <div className="scroll-container  max-w-7xl mx-auto my-10 px-5">
           <div className="scroll-right-to-left flex lg:gap-5 items-center ">
             <Image src={c1} alt="Client Logo" />

@@ -120,9 +120,9 @@ export default function Gastrointestinal() {
                 </div>
 
                 <div>
-                  <p className="text-lg font-bold text-blue-900">
+                  <h2 className="text-lg font-bold text-blue-900">
                     {test.title}
-                  </p>
+                  </h2>
                   <p className="text-gray-700">{test.description}</p>
                 </div>
               </div>

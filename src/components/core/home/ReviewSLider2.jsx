@@ -31,9 +31,7 @@ const reviews = [
 const ReviewSlider = () => {
   return (
     <div className=" w-full lg:max-w-md mx-auto p-4">
-      <h2 className="text-3xl font-bold text-center text-white mb-4">
-        Reviews
-      </h2>
+      <p className="text-3xl font-bold text-center text-white mb-4">Reviews</p>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={20}
@@ -43,10 +41,10 @@ const ReviewSlider = () => {
         {reviews.map((review) => (
           <SwiperSlide key={review.id}>
             <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
-              <h1 className="text-lg font-bold text-[#0096A5]">
+              <p className="text-lg font-bold text-[#0096A5]">
                 Excellent rating
-              </h1>
-              <p className="text-gray-600 text-sm">Based on 450 reviews</p>
+              </p>
+              <h1 className="text-gray-600 text-sm">Based on 450 reviews</h1>
               <div className="flex items-center mt-2">
                 <FaCheckCircle className="text-[#0096A5] mr-2" />
                 <span className="font-semibold text-gray-700">Trustindex</span>
@@ -70,9 +68,9 @@ const ReviewSlider = () => {
                   <p className="text-gray-500 text-sm">{review.time}</p>
                 </div>
               </div>
-              <div className="bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-lg mt-4 inline-block">
+              <h2 className="bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-lg mt-4 inline-block">
                 Verified by VitalCare
-              </div>
+              </h2>
             </div>
           </SwiperSlide>
         ))}

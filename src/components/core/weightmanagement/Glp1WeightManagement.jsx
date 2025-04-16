@@ -44,9 +44,9 @@ const Glp1WeightManagement = () => {
                   width={60}
                   height={60}
                 />
-                <h4 className="text-[#3b3b8c] font-bold mt-3">
+                <h2 className="text-[#3b3b8c] font-bold mt-3">
                   {benefit.title}
-                </h4>
+                </h2>
                 <p className="text-gray-700 text-sm">{benefit.description}</p>
               </div>
             ))}
