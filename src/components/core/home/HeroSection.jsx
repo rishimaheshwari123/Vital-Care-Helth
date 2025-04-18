@@ -67,7 +67,7 @@ export default function HeroSection() {
           <br />
           <Link
             href="/membership"
-            className="bg-white rounded-xl shadow-md px-6 py-1 text-center inline-block"
+            className="bg-white ml-20 rounded-xl shadow-md px-6 py-1 text-center inline-block"
           >
             <div className="text-lg font-semibold text-cyan-600">Annual</div>
             <div className="text-lg font-semibold text-cyan-600">
