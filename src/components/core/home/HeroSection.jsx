@@ -63,6 +63,18 @@ export default function HeroSection() {
             ACCEPTING NEW PATIENTS NOW!
             <FaArrowRight className="text-xl hidden lg:block" />
           </Link>
+          <br />
+          <br />
+          <Link
+            href="/membership"
+            className="bg-white rounded-xl shadow-md px-6 py-1 text-center inline-block"
+          >
+            <div className="text-lg font-semibold text-cyan-600">Annual</div>
+            <div className="text-lg font-semibold text-cyan-600">
+              Membership
+            </div>
+            <div className="text-xl font-bold text-red-600 mt-1">$399</div>
+          </Link>
         </div>
       </div>
     </div>
