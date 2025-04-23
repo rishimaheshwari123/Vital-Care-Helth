@@ -30,18 +30,18 @@ export default Home;
 
 export const generateMetadata = () => {
   return {
-    title: "VitalCare Health | Comprehensive Urgent Care & Wellness Services",
+    title: "Urgent Care & Primary Care in Tyrone, GA | VitalCare Health",
     description:
-      "VitalCare Health provides quality healthcare services including urgent care, weight management, diabetes care, flu testing, telemedicine, and more. Your trusted partner in health and wellness.",
+      "VitalCare Health offers urgent care, primary care, weight loss programs, and telehealth services in Tyrone, GA. Walk-in welcome. Book your visit online!",
     keywords:
-      "VitalCare Health, urgent care, weight management, annual physicals, flu testing, flu treatment, sports physicals, COVID-19 testing, in-house labs, diabetes management, sore throat, gastrointestinal issues, telemedicine, migraine relief, healthcare services, primary care, wellness clinic, urgent care near me, primary care clinic Georgia, walk-in clinic Georgia, same-day doctor appointment Georgia, 24 hour urgent care Georgia, family medicine Georgia, primary care physician near me, urgent care in Atlanta GA, primary care in [Your City Name], top-rated urgent care Georgia, best walk-in clinic in [City Name], local doctors office open now",
+      "VitalCare Health, urgent care, weight management, annual physicals, flu testing, flu treatment, sports physicals, COVID-19 testing, in-house labs, diabetes management, sore throat, gastrointestinal issues, telemedicine, migraine relief, healthcare services, primary care, wellness clinic, urgent care near me, primary care clinic Georgia, walk-in clinic Georgia, same-day doctor appointment Georgia, 24 hour urgent care Georgia, family medicine Georgia, primary care physician near me, urgent care in Atlanta GA, primary care in Tyrone GA, top-rated urgent care Georgia, best walk-in clinic in Tyrone GA, local doctors office open now",
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
       url: "http://vitalcarega.com",
-      title: "VitalCare Health | Comprehensive Urgent Care & Wellness Services",
+      title: "Urgent Care & Primary Care in Tyrone, GA | VitalCare Health",
       description:
-        "VitalCare Health offers comprehensive urgent care and wellness services like flu testing, diabetes care, physicals, and more.",
+        "VitalCare Health provides urgent care, primary care, and wellness services in Tyrone, GA. Walk-ins welcome.",
       images: [
         {
           url: "/android-chrome-192x192.png",
@@ -53,9 +53,9 @@ export const generateMetadata = () => {
     },
     twitter: {
       card: "summary",
-      title: "VitalCare Health | Urgent Care & Wellness Clinic",
+      title: "Urgent Care in Tyrone, GA | VitalCare Health",
       description:
-        "Explore healthcare services at VitalCare Health, including urgent care, telemedicine, migraine relief, and more.",
+        "Visit VitalCare Health in Tyrone, GA for urgent care, telemedicine, and more. Book online today.",
       images: ["/android-chrome-192x192.png"],
     },
   };
