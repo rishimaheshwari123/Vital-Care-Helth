@@ -53,28 +53,27 @@ export default function HeroSection() {
           <h1 className="text-4xl lg:text-6xl font-extrabold text-cyan-400 drop-shadow-lg">
             Your Health Is Our Priority
           </h1>
+          <br />
+          <div className="flex flex-col  gap-4 w-full max-w-md mt-5">
+            <Link
+              href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-1 py-3 w-full text-lg font-semibold text-gray-900 bg-cyan-300 rounded-lg shadow-md hover:bg-cyan-400 transition duration-300"
+            >
+              ACCEPTING NEW PATIENTS NOW!
+              <FaArrowRight className="text-xl" />
+            </Link>
 
-          <Link
-            href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 mt-6 px-2 py-3 text-lg font-semibold text-gray-900 bg-cyan-300 rounded-lg shadow-md hover:bg-cyan-400 transition duration-300"
-          >
-            ACCEPTING NEW PATIENTS NOW!
-            <FaArrowRight className="text-xl hidden lg:block" />
-          </Link>
-          <br />
-          <br />
-          <Link
-            href="/membership"
-            className="bg-white ml-20 rounded-xl shadow-md px-6 py-1 text-center inline-block"
-          >
-            <div className="text-lg font-semibold text-cyan-600">Annual</div>
-            <div className="text-lg font-semibold text-cyan-600">
-              Membership
-            </div>
-            <div className="text-xl font-bold text-red-600 mt-1">$399</div>
-          </Link>
+            <Link
+              href="/membership"
+              className="flex items-center justify-center gap-2 px-4 py-3 w-full text-lg font-semibold text-cyan-600 bg-white rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+            >
+              Annual Membership{" "}
+              <span className="text-xl font-bold text-red-600">$399</span>
+              <FaArrowRight className="text-xl text-cyan-600" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

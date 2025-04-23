@@ -1,6 +1,10 @@
-import Link from "next/link";
+"use client";
+import { useState } from "react";
+import InquiryForm2 from "@/components/comman/InquiryForm2";
 
 export default function HeroSection() {
+  const [enquiry, setEnquiry] = useState(false);
+
   return (
     <div className="h-screen relative">
       {/* Background Image with Overlay */}
@@ -29,16 +33,19 @@ export default function HeroSection() {
           </p>
           <br />
 
-          <Link
-            href="https://healow.com/apps/practice/vitalcare-health-inc-26732?v=2&t=1"
+          <button
+            onClick={() => setEnquiry(true)}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-cyan-300 rounded-lg shadow-md text-gray-900 text-lg duration-300 font-semibold gap-3 hover:bg-cyan-400 inline-flex items-center mt-6 px-2 py-3 transition"
+            className="bg-cyan-300 cursor-pointer rounded-lg shadow-md text-gray-900 px-5 text-lg duration-300 font-semibold gap-3 hover:bg-cyan-400 inline-flex items-center mt-6  py-3 transition"
           >
             Contact Now
-          </Link>
+          </button>
         </div>
       </div>
+      {enquiry && (
+        <InquiryForm2 onClose={() => setEnquiry(false)} enquiry={enquiry} />
+      )}
     </div>
   );
 }
