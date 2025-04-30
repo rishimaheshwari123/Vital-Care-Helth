@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Zoom } from "react-awesome-reveal";
+import { MdOutlinePrivacyTip } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -38,8 +39,12 @@ const Footer = () => {
             </p>
             <p className="text-white">📞 +1 (470) 851-3800 </p>
             <p className="text-white">📧 info@vitalcarega.com</p>
-            <Link href={"/privacy-policy"} className="text-white">
-              Privacy Policy
+            <Link
+              href={"/privacy-policy"}
+              className="text-white flex items-center gap-1"
+            >
+              <MdOutlinePrivacyTip size={19} />{" "}
+              <span className="ml-1">Privacy Policy</span>
             </Link>
           </div>
 
