@@ -38,6 +38,9 @@ const Footer = () => {
             </p>
             <p className="text-white">📞 +1 (470) 851-3800 </p>
             <p className="text-white">📧 info@vitalcarega.com</p>
+            <Link href={"/privacy-policy"} className="text-white">
+              Privacy Policy
+            </Link>
           </div>
 
           {/* Social Media */}
