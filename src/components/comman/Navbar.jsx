@@ -147,7 +147,7 @@ const Navbar = () => {
       <div className="bg-white shadow-lg text-black w-full fixed left-0 top-0 z-50">
         <TopHeader />
         <Fade direction="down" triggerOnce>
-          <div className="justify-between hidden items-center max-w-11/12 mx-auto px-6 py-4 sm:flex">
+          <div className="justify-between hidden items-center  max-w-11/12 mx-auto px-6 py-4 sm:flex">
             <Zoom triggerOnce>
               <Link href="/" className="text-xl">
                 <Image
@@ -326,7 +326,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col items-center mb-6 mt-4 px-6 space-y-3">
             <Link
-              className="bg-white border border-[#0097a3c3] rounded-2xl text-[#0097a3c3] text-center w-full cursor-pointer py-3"
+              className="bg-white  border border-[#0097a3c3] rounded-2xl text-[#0097a3c3] text-center w-full cursor-pointer py-3"
               href="https://mycw193.ecwcloud.com/portal24581/jsp/100mp/login_otp.jsp"
             >
               Pay Now

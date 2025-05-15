@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import logo from "../../assets/logo.png";
 import Image from "next/image";
@@ -7,6 +7,29 @@ import { Zoom } from "react-awesome-reveal";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 
 const Footer = () => {
+  const [openDropdown, setOpenDropdown] = useState(null); // State to track which dropdown is open: 'tyrone', 'peachtree', or null
+
+  const addresses = {
+    tyrone: {
+      name: "Tyrone", // Only display this
+      fullAddress: "1130 Senoia Road Suite B4 Tyrone GA 30290", // This won't be displayed in the dropdown
+      mapLink: "https://g.co/kgs/fjZMb8X", // Link to this
+    },
+    peachtree: {
+      name: "Peachtree", // Only display this
+      fullAddress: "8 Eastbrook Bend B, Peachtree City, GA 30269", // This won't be displayed in the dropdown
+      mapLink: "https://g.co/kgs/4aiyjcN", // Link to this
+    },
+  };
+
+  const toggleDropdown = (dropdownName) => {
+    setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
+  };
+
+  const closeDropdown = () => {
+    setOpenDropdown(null);
+  };
+
   return (
     <footer className="bg-[#0097a3c3] text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
@@ -29,13 +52,14 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Register Button */}
-
           {/* Contact Info */}
           <div className="flex flex-col gap-2">
             <h3 className="text-white text-xl font-semibold mb-4">Contact</h3>
             <p className="text-white">
               🏠 1130 Senoia Road Suite B4 Tyrone GA 30290{" "}
+            </p>
+            <p className="text-white">
+              🏠 8 Eastbrook Bend B, Peachtree City, GA 30269
             </p>
             <p className="text-white">📞 +1 (470) 851-3800 </p>
             <p className="text-white">📧 info@vitalcarega.com</p>
@@ -58,7 +82,6 @@ const Footer = () => {
                   aria-label="Facebook"
                   className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
                 >
-                  {/* <FaFacebook size={18} className="text-[#0097a3c3]" /> */}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png"
                     alt=""
@@ -71,36 +94,53 @@ const Footer = () => {
                   aria-label="Instagram"
                   className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
                 >
-                  {/* <FaInstagram size={22} className="text-[#0097a3c3]" /> */}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png"
                     alt=""
                   />
                 </Link>
               </Zoom>
-              {/* <Zoom triggerOnce delay={200}>
-                <Link
-                  href="https://www.youtube.com/user/Wix"
-                  aria-label="YouTube"
-                >
-                  <FaYoutube
-                    size={22}
-                    className="text-red-600 duration-300 hover:scale-125 transition-transform"
-                  />
-                </Link>
-              </Zoom> */}
               <Zoom triggerOnce delay={300}>
-                <Link
-                  href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
-                  aria-label="Map"
-                  className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors"
-                >
-                  {/* <SiMaplibre size={22} className="text-[#0097a3c3]" /> */}
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png"
-                    alt=""
-                  />
-                </Link>
+                <div className="relative">
+                  <div
+                    aria-label="Map"
+                    className="flex bg-white h-6 justify-center rounded-full w-6 duration-300 items-center transition-colors cursor-pointer"
+                    onClick={() => toggleDropdown("mapIconMobile")}
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png"
+                      alt=""
+                    />
+                  </div>
+                  {openDropdown === "mapIconMobile" && (
+                    <div className="absolute top-full right-0 mt-2 w-fit bg-white text-black shadow-lg rounded-md z-[999999]">
+                      <a
+                        href={addresses.tyrone.mapLink} // Link to Tyrone map
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                        onClick={closeDropdown}
+                      >
+                        <span className="font-bold">
+                          {addresses.tyrone.name}
+                        </span>{" "}
+                        {/* Display only Tyrone name */}
+                      </a>
+                      <a
+                        href={addresses.peachtree.mapLink} // Link to Peachtree map
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                        onClick={closeDropdown}
+                      >
+                        <span className="font-bold">
+                          {addresses.peachtree.name}
+                        </span>{" "}
+                        {/* Display only Peachtree name */}
+                      </a>
+                    </div>
+                  )}
+                </div>
               </Zoom>
             </div>
           </div>
