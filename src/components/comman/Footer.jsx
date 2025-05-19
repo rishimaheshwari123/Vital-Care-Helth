@@ -16,7 +16,7 @@ const Footer = () => {
       mapLink: "https://g.co/kgs/fjZMb8X", // Link to this
     },
     peachtree: {
-      name: "Peachtree", // Only display this
+      name: "Peachtree City", // Only display this
       fullAddress: "8 Eastbrook Bend B, Peachtree City, GA 30269", // This won't be displayed in the dropdown
       mapLink: "https://g.co/kgs/4aiyjcN", // Link to this
     },

@@ -13,7 +13,7 @@ const TopHeader = () => {
       mapLink: "https://g.co/kgs/fjZMb8X", // Google Maps link for Tyrone
     },
     peachtree: {
-      name: "Peachtree",
+      name: "Peachtree City",
       fullAddress: "8 Eastbrook Bend B, Peachtree City, GA 30269",
       mapLink: "https://g.co/kgs/4aiyjcN",
     },
@@ -154,6 +154,15 @@ const TopHeader = () => {
                   {openDropdown === "mapIcon" && (
                     <div className="absolute top-0 left-4 mt-2 w-fit bg-white text-black shadow-lg rounded-md z-[9999]">
                       <a
+                        href={addresses.tyrone.mapLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4  hover:bg-gray-100"
+                        onClick={closeDropdown}
+                      >
+                        <span className="text-sm">{addresses.tyrone.name}</span>{" "}
+                      </a>
+                      <a
                         href={addresses.peachtree.mapLink}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -163,15 +172,6 @@ const TopHeader = () => {
                         <span className="text-sm">
                           {addresses.peachtree.name}
                         </span>{" "}
-                      </a>
-                      <a
-                        href={addresses.tyrone.mapLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4  hover:bg-gray-100"
-                        onClick={closeDropdown}
-                      >
-                        <span className="text-sm">{addresses.tyrone.name}</span>{" "}
                       </a>
                     </div>
                   )}
