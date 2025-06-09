@@ -7,13 +7,13 @@ const MeetOurFounder = () => {
     <div className="max-w-7xl mx-auto p-6 bg-gradient-to-br ">
       {/* Image Section */}
       <div className="flex flex-col items-center text-center p-6">
-        <div className="relative">
+        <div className="relative w-[180px] h-[180px]">
           <Image
             src={founder}
             alt="Dr. Hardik Parekh"
             width={150}
             height={150}
-            className="rounded-full border-4 border-[#0097a3c3] shadow-lg"
+            className="w-full h-full object-cover rounded-full border-4 border-[#0097a3c3] shadow-lg"
           />
           <div className="absolute bottom-0 right-0 bg-[#0097a3c3] text-white text-xs px-3 py-1 rounded-full shadow-md">
             Founder

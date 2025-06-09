@@ -98,7 +98,7 @@ const Navbar = () => {
     },
     {
       name: "Meet Our Team",
-      to: "/founder",
+      to: "/team",
       image: doctor,
     },
   ];

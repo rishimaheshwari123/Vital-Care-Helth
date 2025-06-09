@@ -7,7 +7,7 @@ const MeetOurTeam = () => {
     <div className="max-w-7xl mx-auto p-6 bg-gradient-to-br ">
       {/* Image Section */}
       <div className="flex flex-col items-center text-center p-6">
-        <div className="relative w-[150px] h-[150px]">
+        <div className="relative w-[180px] h-[180px]">
           <Image
             src={founder}
             alt="Dr. Hardik Parekh"
@@ -17,9 +17,6 @@ const MeetOurTeam = () => {
           />
         </div>
 
-        <h1 className="text-3xl font-extrabold text-gray-900 mt-4">
-          Meet Our Team
-        </h1>
         <h2 className="text-lg font-semibold text-[#0097a3c3] mt-2">
           Megan McCullough Vieira
         </h2>

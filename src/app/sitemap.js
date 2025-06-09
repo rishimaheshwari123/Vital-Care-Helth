@@ -7,7 +7,7 @@ export default async function sitemap() {
     { url: `${baseURL}/urgent-care`, lastModified: new Date() },
     { url: `${baseURL}/urgent-care`, lastModified: new Date() },
     { url: `${baseURL}/about`, lastModified: new Date() },
-    { url: `${baseURL}/founder`, lastModified: new Date() },
+    { url: `${baseURL}/team`, lastModified: new Date() },
     { url: `${baseURL}/services/weight-management`, lastModified: new Date() },
     { url: `${baseURL}/services/annual-physicals`, lastModified: new Date() },
     { url: `${baseURL}/services/flu-testing-treatment`, lastModified: new Date() },

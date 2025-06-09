@@ -26,7 +26,7 @@ export const generateMetadata = () => {
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "profile",
-      url: "http://vitalcarega.com/founder",
+      url: "http://vitalcarega.com/team",
       title: "Meet Our Founder | Dr. Hardik Parekh, MD, MPH",
       description:
         "Dr. Hardik Parekh, founder of VitalCare Health, brings over a decade of experience in family and emergency medicine. Discover his commitment to accessible, holistic healthcare.",
