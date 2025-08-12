@@ -55,9 +55,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="flex flex-col gap-2">
             <h3 className="text-white text-xl font-semibold mb-4">Contact</h3>
-            <p className="text-white">
-              🏠 1130 Senoia Road Suite B4 Tyrone GA 30290{" "}
-            </p>
+            
             <p className="text-white">
               🏠 8 Eastbrook Bend B, Peachtree City, GA 30269
             </p>
