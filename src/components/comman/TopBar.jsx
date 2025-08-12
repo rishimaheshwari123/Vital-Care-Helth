@@ -34,30 +34,7 @@ const TopHeader = () => {
           <div className="flex flex-col justify-between items-center max-w-11/12 md:flex-row md:space-y-0 mx-auto px-4 space-y-2">
             <div className="flex flex-wrap items-center space-x-6">
               {/* Tyrone Address Dropdown */}
-              <Zoom triggerOnce>
-                <div className="relative flex items-center space-x-2">
-                  <FiMapPin className="text-white text-xl" />
-                  <span
-                    onClick={() => toggleDropdown("tyrone")}
-                    className="font-semibold text-white cursor-pointer hover:underline"
-                  >
-                    {addresses.tyrone.name}
-                  </span>
-                  {openDropdown === "tyrone" && (
-                    <div className="absolute top-4 left-0 mt-2 w-[20vw] bg-white text-black shadow-lg rounded-md z-[999999]">
-                      <a
-                        href={addresses.tyrone.mapLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                        onClick={closeDropdown}
-                      >
-                        {addresses.tyrone.fullAddress}
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </Zoom>
+              
 
               {/* Peachtree Address Dropdown */}
               <Zoom triggerOnce delay={50}>
@@ -153,15 +130,7 @@ const TopHeader = () => {
                   </Link>
                   {openDropdown === "mapIcon" && (
                     <div className="absolute top-0 left-4 mt-2 w-fit bg-white text-black shadow-lg rounded-md z-[9999]">
-                      <a
-                        href={addresses.tyrone.mapLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4  hover:bg-gray-100"
-                        onClick={closeDropdown}
-                      >
-                        <span className="text-sm">{addresses.tyrone.name}</span>{" "}
-                      </a>
+                     
                       <a
                         href={addresses.peachtree.mapLink}
                         target="_blank"
@@ -186,29 +155,7 @@ const TopHeader = () => {
       <div className="bg-[#c5dee4] text-black md:hidden pb-[10px] px-2 py-1 relative">
         <div className="flex flex-wrap  items-center space-x-4">
           {/* Tyrone Address Dropdown (Mobile) */}
-          <div className="relative flex items-center space-x-2">
-            <FiMapPin className="text-black text-xl" />
-            <span
-              onClick={() => toggleDropdown("tyroneMobile")}
-              className="font-semibold text-[14px] text-black cursor-pointer hover:underline"
-            >
-              {addresses.tyrone.name}
-            </span>
-            {openDropdown === "tyroneMobile" && (
-              <div className="absolute top-full left-0 mt-2 w-72 bg-white text-black shadow-lg rounded-md z-[999999]">
-                <a
-                  href={addresses.tyrone.mapLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                  onClick={closeDropdown}
-                >
-                  {addresses.tyrone.fullAddress}
-                </a>
-              </div>
-            )}
-          </div>
-
+          
           {/* Peachtree Address Dropdown (Mobile) - Added for mobile */}
           <div className="relative flex items-center space-x-2">
             <FiMapPin className="text-black text-xl" />
@@ -287,15 +234,7 @@ const TopHeader = () => {
                 </Link>
                 {openDropdown === "mapIconMobile" && (
                   <div className="absolute top-full right-0 mt-2 w-fit bg-white text-black shadow-lg rounded-md z-[999999]">
-                    <a
-                      href={addresses.tyrone.mapLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                      onClick={closeDropdown}
-                    >
-                      <span className="font-bold">{addresses.tyrone.name}</span>{" "}
-                    </a>
+                    
                     <a
                       href={addresses.peachtree.mapLink}
                       target="_blank"

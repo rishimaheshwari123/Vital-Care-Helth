@@ -114,18 +114,7 @@ const Footer = () => {
                   </div>
                   {openDropdown === "mapIconMobile" && (
                     <div className="absolute top-full right-0 mt-2 w-fit bg-white text-black shadow-lg rounded-md z-[999999]">
-                      <a
-                        href={addresses.tyrone.mapLink} // Link to Tyrone map
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                        onClick={closeDropdown}
-                      >
-                        <span className="font-bold">
-                          {addresses.tyrone.name}
-                        </span>{" "}
-                        {/* Display only Tyrone name */}
-                      </a>
+                     
                       <a
                         href={addresses.peachtree.mapLink} // Link to Peachtree map
                         target="_blank"
