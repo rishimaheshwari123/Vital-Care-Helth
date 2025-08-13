@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Zoom } from "react-awesome-reveal";
@@ -55,9 +55,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="flex flex-col gap-2">
             <h3 className="text-white text-xl font-semibold mb-4">Contact</h3>
-            <p className="text-white">
-              🏠 1130 Senoia Road Suite B4 Tyrone GA 30290{" "}
-            </p>
+            
             <p className="text-white">
               🏠 8 Eastbrook Bend B, Peachtree City, GA 30269
             </p>
@@ -114,18 +112,7 @@ const Footer = () => {
                   </div>
                   {openDropdown === "mapIconMobile" && (
                     <div className="absolute top-full right-0 mt-2 w-fit bg-white text-black shadow-lg rounded-md z-[999999]">
-                      <a
-                        href={addresses.tyrone.mapLink} // Link to Tyrone map
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                        onClick={closeDropdown}
-                      >
-                        <span className="font-bold">
-                          {addresses.tyrone.name}
-                        </span>{" "}
-                        {/* Display only Tyrone name */}
-                      </a>
+                     
                       <a
                         href={addresses.peachtree.mapLink} // Link to Peachtree map
                         target="_blank"
