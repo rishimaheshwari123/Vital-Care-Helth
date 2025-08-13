@@ -22,7 +22,7 @@ export const generateMetadata = () => {
     description:
       "Take control of your diabetes with VitalCare Health. We offer personalized treatment, blood sugar testing, CGM devices, insulin therapy, and diet counseling to help you live healthier.",
     keywords:
-      "diabetes management doctor Georgia, high blood pressure treatment Georgia, cholesterol check near me, diabetes management, blood sugar testing, insulin therapy, continuous glucose monitoring, CGM, diabetes medication, nutrition counseling, diabetes care Tyrone GA, VitalCare Health, diabetes treatment, online diabetes follow-up",
+      "diabetes management doctor Georgia, diabetes management doctor Georgia, high blood pressure treatment Georgia, cholesterol check near me, high blood pressure treatment Georgia, cholesterol check near me, diabetes management, blood sugar testing, insulin therapy, continuous glucose monitoring, CGM, diabetes medication, nutrition counseling, diabetes care Tyrone GA, VitalCare Health, diabetes treatment, online diabetes follow-up",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
