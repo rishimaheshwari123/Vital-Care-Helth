@@ -27,7 +27,7 @@ import { FcAbout } from "react-icons/fc";
 import { MdEmojiPeople } from "react-icons/md";
 
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
-import logo from "@/assets/logo2.png";
+import logo from "@/assets/logo.jpg";
 import TopHeader from "./TopBar";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiMaplibre } from "react-icons/si";
