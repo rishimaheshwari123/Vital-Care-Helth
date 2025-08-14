@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/footerlogo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Zoom } from "react-awesome-reveal";
