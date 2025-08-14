@@ -18,7 +18,7 @@ export const generateMetadata = () => {
     description:
       "Learn about VitalCare Health – your trusted center for primary and urgent care. Our dedicated team offers expert medical services, weight management, and a holistic approach to wellness with compassion and excellence.",
     keywords:
-      "VitalCare Health, about VitalCare, urgent care center,when to go to urgent care vs ER, what is included in an annual physical, benefits of a medical weight loss program, how to manage diabetes with a primary care doctor, primary care clinic, weight management, holistic healthcare, patient-centered care, experienced doctors, compassionate medical care, chronic condition support, wellness journey, telemedicine, personalized healthcare, healthcare mission, health empowerment, ",
+      "VitalCare Health, when to go to urgent care vs ER, what is included in an annual physical, benefits of a medical weight loss program, how to manage diabetes with a primary care doctor,about VitalCare, urgent care center,when to go to urgent care vs ER, what is included in an annual physical, benefits of a medical weight loss program, how to manage diabetes with a primary care doctor, primary care clinic, weight management, holistic healthcare, patient-centered care, experienced doctors, compassionate medical care, chronic condition support, wellness journey, telemedicine, personalized healthcare, healthcare mission, health empowerment, ",
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
       type: "website",
