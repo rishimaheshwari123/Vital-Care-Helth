@@ -4,13 +4,13 @@ import Link from "next/link";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 const TopHeader = () => {
-  const [openDropdown, setOpenDropdown] = useState(null); // State to track which dropdown is open: 'tyrone', 'peachtree', or null
+  const [openDropdown, setOpenDropdown] = useState(null); // State to track which dropdown is open: 'Peachtree', 'peachtree', or null
 
   const addresses = {
-    tyrone: {
-      name: "Tyrone",
-      fullAddress: "1130 Senoia Road Suite B4 Tyrone GA 30290",
-      mapLink: "https://g.co/kgs/fjZMb8X", // Google Maps link for Tyrone
+    Peachtree: {
+      name: "Peachtree",
+      fullAddress: "1130 Senoia Road Suite B4 Peachtree GA 30290",
+      mapLink: "https://g.co/kgs/fjZMb8X", // Google Maps link for Peachtree
     },
     peachtree: {
       name: "Peachtree City",
@@ -33,7 +33,7 @@ const TopHeader = () => {
         <div className="bg-[#0097a3c3] z-[9999999] h-[55px] text-white hidden md:block py-2 relative">
           <div className="flex flex-col justify-between items-center max-w-11/12 md:flex-row md:space-y-0 mx-auto px-4 space-y-2">
             <div className="flex flex-wrap items-center space-x-6">
-              {/* Tyrone Address Dropdown */}
+              {/* Peachtree Address Dropdown */}
               
 
               {/* Peachtree Address Dropdown */}
@@ -154,7 +154,7 @@ const TopHeader = () => {
       {/* Mobile Header */}
       <div className="bg-[#c5dee4] text-black md:hidden pb-[10px] px-2 py-1 relative">
         <div className="flex flex-wrap  items-center space-x-4">
-          {/* Tyrone Address Dropdown (Mobile) */}
+          {/* Peachtree Address Dropdown (Mobile) */}
           
           {/* Peachtree Address Dropdown (Mobile) - Added for mobile */}
           <div className="relative flex items-center space-x-2">

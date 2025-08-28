@@ -7,12 +7,12 @@ import { Zoom } from "react-awesome-reveal";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 
 const Footer = () => {
-  const [openDropdown, setOpenDropdown] = useState(null); // State to track which dropdown is open: 'tyrone', 'peachtree', or null
+  const [openDropdown, setOpenDropdown] = useState(null); // State to track which dropdown is open: 'Peachtree', 'peachtree', or null
 
   const addresses = {
-    tyrone: {
-      name: "Tyrone", // Only display this
-      fullAddress: "1130 Senoia Road Suite B4 Tyrone GA 30290", // This won't be displayed in the dropdown
+    Peachtree: {
+      name: "Peachtree", // Only display this
+      fullAddress: "1130 Senoia Road Suite B4 Peachtree GA 30290", // This won't be displayed in the dropdown
       mapLink: "https://g.co/kgs/fjZMb8X", // Link to this
     },
     peachtree: {

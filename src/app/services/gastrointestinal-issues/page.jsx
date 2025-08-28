@@ -138,9 +138,9 @@ export const generateMetadata = () => {
   return {
     title: "Gastrointestinal Care & Digestive Health | VitalCare Health",
     description:
-      "Expert treatment for gastrointestinal issues including IBS, acid reflux, liver and gallbladder conditions, and more at VitalCare Health in Tyrone, GA.",
+      "Expert treatment for gastrointestinal issues including IBS, acid reflux, liver and gallbladder conditions, and more at VitalCare Health in Peachtree, GA.",
     keywords:
-      "gastrointestinal care, digestive health, acid reflux treatment, IBS management, colonoscopy, endoscopy, liver health, gallbladder treatment, GI specialist Tyrone GA, stomach pain treatment, gut health, VitalCare Health",
+      "gastrointestinal care, digestive health, acid reflux treatment, IBS management, colonoscopy, endoscopy, liver health, gallbladder treatment, GI specialist Peachtree GA, stomach pain treatment, gut health, VitalCare Health",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
@@ -148,7 +148,7 @@ export const generateMetadata = () => {
       url: "http://vitalcarega.com/services/gastrointestinal-issues",
       title: "GI & Digestive Health Treatment | VitalCare Health",
       description:
-        "Personalized care for acid reflux, IBS, ulcers, and chronic digestive issues. Book a GI consultation today at VitalCare Health in Tyrone, GA.",
+        "Personalized care for acid reflux, IBS, ulcers, and chronic digestive issues. Book a GI consultation today at VitalCare Health in Peachtree, GA.",
       images: [
         {
           url: "/android-chrome-192x192.png",

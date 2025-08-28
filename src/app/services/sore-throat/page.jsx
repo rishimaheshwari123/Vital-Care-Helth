@@ -180,7 +180,7 @@ export const generateMetadata = () => {
     description:
       "Get fast relief for sore throat symptoms at VitalCare Health. We offer rapid strep tests, throat cultures, pain relief, and antibiotic treatments tailored to your needs.",
     keywords:
-      "sore throat treatment, strep throat test, rapid strep test, throat culture, throat pain relief, urgent care sore throat, sore throat medication, strep throat Tyrone GA, VitalCare Health, antibiotics for sore throat, throat sprays and gargles",
+      "sore throat treatment, strep throat test, rapid strep test, throat culture, throat pain relief, urgent care sore throat, sore throat medication, strep throat Peachtree GA, VitalCare Health, antibiotics for sore throat, throat sprays and gargles",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
@@ -202,7 +202,7 @@ export const generateMetadata = () => {
       card: "summary",
       title: "Strep & Sore Throat Relief | VitalCare Health",
       description:
-        "From throat cultures to soothing sprays, get complete sore throat care at VitalCare Health. Trusted treatment in Tyrone, GA.",
+        "From throat cultures to soothing sprays, get complete sore throat care at VitalCare Health. Trusted treatment in Peachtree, GA.",
       images: ["/android-chrome-192x192.png"],
     },
   };

@@ -44,7 +44,7 @@ export default function InHouseLab() {
             provide you with fast and reliable diagnostic testing. Our on-site
             labs are equipped to perform a range of tests to quickly and
             accurately diagnose your condition, helping you receive the care you
-            need without delay. Located in Tyrone, GA, our skilled healthcare
+            need without delay. Located in Peachtree, GA, our skilled healthcare
             professionals ensure efficient processing and interpretation of lab
             results, so you can get the answers and treatment you need promptly.
           </p>
@@ -186,9 +186,9 @@ export const generateMetadata = () => {
   return {
     title: "In-House Lab Testing | Fast Diagnostic Services | VitalCare Health",
     description:
-      "VitalCare Health offers in-house lab testing for fast, accurate diagnosis. Blood tests, urine analysis, rapid diagnostics, and COVID-19 tests—all at one location in Tyrone, GA.",
+      "VitalCare Health offers in-house lab testing for fast, accurate diagnosis. Blood tests, urine analysis, rapid diagnostics, and COVID-19 tests—all at one location in Peachtree, GA.",
     keywords:
-      "in-house lab, diagnostic lab testing, blood tests, urine tests, rapid diagnostic test, on-site lab, urgent care labs, COVID-19 PCR test, strep test, flu test, pregnancy test, VitalCare Health lab services, Tyrone GA healthcare",
+      "in-house lab, diagnostic lab testing, blood tests, urine tests, rapid diagnostic test, on-site lab, urgent care labs, COVID-19 PCR test, strep test, flu test, pregnancy test, VitalCare Health lab services, Peachtree GA healthcare",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
@@ -210,7 +210,7 @@ export const generateMetadata = () => {
       card: "summary",
       title: "In-House Lab Testing | VitalCare Health",
       description:
-        "On-site lab testing for blood, urine, and rapid diagnostics at VitalCare Health. Walk in for fast results and personalized treatment in Tyrone, GA.",
+        "On-site lab testing for blood, urine, and rapid diagnostics at VitalCare Health. Walk in for fast results and personalized treatment in Peachtree, GA.",
       images: ["/android-chrome-192x192.png"],
     },
   };

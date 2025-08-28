@@ -34,7 +34,7 @@ export default function UrgentHome() {
             in addressing urgent medical concerns{" "}
             <span className="hidden lg:inline">
               , ensuring you receive timely care for non-life-threatening
-              conditions.Located in Tyrone, GA, our team of dedicated healthcare
+              conditions.Located in Peachtree, GA, our team of dedicated healthcare
               professionals is committed to providing comprehensive and
               compassionate urgent care services.
             </span>

@@ -31,7 +31,7 @@ export default function UrgentHomeService() {
             When urgent healthcare needs arise, VitalCare Health is here to
             offer swift and responsive medical attention. Our clinic specializes
             in addressing urgent medical concerns, ensuring you receive timely
-            care for non-life-threatening conditions. Located in Tyrone, GA, our
+            care for non-life-threatening conditions. Located in Peachtree, GA, our
             team of dedicated healthcare professionals is committed to providing
             comprehensive and compassionate urgent care services.
           </p>

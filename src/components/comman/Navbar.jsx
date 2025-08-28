@@ -313,7 +313,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Tyrone+GA+30290&z=17&hl=en"
+              href="https://www.google.com/maps?q=1130+Senoia+Road+Suite+B4+Peachtree+GA+30290&z=17&hl=en"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Map"

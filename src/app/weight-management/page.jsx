@@ -21,7 +21,7 @@ export const generateMetadata = () => {
     description:
       "Achieve sustainable weight loss with VitalCare Health’s FDA-approved GLP-1 Weight Management Program. Boost metabolism, reduce cravings, and transform your lifestyle with expert support.",
     keywords:
-      "medical weight loss program Georgia, medical weight loss program Georgia, weight management clinic near me,physician-supervised weight loss Georgia,weight management clinic near me, physician-supervised weight loss Georgia, GLP-1 weight loss, weight management program, FDA-approved weight loss, sustainable weight loss, appetite control, metabolism booster, BMI over 30, obesity treatment, VitalCare Health, weight loss clinic Tyrone GA, lose weight with GLP-1, obesity-related disease prevention, body mass index calculator, medical weight loss program",
+      "medical weight loss program Georgia, medical weight loss program Georgia, weight management clinic near me,physician-supervised weight loss Georgia,weight management clinic near me, physician-supervised weight loss Georgia, GLP-1 weight loss, weight management program, FDA-approved weight loss, sustainable weight loss, appetite control, metabolism booster, BMI over 30, obesity treatment, VitalCare Health, weight loss clinic Peachtree GA, lose weight with GLP-1, obesity-related disease prevention, body mass index calculator, medical weight loss program",
 
     metadataBase: new URL("http://vitalcarega.com"),
     openGraph: {
