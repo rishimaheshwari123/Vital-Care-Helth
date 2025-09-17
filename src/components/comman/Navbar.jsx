@@ -7,9 +7,6 @@ import {
   FaTimes,
   FaChevronDown,
   FaChevronUp,
-  FaIcons,
-} from "react-icons/fa";
-import {
   FaStethoscope,
   FaSyringe,
   FaHeartbeat,
@@ -22,124 +19,50 @@ import {
   FaTooth,
   FaPhone,
   FaHeadSideVirus,
+  FaFacebook,
+  FaInstagram,
 } from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
-import { MdEmojiPeople } from "react-icons/md";
-
+import { SiMaplibre } from "react-icons/si";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import logo from "@/assets/logo.jpg";
 import TopHeader from "./TopBar";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import { SiMaplibre } from "react-icons/si";
 import doctor from "@/assets/doc.png";
 import vital from "@/assets/vital.png";
+
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
-  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const services = [
-    {
-      name: "Urgent Care Needs",
-      to: "/urgent-care",
-      icon: <FaStethoscope />,
-    },
-    {
-      name: "Weight Management",
-      to: "/services/weight-management",
-      icon: <FaWeight />,
-    },
-    {
-      name: "Annual Physicals",
-      to: "/services/annual-physicals",
-      icon: <FaHeartbeat />,
-    },
-    {
-      name: "Flu Testing & Treatment",
-      to: "/services/flu-testing-treatment",
-      icon: <FaVials />,
-    },
-    {
-      name: "Sports Physicals",
-      to: "/services/sports-physicals",
-      icon: <FaRunning />,
-    },
-    {
-      name: "COVID-19 Testing",
-      to: "/services/covid-19-testing",
-      icon: <FaSyringe />,
-    },
-
+    { name: "Urgent Care Needs", to: "/urgent-care", icon: <FaStethoscope /> },
+    { name: "Weight Management", to: "/services/weight-management", icon: <FaWeight /> },
+    { name: "Annual Physicals", to: "/services/annual-physicals", icon: <FaHeartbeat /> },
+    { name: "Flu Testing & Treatment", to: "/services/flu-testing-treatment", icon: <FaVials /> },
+    { name: "Sports Physicals", to: "/services/sports-physicals", icon: <FaRunning /> },
+    { name: "COVID-19 Testing", to: "/services/covid-19-testing", icon: <FaSyringe /> },
     { name: "In-House Labs", to: "/services/in-house-labs", icon: <FaFlask /> },
-    {
-      name: "Diabetes Management",
-      to: "/services/diabetes-managements",
-      icon: <FaUserMd />,
-    },
+    { name: "Diabetes Management", to: "/services/diabetes-managements", icon: <FaUserMd /> },
     { name: "Sore Throat", to: "/services/sore-throat", icon: <FaDiagnoses /> },
-    {
-      name: "Gastrointestinal Issues",
-      to: "/services/gastrointestinal-issues",
-      icon: <FaTooth />,
-    },
+    { name: "Gastrointestinal Issues", to: "/services/gastrointestinal-issues", icon: <FaTooth /> },
     { name: "Telemedicine", to: "/services/telemedicine", icon: <FaPhone /> },
-    {
-      name: "Migraine Relief Solutions",
-      to: "/services/migraine-relief",
-      icon: <FaHeadSideVirus />,
-    },
+    { name: "Migraine Relief Solutions", to: "/services/migraine-relief", icon: <FaHeadSideVirus /> },
   ];
 
   const aboutsubmenu = [
-    {
-      name: "About VitalCare Health",
-      to: "/about",
-      image: vital,
-    },
-    {
-      name: "Meet Our Team",
-      to: "/team",
-      image: doctor,
-    },
+    { name: "About VitalCare Health", to: "/about", image: vital },
+    { name: "Meet Our Team", to: "/team", image: doctor },
   ];
 
   const links = [
     { name: "Home", to: "/" },
-    // { name: "About ", to: "/about" },
-    {
-      name: "About",
-      to: "/about",
-      hasSubmenu: true,
-      submenu: aboutsubmenu,
-    },
-    {
-      name: "Services",
-      to: "/services",
-      hasSubmenu: true,
-      submenu: services,
-    },
+    { name: "About", to: "/about", hasSubmenu: true, submenu: aboutsubmenu },
+    { name: "Services", to: "/services", hasSubmenu: true, submenu: services },
     { name: "Urgent Care", to: "/urgent-care" },
     { name: "Weight Management", to: "/weight-management" },
   ];
 
-  const [hoveredMenu, setHoveredMenu] = useState(null); // 🔹 New state to track hovered menu
-  const hoveredSubmenu = hoveredMenu?.submenu || hoveredMenu || [];
-
   const toggleSubmenu = (index) => {
-    if (openSubmenu === index) {
-      setOpenSubmenu(null);
-    } else {
-      setOpenSubmenu(index);
-    }
-  };
-  const handleMouseEnter = (index) => {
-    setActiveDropdown(index);
-    setHoveredMenu(links[index]); // 🔹 Store hovered menu item
-  };
-
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
-    setHoveredMenu(null); // 🔹 Clear hovered menu
+    setOpenSubmenu(openSubmenu === index ? null : index);
   };
 
   return (
@@ -147,37 +70,55 @@ const Navbar = () => {
       <div className="bg-white shadow-lg text-black w-full fixed left-0 top-0 z-50">
         <TopHeader />
         <Fade direction="down" triggerOnce>
-          <div className="justify-between hidden items-center  max-w-11/12 mx-auto px-6 py-4 sm:flex">
+          <div className="justify-between hidden items-center max-w-11/12 mx-auto px-6 py-4 sm:flex">
             <Zoom triggerOnce>
               <Link href="/" className="text-xl">
-                <Image
-                  src={logo || "/placeholder.svg"}
-                  className="w-80"
-                  alt="Logo"
-                />
+                <Image src={logo || "/placeholder.svg"} className="w-80" alt="Logo" />
               </Link>
             </Zoom>
             <div>
               <div className="flex items-center space-x-6">
                 {links.map((link, index) => (
-                  <Slide
-                    direction="down"
-                    triggerOnce
-                    key={index}
-                    delay={index * 100}
-                  >
-                    <div className=" ">
+                  <Slide direction="down" triggerOnce key={index} delay={index * 100}>
+                    <div className="group relative">
                       <Link
                         href={link.to}
-                        onMouseEnter={() => handleMouseEnter(index)}
-                        onMouseLeave={handleMouseLeave}
                         className="flex text-[17px] duration-300 font-semibold hover:text-[#0097a3c3] items-center transition-all"
                       >
                         {link.name}
-                        {link.hasSubmenu && (
-                          <FaChevronDown className="text-xs ml-1" />
-                        )}
+                        {link.hasSubmenu && <FaChevronDown className="text-xs ml-1" />}
                       </Link>
+
+                      {link.hasSubmenu && (
+                        <div
+                          className="absolute top-full left-1/2 -translate-x-1/2 w-[600px] mt-4 z-50 invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100"
+                        >
+                          <div className="bg-white p-4 shadow-lg rounded-md border border-gray-200">
+                            <div className={`grid gap-4 ${link.submenu.length <= 4 ? "grid-cols-2" : "grid-cols-3"}`}>
+                              {link.submenu.map((subItem, subIndex) => (
+                                <Link
+                                  key={subIndex}
+                                  href={subItem.to}
+                                  className="flex items-center p-3 rounded-md transition-all  hover:text-white duration-300 hover:bg-[#0097a3c3]  group"
+                                >
+                                  {subItem.image ? (
+                                    <Image
+                                      src={subItem.image}
+                                      alt={subItem.name}
+                                      className="h-6 w-6 mr-3"
+                                    />
+                                  ) : (
+                                    <span className="text-lg  text-black mr-3">
+                                      {subItem.icon}
+                                    </span>
+                                  )}
+                                  <span className="text-base font-medium">{subItem.name}</span>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </Slide>
                 ))}
@@ -211,7 +152,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={() => setIsSidebarOpen((prev) => !prev)}
-            className="duration-300 transition-all"
+            className="duration-300 transition-all text-black"
           >
             {isSidebarOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
           </button>
@@ -224,12 +165,8 @@ const Navbar = () => {
           }`}
         >
           <div className="flex border-b border-gray-200 justify-between items-center px-6 py-4">
-            <Image
-              src={logo || "/placeholder.svg"}
-              className="w-48"
-              alt="Logo"
-            />
-            <button onClick={() => setIsSidebarOpen(false)}>
+            <Image src={logo || "/placeholder.svg"} className="w-48" alt="Logo" />
+            <button onClick={() => setIsSidebarOpen(false)} className="text-black">
               <FaTimes size={28} />
             </button>
           </div>
@@ -240,18 +177,22 @@ const Navbar = () => {
                   <div className="flex justify-between items-center">
                     <Link
                       href={link.to}
-                      className="text-lg block font-medium hover:text-gray-600 mb-4"
-                      onClick={() => setIsSidebarOpen(false)}
+                      className="text-lg block font-medium text-black hover:text-gray-600 mb-4"
+                      onClick={() => {
+                        if (!link.hasSubmenu) {
+                          setIsSidebarOpen(false);
+                        }
+                      }}
                     >
                       {link.name}
                     </Link>
                     {link.hasSubmenu && (
                       <button
                         onClick={(e) => {
-                          e.stopPropagation(); // Prevents parent click
+                          e.stopPropagation();
                           toggleSubmenu(index);
                         }}
-                        className="p-2 mb-4"
+                        className="p-2 mb-4 text-black"
                       >
                         {openSubmenu === index ? (
                           <FaChevronUp size={14} />
@@ -262,19 +203,14 @@ const Navbar = () => {
                     )}
                   </div>
                 </Fade>
-
                 {link.hasSubmenu && openSubmenu === index && (
                   <div className="mb-4 ml-4">
                     <div className="grid grid-cols-1 gap-1">
                       {link.submenu.map((subItem, subIndex) => (
-                        <Fade
-                          direction="up"
-                          key={subIndex}
-                          delay={subIndex * 50}
-                        >
+                        <Fade direction="up" key={subIndex} delay={subIndex * 50}>
                           <Link
                             href={subItem.to}
-                            className="text-base text-gray-700 block hover:text-[#800080] mb-2"
+                            className="text-base text-gray-700 block hover:text-[#0097a3c3] mb-2"
                             onClick={() => setIsSidebarOpen(false)}
                           >
                             {subItem.name}
@@ -326,7 +262,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col items-center mb-6 mt-4 px-6 space-y-3">
             <Link
-              className="bg-white  border border-[#0097a3c3] rounded-2xl text-[#0097a3c3] text-center w-full cursor-pointer py-3"
+              className="bg-white border border-[#0097a3c3] rounded-2xl text-[#0097a3c3] text-center w-full cursor-pointer py-3"
               href="https://mycw193.ecwcloud.com/portal24581/jsp/100mp/login_otp.jsp"
             >
               Pay Now
@@ -348,46 +284,6 @@ const Navbar = () => {
           onClick={() => setIsSidebarOpen(false)}
         ></div>
       </div>
-
-      {hoveredSubmenu.length > 0 && (
-        <div className="max-w-[50vw] mx-auto">
-          <div
-            className="fixed left-0 min-h-[20px] min-w-full top-[100px] z-[999999]"
-            onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
-            onMouseLeave={handleMouseLeave}
-          ></div>
-          <div
-            className="bg-white p-1 shadow-lg w-full fixed left-[29%] max-w-[40vw] right-[32%] top-[125px] transform z-[99999]"
-            onMouseEnter={() => setHoveredMenu(hoveredSubmenu)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div
-              className={`grid gap-3 ${
-                hoveredSubmenu.length <= 4 ? "grid-cols-2" : "grid-cols-3"
-              }`}
-            >
-              {hoveredSubmenu.map((subItem, subIndex) => (
-                <Link
-                  key={subIndex}
-                  href={subItem.to}
-                  className="flex rounded text-sm hover:bg-[#0097a3c3] hover:text-white items-center px-3 py-2 transition-colors"
-                >
-                  {subItem.image ? (
-                    <Image
-                      src={subItem.image}
-                      alt={subItem.name}
-                      className="h-5 w-5 mr-2"
-                    />
-                  ) : (
-                    <p className="text-lg">{subItem.icon}</p>
-                  )}
-                  <span className="text-[16px] ml-2">{subItem.name}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
