@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 import Link from "next/link";
 import { Fade, Zoom } from "react-awesome-reveal";
+import { MdAccessTime } from "react-icons/md";
 
 const TopHeader = () => {
   const [openDropdown, setOpenDropdown] = useState(null); // State to track which dropdown is open: 'Peachtree', 'peachtree', or null
@@ -75,6 +76,7 @@ const TopHeader = () => {
                   </a>
                 </div>
               </Zoom>
+              
 
               <Zoom triggerOnce delay={200}>
                 <div className="flex items-center space-x-2">
@@ -85,6 +87,11 @@ const TopHeader = () => {
                   >
                     info@vitalcarega.com
                   </a>
+                </div>
+              </Zoom>
+              <Zoom triggerOnce delay={100}>
+                <div className="hidden font-semibold items-center md:flex space-x-2">
+                 Mon-Fri: 9:00-7:00PM Sat: 9:00-4:00PM
                 </div>
               </Zoom>
             </div>
@@ -178,10 +185,17 @@ const TopHeader = () => {
                 </a>
               </div>
             )}
+            
           </div>
         </div>
+        <div className="flex items-center mt-[8px] gap-2 text-gray-700 font-bold text-sm md:text-base">
+  <MdAccessTime className="text-black w-5 h-5" />
+  <span>
+    Mon-Fri: 9:00 AM - 7:00 PM | Sat: 9:00 AM - 4:00 PM
+  </span>
+</div>
 
-        <div className="flex justify-between mt-3">
+        <div className="flex justify-between mt-2">
           <div className="flex items-center space-x-2">
             <FiPhone className="text-green-600 text-xl" />
             <a
