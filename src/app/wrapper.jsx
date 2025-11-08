@@ -5,15 +5,12 @@ import "./globals.css";
 import Footer from "@/components/comman/Footer";
 import { useEffect, useState } from "react";
 import InquiryDrawer from "@/components/comman/InquiryDrawer";
-import InquiryForm2 from "@/components/comman/InquiryForm2";
 
 const Wrapper = ({ children }) => {
-  const [showModal, setShowModal] = useState(true);
-  const [enquiry, setEnquiry] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleCloseModal = () => {
     setShowModal(false);
-    setEnquiry(false);
   };
 
   const [isClient, setIsClient] = useState(false);
@@ -34,15 +31,11 @@ const Wrapper = ({ children }) => {
       <div className="mt-32">{children}</div>
 
       <button
-        onClick={() => setEnquiry(true)}
+        onClick={() => setShowModal(true)} // ✅ Open Drawer
         className="fixed cursor-pointer bottom-4 -right-10 transform -translate-x-1/2 bg-red-600 text-white px-6 py-3 rounded-full shadow-lg z-50"
       >
         Get Inquiry
       </button>
-
-      {enquiry && (
-        <InquiryForm2 onClose={() => setEnquiry(false)} enquiry={enquiry} />
-      )}
 
       <Footer />
     </div>
