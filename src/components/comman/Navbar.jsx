@@ -21,6 +21,7 @@ import {
   FaHeadSideVirus,
   FaFacebook,
   FaInstagram,
+  FaArrowRight,
 } from "react-icons/fa";
 import { SiMaplibre } from "react-icons/si";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
@@ -34,6 +35,7 @@ const Navbar = () => {
   const [openSubmenu, setOpenSubmenu] = useState(null);
 
   const services = [
+    { name: "IV Hydration Therapy", to: "/services/iv-hydration-therapy", icon: <FaSyringe />, isNew: true },
     { name: "Urgent Care Needs", to: "/urgent-care", icon: <FaStethoscope /> },
     { name: "Weight Management", to: "/services/weight-management", icon: <FaWeight /> },
     { name: "Annual Physicals", to: "/services/annual-physicals", icon: <FaHeartbeat /> },
@@ -91,30 +93,67 @@ const Navbar = () => {
 
                       {link.hasSubmenu && (
                         <div
-                          className="absolute top-full left-1/2 -translate-x-1/2 w-[600px] mt-4 z-50 invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100"
+                          className="absolute top-full left-1/2 -translate-x-1/2 w-[700px] mt-6 z-50 invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-2"
                         >
-                          <div className="bg-white p-4 shadow-lg rounded-md border border-gray-200">
-                            <div className={`grid gap-4 ${link.submenu.length <= 4 ? "grid-cols-2" : "grid-cols-3"}`}>
-                              {link.submenu.map((subItem, subIndex) => (
-                                <Link
-                                  key={subIndex}
-                                  href={subItem.to}
-                                  className="flex items-center p-3 rounded-md transition-all  hover:text-white duration-300 hover:bg-[#0097a3c3]  group"
-                                >
-                                  {subItem.image ? (
-                                    <Image
-                                      src={subItem.image}
-                                      alt={subItem.name}
-                                      className="h-6 w-6 mr-3"
-                                    />
-                                  ) : (
-                                    <span className="text-lg  text-black mr-3">
-                                      {subItem.icon}
-                                    </span>
-                                  )}
-                                  <span className="text-base font-medium">{subItem.name}</span>
-                                </Link>
-                              ))}
+                          {/* Arrow pointer */}
+                          <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-l border-t border-gray-200"></div>
+                          
+                          <div className="bg-white p-6 shadow-2xl rounded-2xl border border-gray-100 relative overflow-hidden">
+                            {/* Background pattern */}
+                            <div className="absolute inset-0 opacity-5">
+                              <div className="absolute inset-0" style={{
+                                backgroundImage: 'radial-gradient(circle, #0097a3 1px, transparent 1px)',
+                                backgroundSize: '20px 20px'
+                              }}></div>
+                            </div>
+                            
+                            <div className="relative">
+                              {link.name === "Services" && (
+                                <div className="mb-4 pb-4 border-b border-gray-200">
+                                  <h3 className="text-lg font-bold text-[#0097a3] mb-1">Our Healthcare Services</h3>
+                                  <p className="text-sm text-gray-600">Comprehensive care for your health needs</p>
+                                </div>
+                              )}
+                              
+                              <div className={`grid gap-3 ${link.submenu.length <= 4 ? "grid-cols-2" : "grid-cols-3"}`}>
+                                {link.submenu.map((subItem, subIndex) => (
+                                  <Link
+                                    key={subIndex}
+                                    href={subItem.to}
+                                    className="relative flex items-center p-4 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-[#0097a3] hover:to-[#00BFB3] hover:text-white hover:shadow-lg hover:scale-105 group/item"
+                                  >
+                                    {subItem.isNew && (
+                                      <span className="absolute -top-1 -right-1 bg-gradient-to-r from-[#FDB913] to-[#f59e0b] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg animate-pulse">
+                                        NEW
+                                      </span>
+                                    )}
+                                    {subItem.image ? (
+                                      <Image
+                                        src={subItem.image}
+                                        alt={subItem.name}
+                                        className="h-8 w-8 mr-3 rounded-lg"
+                                      />
+                                    ) : (
+                                      <span className="text-xl text-[#0097a3] group-hover/item:text-white mr-3 transition-colors">
+                                        {subItem.icon}
+                                      </span>
+                                    )}
+                                    <span className="text-sm font-semibold">{subItem.name}</span>
+                                  </Link>
+                                ))}
+                              </div>
+                              
+                              {link.name === "Services" && (
+                                <div className="mt-4 pt-4 border-t border-gray-200 text-center">
+                                  <Link
+                                    href="/services"
+                                    className="inline-flex items-center gap-2 text-[#0097a3] font-semibold hover:text-[#00BFB3] transition-colors"
+                                  >
+                                    View All Services
+                                    <FaArrowRight className="text-sm" />
+                                  </Link>
+                                </div>
+                              )}
                             </div>
                           </div>
                         </div>

@@ -1,8 +1,8 @@
-// "use client";
+"use client";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
-import { Fade } from "react-awesome-reveal";
+import { useState } from "react";
 import a1 from "@/assets/Urgent.png";
 import a2 from "@/assets/Covid.png";
 import a3 from "@/assets/Annual.png";
@@ -15,8 +15,16 @@ import a9 from "@/assets/Sore.png";
 import a10 from "@/assets/Gastroitestonal.png";
 import a11 from "@/assets/telemedicine.jpg";
 import a12 from "@/assets/Migranne.png";
+import a13 from "@/assets/ingection.png";
 
 const treatments = [
+  {
+    title: "IV Hydration Therapy",
+    desc: "Fast, effective hydration therapy to replenish fluids, electrolytes, and nutrients. Relieve dehydration, boost energy, and support recovery from illness or workouts.",
+    image: a13,
+    link: "services/iv-hydration-therapy",
+    isNew: true,
+  },
   {
     title: "Urgent Care Needs",
     desc: "Prompt care for immediate medical concerns, ensuring timely attention and relief.",
@@ -92,54 +100,124 @@ const treatments = [
   },
 ];
 
-const Services = () => {
+const ServiceCard = ({ treatment, index }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="bg-[#0097a3c3] px-6 py-12">
-      <div className="text-center max-w-3xl mb-12 mx-auto">
-        <h4 className="text-4xl text-white font-bold">Our Services</h4>
-        <h1 className="text-white mt-2">
-          Explore our wide range of health care services designed to meet your
-          medical needs with compassion and expertise.
-        </h1>
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transform hover:-translate-y-2 transition-all duration-500"
+      style={{
+        animationDelay: `${index * 50}ms`,
+      }}
+    >
+      {/* NEW Badge for IV Hydration */}
+      {treatment.isNew && (
+        <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-[#FDB913] to-[#f59e0b] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+          NEW! 💧
+        </div>
+      )}
+      
+      {/* Image Container */}
+      <div className="relative h-56 overflow-hidden">
+        <Image
+          src={treatment.image}
+          alt={treatment.title}
+          className={`w-full h-full object-cover transition-transform duration-700 ${
+            isHovered ? 'scale-110' : 'scale-100'
+          }`}
+        />
+        {/* Gradient Overlay */}
+        <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-500 ${
+          isHovered ? 'opacity-90' : 'opacity-60'
+        }`}></div>
+        
+        {/* Title Badge */}
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <h3 className="text-white text-lg font-bold leading-tight">
+            {treatment.title}
+          </h3>
+        </div>
       </div>
 
-      <div className="grid p-6 gap-8 lg:grid-cols-4 max-w-6xl md:grid-cols-3 mx-auto sm:grid-cols-2">
-        <Fade direction="up">
-          {treatments.map((treatment, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg duration-300 group overflow-hidden relative transition-all"
-            >
-              {/* Image */}
-              <div className="relative">
-                <Image
-                  src={treatment.image}
-                  alt={treatment.title}
-                  className="w-full duration-300 group-hover:scale-105 object-cover transition-transform"
-                />
-                <div className="bg-black bg-opacity-60 p-2 text-center text-white w-full absolute bottom-0">
-                  <h2 className="text-lg font-semibold">{treatment.title}</h2>
-                </div>
-              </div>
+      {/* Content Container */}
+      <div className={`absolute inset-0 flex flex-col justify-center items-center p-6 bg-gradient-to-br from-[#0097a3]/95 to-[#005d67]/95 backdrop-blur-sm transition-all duration-500 ${
+        isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
+      }`}>
+        <div className="text-center space-y-4">
+          <h3 className="text-white text-xl font-bold">
+            {treatment.title}
+          </h3>
+          <p className="text-gray-100 text-sm leading-relaxed line-clamp-4">
+            {treatment.desc}
+          </p>
+          <Link
+            href={treatment.link}
+            className="inline-flex items-center gap-2 bg-white text-[#0097a3] font-semibold px-6 py-3 rounded-full hover:bg-[#00BFB3] hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg"
+          >
+            Learn More
+            <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </div>
 
-              {/* Hover Effect */}
-              <div className="flex flex-col bg-black bg-opacity-60 justify-center p-4 text-center absolute duration-300 group-hover:opacity-100 inset-0 items-center opacity-0 transition-opacity">
-                <h2 className="text-lg text-white font-semibold">
-                  {treatment.title}
-                </h2>
-                <p className="text-gray-200 text-sm mt-2">{treatment.desc}</p>
-                <Link
-                  href={treatment?.link}
-                  className="flex bg-[#00BFB3] justify-center rounded-md text-white gap-2 hover:bg-[#00a69b] items-center mt-3 px-4 py-2 transition"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          ))}
-        </Fade>
+      {/* Decorative Corner */}
+      <div className={`absolute top-4 right-4 w-12 h-12 bg-[#00BFB3] rounded-full flex items-center justify-center transition-all duration-500 ${
+        isHovered ? 'scale-0 opacity-0' : 'scale-100 opacity-100'
+      }`}>
+        <FaArrowRight className="text-white text-lg transform rotate-[-45deg]" />
       </div>
     </div>
+  );
+};
+
+const Services = () => {
+  return (
+    <section className="relative bg-gradient-to-b from-[#0097a3] to-[#007a85] px-6 py-20 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mb-16 mx-auto space-y-4">
+          <div className="inline-block">
+            <span className="text-[#00BFB3] text-sm font-bold uppercase tracking-wider bg-white/10 px-4 py-2 rounded-full">
+              What We Offer
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-white font-extrabold">
+            Our Services
+          </h2>
+          <p className="text-white/90 text-lg leading-relaxed">
+            Explore our comprehensive range of healthcare services designed to meet your medical needs with compassion, expertise, and cutting-edge care.
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {treatments.map((treatment, index) => (
+            <ServiceCard key={index} treatment={treatment} index={index} />
+          ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-3 bg-white text-[#0097a3] font-bold text-lg px-8 py-4 rounded-full hover:bg-[#00BFB3] hover:text-white transform hover:scale-105 transition-all duration-300 shadow-2xl"
+          >
+            View All Services
+            <FaArrowRight className="text-xl" />
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import Navbar from "@/components/comman/Navbar";
 import "./globals.css";
 import Footer from "@/components/comman/Footer";
 import { useEffect, useState } from "react";
-import InquiryForm from "@/components/comman/InquiryForm";
+import InquiryDrawer from "@/components/comman/InquiryDrawer";
 import InquiryForm2 from "@/components/comman/InquiryForm2";
 
 const Wrapper = ({ children }) => {
@@ -28,7 +28,7 @@ const Wrapper = ({ children }) => {
       <Navbar />
 
       {showModal && (
-        <InquiryForm onClose={handleCloseModal} showModal={showModal} />
+        <InquiryDrawer onClose={handleCloseModal} showModal={showModal} />
       )}
 
       <div className="mt-32">{children}</div>
