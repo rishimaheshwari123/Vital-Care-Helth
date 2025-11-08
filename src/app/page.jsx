@@ -14,6 +14,8 @@ const Home = () => {
       <StructuredData />
       <div>
         <HereSection />
+        <br />
+        <br />
         <About />
         <Services />
         {/* <WeightManagementBanner /> */}
@@ -34,7 +36,8 @@ export default Home;
 
 export const generateMetadata = () => {
   return {
-    title: "Locally Owned Urgent Care & Primary Care in Peachtree City, GA | VitalCare Health",
+    title:
+      "Locally Owned Urgent Care & Primary Care in Peachtree City, GA | VitalCare Health",
     description:
       "Locally owned VitalCare Health offers urgent care, primary care, IV hydration therapy, weight loss programs, and telehealth in Peachtree City, GA. Walk-ins welcome. Same-day appointments available!",
     keywords:
@@ -43,7 +46,8 @@ export const generateMetadata = () => {
     openGraph: {
       type: "website",
       url: "http://vitalcarega.com",
-      title: "Locally Owned Urgent Care & Primary Care in Peachtree City, GA | VitalCare Health",
+      title:
+        "Locally Owned Urgent Care & Primary Care in Peachtree City, GA | VitalCare Health",
       description:
         "Locally owned VitalCare Health provides urgent care, primary care, IV hydration therapy, and wellness services in Peachtree City, GA. Walk-ins welcome. Same-day appointments!",
       images: [
@@ -59,7 +63,8 @@ export const generateMetadata = () => {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Locally Owned Urgent Care in Peachtree City, GA | VitalCare Health",
+      title:
+        "Locally Owned Urgent Care in Peachtree City, GA | VitalCare Health",
       description:
         "Visit locally owned VitalCare Health in Peachtree City, GA for urgent care, IV hydration, telemedicine, and more. Book online today!",
       images: ["/android-chrome-192x192.png"],
@@ -70,9 +75,9 @@ export const generateMetadata = () => {
       googleBot: {
         index: true,
         follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
       },
     },
     alternates: {
