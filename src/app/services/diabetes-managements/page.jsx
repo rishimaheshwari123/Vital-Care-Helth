@@ -15,7 +15,7 @@ const Diabetes = () => {
 };
 
 export default Diabetes;
-
+// test
 export const generateMetadata = () => {
   return {
     title: "Diabetes Management & Treatment Plans | VitalCare Health",
